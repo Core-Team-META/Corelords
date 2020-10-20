@@ -1,9 +1,0 @@
-﻿--[[
-
-META CORELORDS
-
-- Buckmonster
-- Waffle
-
-
-]]--

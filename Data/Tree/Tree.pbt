@@ -18,8 +18,13 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
-  ChildIds: 14982843161775482339
-  ChildIds: 15519234200537269827
+  ChildIds: 8128143991820770139
+  ChildIds: 5486255354436784870
+  ChildIds: 4781419766995802276
+  ChildIds: 287419262786186720
+  ChildIds: 17917873266452412741
+  ChildIds: 16747225438119934541
+  ChildIds: 15307418420075356122
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,8 +37,8 @@ Objects {
   }
 }
 Objects {
-  Id: 15519234200537269827
-  Name: "README"
+  Id: 15307418420075356122
+  Name: "DefaultContext"
   Transform {
     Location {
     }
@@ -52,35 +57,387 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Script {
-    ScriptAsset {
-      Id: 2907560550017105870
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "DefaultContext"
   }
 }
 Objects {
-  Id: 14982843161775482339
-  Name: "Default Floor"
+  Id: 16747225438119934541
+  Name: "ServerContext"
   Transform {
     Location {
-      Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 1
+      Y: 1
       Z: 1
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 3925169924349952369
+  ChildIds: 1683219400106302943
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 1683219400106302943
+  Name: "BRICK_CONTAINER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16747225438119934541
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PADDLE_CONTAINER"
+  }
+}
+Objects {
+  Id: 3925169924349952369
+  Name: "main"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16747225438119934541
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:utils"
+      AssetReference {
+        Id: 10067007158274220082
+      }
+    }
+    Overrides {
+      Name: "cs:RoundService"
+      AssetReference {
+        Id: 5133576234590503280
+      }
+    }
+    Overrides {
+      Name: "cs:BrickService"
+      AssetReference {
+        Id: 14967022320886192688
+      }
+    }
+    Overrides {
+      Name: "cs:BallService"
+      AssetReference {
+        Id: 2622231665703962120
+      }
+    }
+    Overrides {
+      Name: "cs:BallPhysics"
+      AssetReference {
+        Id: 14203953131927154589
+      }
+    }
+    Overrides {
+      Name: "cs:PaddleService"
+      AssetReference {
+        Id: 16034823918478285713
+      }
+    }
+    Overrides {
+      Name: "cs:CastleService"
+      AssetReference {
+        Id: 4789939289866160584
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14394737397616922063
+    }
+  }
+}
+Objects {
+  Id: 17917873266452412741
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 2824740615320921248
+  ChildIds: 12535147227088452243
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BrickString"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:BrickString:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12535147227088452243
+  Name: "BRICK_CONTAINER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BRICK_CONTAINER"
+  }
+}
+Objects {
+  Id: 2824740615320921248
+  Name: "clientMain"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:utils"
+      AssetReference {
+        Id: 10067007158274220082
+      }
+    }
+    Overrides {
+      Name: "cs:BrickController"
+      AssetReference {
+        Id: 14906331533300426999
+      }
+    }
+    Overrides {
+      Name: "cs:PaddleController"
+      AssetReference {
+        Id: 12129623447978858665
+      }
+    }
+    Overrides {
+      Name: "cs:BallController"
+      AssetReference {
+        Id: 6882639620733935136
+      }
+    }
+    Overrides {
+      Name: "cs:BallPhysics"
+      AssetReference {
+        Id: 14203953131927154589
+      }
+    }
+    Overrides {
+      Name: "cs:ABILITY_FOLDER"
+      ObjectReference {
+        SelfId: 5486255354436784870
+      }
+    }
+    Overrides {
+      Name: "cs:Camera"
+      ObjectReference {
+        SelfId: 5949665113807774522
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12045856215708368520
+    }
+  }
+}
+Objects {
+  Id: 287419262786186720
+  Name: "BALL_CONTAINER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BALL_CONTAINER"
+  }
+}
+Objects {
+  Id: 4781419766995802276
+  Name: "PADDLE_CONTAINER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PADDLE_CONTAINER_1"
+  }
+}
+Objects {
+  Id: 5486255354436784870
+  Name: "ABILITY_FOLDER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "ABILITY_FOLDER"
+  }
+}
+Objects {
+  Id: 8128143991820770139
+  Name: "Invisible Floor"
+  Transform {
+    Location {
+      Z: -75
+    }
+    Rotation {
+    }
+    Scale {
+      X: 200
+      Y: 300
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10395852565408763559
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -476,7 +833,7 @@ Objects {
     }
   }
   ParentId: 14713340454944924967
-  ChildIds: 3567959178173361743
+  ChildIds: 5949665113807774522
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -489,11 +846,10 @@ Objects {
   }
 }
 Objects {
-  Id: 3567959178173361743
+  Id: 5949665113807774522
   Name: "Third Person Camera"
   Transform {
     Location {
-      Z: 500
     }
     Rotation {
     }
@@ -515,22 +871,21 @@ Objects {
   Camera {
     UseAsDefault: true
     AttachToLocalPlayer: true
-    InitialDistance: 400
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
-      Y: 60
+      X: -1700
     }
     RotationOffset {
+      Pitch: -90
     }
     FieldOfView: 90
     ViewWidth: 1200
     RotationMode {
-      Value: "mc:erotationmode:lookangle"
+      Value: "mc:erotationmode:fixed"
     }
     MinPitch: -89
     MaxPitch: 89
-    DoesPositionOffsetSpring: true
   }
 }
 Objects {
@@ -591,14 +946,8 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
-      IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
       AbilityAimMode {
-        Value: "mc:eabilityaimmode:viewrelative"
+        Value: "mc:eabilityaimmode:lookrelative"
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
@@ -632,6 +981,7 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -662,6 +1012,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
     }
   }
 }
