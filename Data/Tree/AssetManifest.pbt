@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 14421684508605150532
+  Name: "Rubber Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_scf_rubber_panels_004_uv"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -23,14 +32,5 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
-  Id: 10395852565408763559
-  Name: "Invisible"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
   }
 }
