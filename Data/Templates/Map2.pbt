@@ -16,6 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 10417313753154873768
+        ChildIds: 7067328322326596804
         ChildIds: 6372977487663019851
         ChildIds: 1294252946393339050
         ChildIds: 15387983017262512341
@@ -36,6 +38,190 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 10417313753154873768
+        Name: "Skylight"
+        Transform {
+          Location {
+            X: 271.577087
+            Y: -339.054108
+            Z: 725
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14511115534738435738
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Index"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Occlusion Contrast"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Intensity"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Lower Hemisphere Color"
+            Color {
+              R: 0.0666259378
+              G: 0.0307134502
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Occlusion Tint"
+            Color {
+              R: 0.0274509825
+              G: 0.0274509825
+              B: 0.0392156877
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Occlusion Exponent"
+            Float: 0.4
+          }
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Volumetric Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Tint Color"
+            Color {
+              R: 0.502886474
+              G: 0.48514995
+              B: 0.752942204
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11515840070784317904
+          }
+        }
+      }
+      Objects {
+        Id: 7067328322326596804
+        Name: "Sun Light"
+        Transform {
+          Location {
+            X: 271.577087
+            Y: -339.054108
+            Z: 725
+          }
+          Rotation {
+            Pitch: -45.8452492
+            Yaw: 33.9371529
+            Roll: 8.92733097
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14511115534738435738
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Use Temperature"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Light Color"
+            Color {
+              R: 1
+              G: 0.955973327
+              B: 0.73791039
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Shape"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Size"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Light Shaft Bloom"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Cast Volumetric Shadows"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Light Shaft Mask Darkness"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Intensity"
+            Float: 3.5
+          }
+          Overrides {
+            Name: "bp:Sun Disc Color"
+            Color {
+              R: 3
+              G: 3
+              B: 3
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Light Shaft Bloom Scale"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "bp:Light Shaft Bloom Threshold"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "bp:Light Shaft Occlusion"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Light Shaft Bloom Tint"
+            Color {
+              R: 1
+              G: 0.998476863
+              B: 0.77
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16910278292812118833
+          }
         }
       }
       Objects {
@@ -19269,6 +19455,24 @@
           TeamSettings {
           }
         }
+      }
+    }
+    Assets {
+      Id: 11515840070784317904
+      Name: "Skylight"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_Skylight"
+      }
+    }
+    Assets {
+      Id: 16910278292812118833
+      Name: "Sun Light"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_SunLight"
       }
     }
     Assets {
