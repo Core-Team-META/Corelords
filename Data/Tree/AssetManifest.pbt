@@ -7,3 +7,15 @@
     AssetId: "sm_cube_002"
   }
 }
+<<<<<<< Updated upstream
+=======
+Assets {
+  Id: 10395852565408763559
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+>>>>>>> Stashed changes
