@@ -17,7 +17,7 @@ Objects {
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
-  ChildIds: 8128143991820770139
+  ChildIds: 4446118021654056593
   ChildIds: 5486255354436784870
   ChildIds: 4781419766995802276
   ChildIds: 287419262786186720
@@ -430,7 +430,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8128143991820770139
+  Id: 4446118021654056593
   Name: "Invisible Floor"
   Transform {
     Location {
@@ -449,7 +449,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14421684508605150532
+        Id: 10395852565408763559
       }
     }
     Overrides {
