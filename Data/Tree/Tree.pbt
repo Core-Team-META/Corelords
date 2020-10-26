@@ -17,11 +17,7 @@ Objects {
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
-<<<<<<< Updated upstream
   ChildIds: 8128143991820770139
-=======
-  ChildIds: 3008174124733640398
->>>>>>> Stashed changes
   ChildIds: 5486255354436784870
   ChildIds: 4781419766995802276
   ChildIds: 287419262786186720
@@ -434,11 +430,7 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
   Id: 8128143991820770139
-=======
-  Id: 3008174124733640398
->>>>>>> Stashed changes
   Name: "Invisible Floor"
   Transform {
     Location {
@@ -457,11 +449,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-<<<<<<< Updated upstream
         Id: 14421684508605150532
-=======
-        Id: 10395852565408763559
->>>>>>> Stashed changes
       }
     }
     Overrides {
