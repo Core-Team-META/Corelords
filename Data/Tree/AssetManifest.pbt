@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿Assets {
   Id: 12095835209017042614
   Name: "Cube"
@@ -7,3 +8,6 @@
     AssetId: "sm_cube_002"
   }
 }
+=======
+﻿
+>>>>>>> Stashed changes
