@@ -17,6 +17,7 @@ Objects {
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
+  ChildIds: 8128143991820770139
   ChildIds: 5486255354436784870
   ChildIds: 4781419766995802276
   ChildIds: 287419262786186720
@@ -24,7 +25,6 @@ Objects {
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
   ChildIds: 6225542725005764872
-  ChildIds: 7047666856328614079
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,33 +34,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 7047666856328614079
-  Name: "Map4"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17408431830172582200
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Map4"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5421225847524541680
-    }
   }
 }
 Objects {
@@ -454,6 +427,57 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "ABILITY_FOLDER"
+  }
+}
+Objects {
+  Id: 8128143991820770139
+  Name: "Invisible Floor"
+  Transform {
+    Location {
+      Z: -75
+    }
+    Rotation {
+    }
+    Scale {
+      X: 200
+      Y: 300
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14421684508605150532
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
