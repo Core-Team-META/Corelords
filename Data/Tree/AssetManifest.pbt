@@ -8,11 +8,11 @@
   }
 }
 Assets {
-  Id: 10395852565408763559
-  Name: "Invisible"
+  Id: 1999639085945440114
+  Name: "Solar Panel 003"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
+    AssetId: "mi_scf_solar_panel_003_uv_ref"
   }
 }

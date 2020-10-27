@@ -15,8 +15,8 @@
       Overrides {
         Name: "color_lights"
         Color {
-          G: 0.676291227
-          B: 0.690000057
+          R: 0.364370912
+          B: 0.419999957
           A: 1
         }
       }
