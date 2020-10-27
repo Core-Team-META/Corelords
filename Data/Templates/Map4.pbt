@@ -19690,6 +19690,7 @@
         ChildIds: 15406742006517572110
         ChildIds: 15244341422343020358
         ChildIds: 17071155363244508998
+        ChildIds: 14433185415020851002
         ChildIds: 937068033121349522
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22242,7 +22243,7 @@
           }
         }
         ParentId: 4415322507517284765
-        ChildIds: 1514427847334124699
+        ChildIds: 7848674802897386670
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -22312,13 +22313,13 @@
         }
       }
       Objects {
-        Id: 1514427847334124699
+        Id: 7848674802897386670
         Name: "Object Rotator Continuous"
         Transform {
           Location {
-            X: 38.5694351
-            Y: -912.635803
-            Z: -523.887512
+            X: 115.149628
+            Y: 85.2064819
+            Z: -34.100296
           }
           Rotation {
             Pitch: 90
@@ -22390,6 +22391,142 @@
         Script {
           ScriptAsset {
             Id: 2331688389429807128
+          }
+        }
+      }
+      Objects {
+        Id: 14433185415020851002
+        Name: "Tick1_Other"
+        Transform {
+          Location {
+            X: -1.13633919
+            Y: 5.16992188
+            Z: 87.5911865
+          }
+          Rotation {
+            Pitch: -90
+            Roll: 3.20353938e-05
+          }
+          Scale {
+            X: 0.326455057
+            Y: 0.526134908
+            Z: 1.32710731
+          }
+        }
+        ParentId: 4415322507517284765
+        ChildIds: 13170787066498202402
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 15312214523070309996
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimOuter:id"
+            AssetReference {
+              Id: 15312214523070309996
+            }
+          }
+          Overrides {
+            Name: "ma:Building_Foundation:id"
+            AssetReference {
+              Id: 15312214523070309996
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 1
+              G: 0.554702
+              B: 0.18
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimOuter:color"
+            Color {
+              R: 1
+              G: 0.554702
+              B: 0.18
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_Foundation:color"
+            Color {
+              R: 1
+              G: 0.554702
+              B: 0.18
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4284392322078894749
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13170787066498202402
+        Name: "ClockAnimation"
+        Transform {
+          Location {
+            X: 115.149628
+            Y: 85.2065125
+            Z: -55.6576195
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -83.9150238
+            Roll: -83.9150391
+          }
+          Scale {
+            X: 3.06320882
+            Y: 1.90065324
+            Z: 0.753518581
+          }
+        }
+        ParentId: 14433185415020851002
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ease3D"
+            AssetReference {
+              Id: 16050147283496351669
+            }
+          }
+          Overrides {
+            Name: "cs:SecondHand"
+            ObjectReference {
+              SubObjectId: 14433185415020851002
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13781473429820412695
           }
         }
       }
@@ -22514,7 +22651,7 @@
           Overrides {
             Name: "cs:RotateVelocity"
             Rotator {
-              Roll: -6
+              Roll: 30
             }
           }
           Overrides {

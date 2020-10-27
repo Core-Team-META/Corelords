@@ -50,7 +50,7 @@ end
 function StartAction()
     if not Object.IsValid(OBJECT) then return end
 
-    Task.Wait(RandomFloat(DELAY_RANGE.x, DELAY_RANGE.y))
+    Task.Wait(1)
 
     -- Check if the object has been destroyed
     if not Object.IsValid(OBJECT) then
