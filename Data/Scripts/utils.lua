@@ -66,13 +66,6 @@ TEAM_COLORS = {
 	Color.New(.4, 0, .7) -- purple
 }
 
-BRICK_TEMPLATES = {
-	script:GetCustomProperty("Brick1"),
-	script:GetCustomProperty("Brick2"),
-	script:GetCustomProperty("Brick3"),
-	script:GetCustomProperty("Brick4")
-}
-
 SOUNDS = {
 	paddleHit = script:GetCustomProperty("paddleHitSound"),
 	destroyBrick = script:GetCustomProperty("destroyBrickSound"),

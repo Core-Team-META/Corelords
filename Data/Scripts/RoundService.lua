@@ -3,8 +3,7 @@
 local MAPS = {
 	(script:GetCustomProperty("Map1")),
 	(script:GetCustomProperty("Map2")),
-	(script:GetCustomProperty("Map3")),
-	(script:GetCustomProperty("Map4"))
+	(script:GetCustomProperty("Map3"))
 }
 
 local NAMETAG = script:GetCustomProperty("Nametag")
@@ -134,6 +133,7 @@ end
 function RoundService.AssignPlayer(player)
 	local round = RoundService.currentRound
 	local data = RoundService.players[player]
+	player:SetResource("Score", 0)
 	local randomOffset = math.random(4)
 	local castleList = {}
 	for object, castle in pairs(round.castles) do

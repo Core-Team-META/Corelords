@@ -39,9 +39,8 @@ function PaddleService.DestroyPaddle(player)
 	local paddle = data.paddle
 	if not data.paddle then return end
 	PaddleService.ReleaseBall(paddle)
-	data.paddle = nil
-	Task.Wait(1) -- give the client a chance to notice the ball was released before destroying the paddle it's attached to
 	paddle.object:Destroy()
+	data.paddle = nil
 end
 
 function PaddleService.ReleaseBall(paddle)

@@ -52,30 +52,6 @@
           Id: 17153586369859599210
         }
       }
-      Overrides {
-        Name: "cs:Brick1"
-        AssetReference {
-          Id: 3074196362803456699
-        }
-      }
-      Overrides {
-        Name: "cs:Brick2"
-        AssetReference {
-          Id: 647801613508379601
-        }
-      }
-      Overrides {
-        Name: "cs:Brick3"
-        AssetReference {
-          Id: 7978194873655190206
-        }
-      }
-      Overrides {
-        Name: "cs:Brick4"
-        AssetReference {
-          Id: 8686775356970634817
-        }
-      }
     }
   }
   SerializationVersion: 65

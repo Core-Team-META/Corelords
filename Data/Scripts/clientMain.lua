@@ -30,10 +30,6 @@ UI.SetCanCursorInteractWithUI(true)
 local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false
 
-local camera = script:GetCustomProperty("Camera"):WaitForObject()
-local screenSize = UI.GetScreenSize() -- different aspect ratios can cut off parts of the intended viewport if the camera is not adjusted
-camera:SetPositionOffset(camera:GetPositionOffset() * (screenSize.x/16) / (screenSize.y/9))
-
 Events.Connect("CastleDestroyed", function(owner)
 	if owner == player then
 		utils.PlaySound("gameOver", Vector3.ZERO)

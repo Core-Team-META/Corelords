@@ -50,7 +50,7 @@ function BrickService.GenerateBricks()
 						local y = j*(1 - sidey*2) + (utils.GRID_WIDTH + 1)*sidey
 						local x = i*(1 - sidex*2) + (utils.GRID_HEIGHT + 1)*sidex
 						local position = Vector3.New(utils.FLOOR_HEIGHT/2 - (x-.5)*utils.BRICK_HEIGHT, -utils.FLOOR_WIDTH/2 + (y-.5)*utils.BRICK_WIDTH, 0)
-						local brickObject = World.SpawnAsset(utils.BRICK_TEMPLATES[sidex*2+sidey+1], { -- server-only
+						local brickObject = World.SpawnAsset(BRICK, { -- server-only
 							parent = BRICK_CONTAINER,
 							position = position
 						})

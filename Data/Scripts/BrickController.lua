@@ -28,18 +28,22 @@ function BrickController.Setup(dependencies)
 end
 
 function BrickController.CreateBrick(x, y)
-	local team = (x > utils.GRID_HEIGHT / 2 and 2 or 0) + (y > utils.GRID_WIDTH / 2 and 2 or 1)
 	local position = Vector3.New(utils.FLOOR_HEIGHT/2 - (x-.5)*utils.BRICK_HEIGHT, -utils.FLOOR_WIDTH/2 + (y-.5)*utils.BRICK_WIDTH, 0)
-	local object = World.SpawnAsset(utils.BRICK_TEMPLATES[team], {
+	local object = World.SpawnAsset(BRICK_TEMPLATE, {
 		parent = BRICK_CONTAINER,
 		position = position
 	})
 	local brick = {
 		object = object,
-		team = team,
+		emissive = object:GetCustomProperty("Emissive"):WaitForObject(),
+		inside = object:GetCustomProperty("Inside"):WaitForObject(),
+		team = (x > utils.GRID_HEIGHT / 2 and 2 or 0) + (y > utils.GRID_WIDTH / 2 and 2 or 1),
 		position = position
 	}
 	BrickController.brickLookup[object] = brick
+	local color = utils.TEAM_COLORS[brick.team]
+	brick.emissive:SetColor(color)
+	brick.inside:SetColor(color)
 	function brick:Destroy()
 		brick.object:Destroy()
 		BrickController.grid[y][x] = nil
