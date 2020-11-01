@@ -36,6 +36,9 @@ else -- server
 	end)
 end
 
+BRICK_POINT_VALUE = 10
+CASTLE_POINT_VALUE = 100 -- points awarded for destroying a castle
+
 FLOOR_WIDTH = 3000
 FLOOR_HEIGHT = 2000
 BRICK_WIDTH = 100
@@ -64,6 +67,13 @@ TEAM_COLORS = {
 	Color.New(0, .5, .1), -- green
 	Color.New(1, .2, 0), -- orange
 	Color.New(.4, 0, .7) -- purple
+}
+
+BRICK_TEMPLATES = {
+	script:GetCustomProperty("Brick1"),
+	script:GetCustomProperty("Brick2"),
+	script:GetCustomProperty("Brick3"),
+	script:GetCustomProperty("Brick4")
 }
 
 SOUNDS = {

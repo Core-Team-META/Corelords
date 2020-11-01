@@ -43,3 +43,8 @@ Events.Connect("RoundEnded", function(winner)
 end)
 
 utils.SendBroadcast("Ready")
+
+Task.Wait()
+local camera = script:GetCustomProperty("Camera"):WaitForObject()
+local screenSize = UI.GetScreenSize()
+camera:SetPositionOffset(camera:GetPositionOffset() * (screenSize.x/16) / (screenSize.y/9))

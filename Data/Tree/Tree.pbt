@@ -301,6 +301,12 @@ Objects {
         SelfId: 5486255354436784870
       }
     }
+    Overrides {
+      Name: "cs:Camera"
+      ObjectReference {
+        SelfId: 5949665113807774522
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

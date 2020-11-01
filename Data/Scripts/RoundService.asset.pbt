@@ -22,6 +22,12 @@
           Id: 8092898030081002186
         }
       }
+      Overrides {
+        Name: "cs:Nametag"
+        AssetReference {
+          Id: 10816911584593674529
+        }
+      }
     }
   }
   SerializationVersion: 65

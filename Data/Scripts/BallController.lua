@@ -65,7 +65,6 @@ function BallController.AddBall(ballObject)
 				ball.reflectionsThisFrame = {}
 				if serverPosition.parent ~= ballObject then break end
 			end
-			CoreDebug.DrawSphere(ball.position, 50, {thickness = 10, color = Color.New(0, 0, 0)})
 			local visualBallPosition = clientBall:GetWorldPosition()
 			local visualBallOffset = ball.position - visualBallPosition
 			if visualBallOffset.sizeSquared < 1 then
