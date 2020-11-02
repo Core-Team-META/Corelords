@@ -423,7 +423,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10395852565408763559
+        Id: 11037954362083570912
       }
     }
     Overrides {
@@ -700,9 +700,6 @@ Objects {
     Overrides {
       Name: "bp:Haze Color"
       Color {
-        R: 0.590618849
-        G: 0.590618849
-        B: 0.701101899
         A: 1
       }
     }
