@@ -874,7 +874,7 @@ Objects {
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
-      X: -1800
+      X: -2000
     }
     RotationOffset {
       Pitch: -90

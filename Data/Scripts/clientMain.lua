@@ -46,5 +46,10 @@ utils.SendBroadcast("Ready")
 
 Task.Wait()
 local camera = script:GetCustomProperty("Camera"):WaitForObject()
-local screenSize = UI.GetScreenSize()
-camera:SetPositionOffset(camera:GetPositionOffset() * (screenSize.x/16) / (screenSize.y/9))
+local initialOffset = camera:GetPositionOffset()
+local cameraUpdateTask = Task.Spawn(function()
+	local screenSize = UI.GetScreenSize()
+	camera:SetPositionOffset(initialOffset * (screenSize.x/16) / (screenSize.y/9))
+end)
+cameraUpdateTask.repeatInterval = .5
+cameraUpdateTask.repeatCount = -1
