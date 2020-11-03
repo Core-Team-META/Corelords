@@ -198,8 +198,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.88
-              B: 0.821721554
+              R: 0.74
+              B: 0.543973148
               A: 1
             }
           }
@@ -256,8 +256,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.88
-              B: 0.821721554
+              R: 0.74
+              B: 0.543973148
               A: 1
             }
           }
@@ -314,8 +314,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.88
-              B: 0.821721554
+              R: 0.74
+              B: 0.543973148
               A: 1
             }
           }
@@ -370,8 +370,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.88
-              B: 0.821721554
+              R: 0.74
+              B: 0.543973148
               A: 1
             }
           }

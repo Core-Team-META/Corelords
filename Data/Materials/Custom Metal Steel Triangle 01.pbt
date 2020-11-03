@@ -8,11 +8,11 @@
     ParameterOverrides {
       Overrides {
         Name: "gradient_falloff"
-        Float: 0.78931284
+        Float: 0.16863516
       }
       Overrides {
         Name: "gradient_shift"
-        Float: 0.250036061
+        Float: 0
       }
       Overrides {
         Name: "material_scale"
@@ -25,6 +25,10 @@
           G: 0.0506622568
           A: 1
         }
+      }
+      Overrides {
+        Name: "roughness_multiplier"
+        Float: 0.575636506
       }
     }
     Assets {

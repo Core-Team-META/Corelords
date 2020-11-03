@@ -17,8 +17,8 @@
       Overrides {
         Name: "color_secondary"
         Color {
-          R: 0.0238411929
-          B: 0.450000048
+          G: 0.714900374
+          B: 0.85
           A: 1
         }
       }
