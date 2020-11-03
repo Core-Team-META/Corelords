@@ -53,6 +53,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              G: 0.0443707816
+              B: 0.669999957
               A: 1
             }
           }

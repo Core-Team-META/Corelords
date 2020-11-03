@@ -419,6 +419,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 12095280123006123146
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -451,6 +452,38 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 12095280123006123146
+  Name: "RoundService"
+  Transform {
+    Location {
+      X: -2.66328692
+      Y: -2.1907804
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.005
+      Y: 0.00333333341
+      Z: 1
+    }
+  }
+  ParentId: 8128143991820770139
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5133576234590503280
     }
   }
 }

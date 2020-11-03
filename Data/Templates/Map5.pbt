@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 8092898030081002186
-  Name: "Map3"
+  Id: 17208141850705169281
+  Name: "Map5"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 17357075513807021464
       Objects {
         Id: 17357075513807021464
-        Name: "Map3"
+        Name: "Map5"
         Transform {
           Scale {
             X: 1

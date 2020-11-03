@@ -23,9 +23,21 @@
         }
       }
       Overrides {
+        Name: "cs:Map4"
+        AssetReference {
+          Id: 662803669014705547
+        }
+      }
+      Overrides {
         Name: "cs:Nametag"
         AssetReference {
           Id: 10816911584593674529
+        }
+      }
+      Overrides {
+        Name: "cs:Map5"
+        AssetReference {
+          Id: 17208141850705169281
         }
       }
     }
