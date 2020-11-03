@@ -1,21 +1,19 @@
 ﻿Assets {
-  Id: 11918547397350143104
-  Name: "Custom Grid Glow Topographical - Copy_1"
+  Id: 6041465607513032663
+  Name: "Custom Grid Glow Topographical_1"
   PlatformAssetType: 13
   SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 9824246533745550585
     ParameterOverrides {
       Overrides {
-        Name: "emissive_boost_accent"
-        Float: 100
+        Name: "fresnel_color"
+        Color {
+          A: 1
+        }
       }
       Overrides {
-        Name: "emissive_boost_color-2"
-        Float: 0
-      }
-      Overrides {
-        Name: "color"
+        Name: "color_accent"
         Color {
           A: 1
         }
@@ -27,22 +25,8 @@
         }
       }
       Overrides {
-        Name: "fresnel_color"
-        Color {
-          A: 1
-        }
-      }
-      Overrides {
-        Name: "roughness"
+        Name: "emissive_boost_color-2"
         Float: 0
-      }
-      Overrides {
-        Name: "material_scale"
-        Float: 0.6
-      }
-      Overrides {
-        Name: "metallic"
-        Float: 1
       }
     }
     Assets {

@@ -9,16 +9,16 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.710000038
-          G: 0.564238429
+          R: 0.032649111
+          B: 0.289999962
           A: 1
         }
       }
       Overrides {
         Name: "tile color"
         Color {
-          R: 0.73
-          G: 0.594635844
+          G: 0.029139027
+          B: 0.440000057
           A: 1
         }
       }

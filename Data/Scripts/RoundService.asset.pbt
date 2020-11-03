@@ -46,6 +46,12 @@
           Id: 12095725374660707439
         }
       }
+      Overrides {
+        Name: "cs:Map7"
+        AssetReference {
+          Id: 6150484985265496920
+        }
+      }
     }
   }
   SerializationVersion: 65

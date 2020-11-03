@@ -17,6 +17,11 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 17936629543630203207
+        ChildIds: 8434808969766645705
+        ChildIds: 5543027967401435246
+        ChildIds: 7363177111127405875
+        ChildIds: 16911852996040033526
+        ChildIds: 10537201536487461999
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -32,12 +37,10 @@
         Name: "Group"
         Transform {
           Location {
-            X: -71.4672241
-            Y: -0.000610351563
-            Z: -1065
           }
           Rotation {
-            Yaw: 89.9999542
+            Yaw: 90
+            Roll: -32.2063904
           }
           Scale {
             X: 1.228369
@@ -48,7 +51,6 @@
         ParentId: 17357075513807021464
         ChildIds: 15174926133675599561
         ChildIds: 11995521084694868162
-        ChildIds: 42196581685086743
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,9 +66,9 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: 823.591858
-            Y: -377.268433
-            Z: 974.046143
+            X: 527.968384
+            Y: 190.222702
+            Z: 792.191711
           }
           Rotation {
             Yaw: -66.017395
@@ -87,17 +89,18 @@
         Light {
           Intensity: 20.2823639
           Color {
-            G: 0.0287417322
-            B: 0.62
+            R: 0.13
+            G: 1
+            B: 0.982715547
             A: 1
           }
-          VolumetricIntensity: 70.7255325
+          VolumetricIntensity: 36.4622459
           TeamSettings {
           }
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 5046.19873
+              AttenuationRadius: 2371.18774
               PointLight {
                 SoftSourceRadius: 500
                 SourceLength: 339.351288
@@ -116,9 +119,9 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: -1257.06616
-            Y: 691.421509
-            Z: 974.046143
+            X: -280.50058
+            Y: 691.420654
+            Z: 974.045288
           }
           Rotation {
             Yaw: -66.017395
@@ -164,51 +167,322 @@
         }
       }
       Objects {
-        Id: 42196581685086743
+        Id: 8434808969766645705
         Name: "Default Floor"
         Transform {
           Location {
-            Y: 719.286804
-            Z: -40.70438
+            Z: -75
           }
           Rotation {
-            Pitch: -27.8177948
-            Yaw: -89.9999313
-            Roll: 180
           }
           Scale {
-            X: 16.2817535
-            Y: 41.925518
-            Z: 0.814087629
+            X: 20
+            Y: 30
+            Z: 1
           }
         }
-        ParentId: 17936629543630203207
+        ParentId: 17357075513807021464
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11918547397350143104
+              Id: 5148203635107934814
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.0463575386
-              B: 0.700000048
+              R: 0.068
+              G: 0.068
+              B: 0.068
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3.75576878
+            Float: 0.5
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 10.9355679
+            Float: 0.5
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5543027967401435246
+        Name: "Default Floor"
+        Transform {
+          Location {
+            X: 1020
+            Z: -25
+          }
+          Rotation {
+            Pitch: 45
+          }
+          Scale {
+            X: 11.5000105
+            Y: 30
+            Z: 1
+          }
+        }
+        ParentId: 17357075513807021464
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5148203635107934814
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.068
+              G: 0.068
+              B: 0.068
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7363177111127405875
+        Name: "Default Floor"
+        Transform {
+          Location {
+            X: -1028.70581
+            Z: -25
+          }
+          Rotation {
+            Pitch: 45
+            Yaw: 180
+          }
+          Scale {
+            X: 11.5000105
+            Y: 30
+            Z: 1
+          }
+        }
+        ParentId: 17357075513807021464
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5148203635107934814
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.068
+              G: 0.068
+              B: 0.068
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16911852996040033526
+        Name: "Default Floor"
+        Transform {
+          Location {
+            Y: -1532.23657
+            Z: -75
+          }
+          Rotation {
+            Roll: 45
+          }
+          Scale {
+            X: 20
+            Y: 30
+            Z: 1
+          }
+        }
+        ParentId: 17357075513807021464
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5148203635107934814
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.068
+              G: 0.068
+              B: 0.068
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10537201536487461999
+        Name: "Default Floor"
+        Transform {
+          Location {
+            Y: 1537.76343
+            Z: -75
+          }
+          Rotation {
+            Yaw: 180
+            Roll: 45
+          }
+          Scale {
+            X: 20
+            Y: 30
+            Z: 1
+          }
+        }
+        ParentId: 17357075513807021464
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5148203635107934814
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.068
+              G: 0.068
+              B: 0.068
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
           }
         }
         Collidable_v2 {

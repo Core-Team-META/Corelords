@@ -8,17 +8,15 @@
     ParameterOverrides {
       Overrides {
         Name: "specular"
-        Float: 1
+        Float: 0.826422
       }
       Overrides {
         Name: "roughness"
-        Float: 1
+        Float: 0.529893637
       }
       Overrides {
         Name: "color"
         Color {
-          G: 0.839999855
-          B: 0.840000033
           A: 1
         }
       }

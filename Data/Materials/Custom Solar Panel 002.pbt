@@ -9,22 +9,30 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.49
-          G: 2.33650212e-07
+          G: 0.89
+          B: 0.129668951
           A: 1
         }
       }
       Overrides {
         Name: "color_secondary"
         Color {
-          G: 0.714900374
-          B: 0.85
+          G: 0.597880602
+          B: 0.61
           A: 1
         }
       }
       Overrides {
         Name: "roughness_multiplier"
-        Float: 0.565462112
+        Float: 0
+      }
+      Overrides {
+        Name: "v_tiles"
+        Float: 0.433002681
+      }
+      Overrides {
+        Name: "u_tiles"
+        Float: 0.461378694
       }
     }
     Assets {

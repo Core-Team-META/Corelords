@@ -15,11 +15,11 @@
       }
       Overrides {
         Name: "roughness"
-        Float: 0.758787155
+        Float: 0
       }
       Overrides {
         Name: "variation"
-        Float: 0.534936368
+        Float: 0
       }
       Overrides {
         Name: "grout_color"
@@ -31,7 +31,7 @@
       }
       Overrides {
         Name: "discoloration_amount"
-        Float: 1
+        Float: 0.351785779
       }
       Overrides {
         Name: "damage_amount"
@@ -39,7 +39,7 @@
       }
       Overrides {
         Name: "cracks"
-        Float: 1
+        Float: 0
       }
       Overrides {
         Name: "gradient_shift"
