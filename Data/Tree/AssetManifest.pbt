@@ -8,11 +8,11 @@
   }
 }
 Assets {
-  Id: 6119445208550115837
-  Name: "Hex Energy Cycling Tile"
+  Id: 449229339179069243
+  Name: "Animated Glowing Hex"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_hex_cycle"
+    AssetId: "fxma_hex_animated"
   }
 }
