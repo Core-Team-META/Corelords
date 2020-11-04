@@ -429,9 +429,9 @@
         Name: "Hill 02"
         Transform {
           Location {
-            X: 35.245842
-            Y: 24.4570885
-            Z: 31.509407
+            X: 35.2458458
+            Y: 24.4570827
+            Z: 31.509409
           }
           Rotation {
             Pitch: 41.7576523
@@ -439,9 +439,9 @@
             Roll: -89.3403931
           }
           Scale {
-            X: 0.0979131311
-            Y: 0.10852804
-            Z: 0.205270812
+            X: 0.169897348
+            Y: 0.188316196
+            Z: 0.356182784
           }
         }
         ParentId: 2403712078598745648
@@ -469,7 +469,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 10075228522725187702
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -487,19 +487,19 @@
         Name: "Hill 02"
         Transform {
           Location {
-            X: 34.9816399
-            Y: 24.4069309
-            Z: -35.9998
+            X: 34.374527
+            Y: 25.4611435
+            Z: -39.7154465
           }
           Rotation {
-            Pitch: -34.8165588
-            Yaw: -60.7797241
-            Roll: 90.2612457
+            Pitch: 73.7303925
+            Yaw: 118.624367
+            Roll: -90.7781372
           }
           Scale {
-            X: 0.0979131311
-            Y: 0.10852804
-            Z: 0.205270812
+            X: 0.0907603279
+            Y: 0.0907603279
+            Z: 0.0907603279
           }
         }
         ParentId: 2403712078598745648
@@ -527,7 +527,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 1847184078047029698
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -546,8 +546,8 @@
         Transform {
           Location {
             X: 7.26592112
-            Y: 42.054184
-            Z: -35.9211617
+            Y: 42.0542068
+            Z: -35.9211769
           }
           Rotation {
             Pitch: -34.8260803
@@ -555,9 +555,9 @@
             Roll: 90.2702408
           }
           Scale {
-            X: 0.0300449654
-            Y: 0.0300401524
-            Z: 0.579759479
+            X: 0.270795971
+            Y: 0.270795971
+            Z: 0.270795971
           }
         }
         ParentId: 2403712078598745648
@@ -585,7 +585,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 10075228522725187702
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -603,9 +603,9 @@
         Name: "Hill 02"
         Transform {
           Location {
-            X: -17.2874737
-            Y: 39.2659378
-            Z: 31.5054111
+            X: -21.0315685
+            Y: 47.2963943
+            Z: 31.3605194
           }
           Rotation {
             Pitch: 41.7769165
@@ -643,7 +643,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 10075228522725187702
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -661,9 +661,9 @@
         Name: "Hill 02"
         Transform {
           Location {
-            X: -17.286871
-            Y: 38.9747734
-            Z: -36.5233269
+            X: -17.2868824
+            Y: 38.9747887
+            Z: -36.5233383
           }
           Rotation {
             Pitch: -34.8351746
@@ -671,9 +671,9 @@
             Roll: 90.27
           }
           Scale {
-            X: 0.071822837
-            Y: 0.0718239173
-            Z: 0.342254549
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 2403712078598745648
@@ -701,7 +701,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 7602068958345363641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1142,9 +1142,9 @@
         Name: "Hill 02"
         Transform {
           Location {
-            X: 2940.1167
-            Y: 635.389404
-            Z: -2725.56519
+            X: 3297.6
+            Y: 675.792969
+            Z: -1708.39197
           }
           Rotation {
             Pitch: -35.6047058
@@ -1152,9 +1152,9 @@
             Roll: 91.8779144
           }
           Scale {
-            X: 7.00078
-            Y: 7.75974178
-            Z: 13.6378546
+            X: 13.7861767
+            Y: 15.2807398
+            Z: 21.3986397
           }
         }
         ParentId: 2404259795481313794
@@ -1182,7 +1182,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 7602068958345363641
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1240,7 +1240,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 2040272604525386659
+            Id: 6941940526405569022
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1279,6 +1279,42 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_hill_002"
+      }
+    }
+    Assets {
+      Id: 10075228522725187702
+      Name: "Rock Pile 002"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rocks_small_002"
+      }
+    }
+    Assets {
+      Id: 1847184078047029698
+      Name: "Rock 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rock_generic_001"
+      }
+    }
+    Assets {
+      Id: 7602068958345363641
+      Name: "Rock Pile 001"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rocks_small_001"
+      }
+    }
+    Assets {
+      Id: 6941940526405569022
+      Name: "Rock Block 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rock_generic_007"
       }
     }
     PrimaryAssetId {

@@ -19,6 +19,7 @@
         ChildIds: 4558377944371309017
         ChildIds: 2351687759321148694
         ChildIds: 2403712078598745648
+        ChildIds: 17968221349425165619
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -39,8 +40,8 @@
           Rotation {
           }
           Scale {
-            X: 23.3120346
-            Y: 34.4145966
+            X: 33.9125023
+            Y: 61.4567642
             Z: 1
           }
         }
@@ -49,14 +50,12 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 737167275776341752
+              Id: 581063974361107131
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.699602485
-              B: 0.76
               A: 1
             }
           }
@@ -150,8 +149,8 @@
         Light {
           Intensity: 15.5235748
           Color {
-            G: 0.0287417322
-            B: 0.62
+            G: 0.960000038
+            B: 0.902781665
             A: 1
           }
           VolumetricIntensity: 64.0632248
@@ -202,8 +201,8 @@
         Light {
           Intensity: 15.5235748
           Color {
-            R: 0.51
-            G: 0.02026489
+            R: 0.771391034
+            B: 0.909999967
             A: 1
           }
           VolumetricIntensity: 64.0632248
@@ -1135,6 +1134,43 @@
           }
         }
       }
+      Objects {
+        Id: 17968221349425165619
+        Name: "Skylight"
+        Transform {
+          Location {
+            X: -221.285126
+            Y: 1367.26074
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14511115534738435738
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11515840070784317904
+          }
+          TeamSettings {
+          }
+        }
+      }
     }
     Assets {
       Id: 12095835209017042614
@@ -1161,6 +1197,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_hill_002"
+      }
+    }
+    Assets {
+      Id: 11515840070784317904
+      Name: "Skylight"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_Skylight"
       }
     }
     PrimaryAssetId {

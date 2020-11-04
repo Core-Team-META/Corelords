@@ -22,6 +22,7 @@
         ChildIds: 7363177111127405875
         ChildIds: 16911852996040033526
         ChildIds: 10537201536487461999
+        ChildIds: 17787123198477318240
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -506,6 +507,51 @@
           }
         }
       }
+      Objects {
+        Id: 17787123198477318240
+        Name: "Skylight"
+        Transform {
+          Location {
+            X: 114.20755
+            Y: 596.186462
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17357075513807021464
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Blend Amount"
+            Float: 0.272086978
+          }
+          Overrides {
+            Name: "bp:Intensity"
+            Float: 0.949205875
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11515840070784317904
+          }
+          TeamSettings {
+          }
+        }
+      }
     }
     Assets {
       Id: 12095835209017042614
@@ -514,6 +560,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 11515840070784317904
+      Name: "Skylight"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_Skylight"
       }
     }
     PrimaryAssetId {

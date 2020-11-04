@@ -16,6 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 15296924969789236918
+        ChildIds: 15119516993684682719
         ChildIds: 4631555019377530144
         ChildIds: 8809100292642805882
         WantsNetworking: true
@@ -26,6 +28,106 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 15296924969789236918
+        Name: "Skylight"
+        Transform {
+          Location {
+            X: 225.438812
+            Y: 286.964783
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Cast Shadows"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Tint Color"
+            Color {
+              G: 0.429006517
+              B: 0.789999962
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Ambient Image"
+            Enum {
+              Value: "mc:eambientcubemapssmall:14"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11515840070784317904
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 15119516993684682719
+        Name: "Sun Light"
+        Transform {
+          Location {
+            X: -419.155823
+            Y: 585.660706
+          }
+          Rotation {
+            Pitch: -82.5976791
+            Yaw: 165.394623
+            Roll: -165.277252
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Intensity"
+            Float: 0.984179199
+          }
+          Overrides {
+            Name: "bp:Light Color"
+            Color {
+              R: 1
+              G: 0.58874166
+              B: 0.459999979
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16910278292812118833
+          }
+          TeamSettings {
+          }
         }
       }
       Objects {
@@ -1381,6 +1483,24 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 11515840070784317904
+      Name: "Skylight"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_Skylight"
+      }
+    }
+    Assets {
+      Id: 16910278292812118833
+      Name: "Sun Light"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "CORESKY_SunLight"
       }
     }
     Assets {
