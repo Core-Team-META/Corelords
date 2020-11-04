@@ -38,7 +38,7 @@
       }
       Overrides {
         Name: "metallic"
-        Float: 0
+        Float: 1
       }
       Overrides {
         Name: "roughness"

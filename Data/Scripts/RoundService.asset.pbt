@@ -52,6 +52,18 @@
           Id: 6150484985265496920
         }
       }
+      Overrides {
+        Name: "cs:Map8"
+        AssetReference {
+          Id: 12749635948260690712
+        }
+      }
+      Overrides {
+        Name: "cs:Map9"
+        AssetReference {
+          Id: 3872276035659496312
+        }
+      }
     }
   }
   SerializationVersion: 65

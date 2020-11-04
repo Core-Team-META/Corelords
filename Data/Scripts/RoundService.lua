@@ -7,7 +7,9 @@ local MAPS = {
 	(script:GetCustomProperty("Map4")),	
 	(script:GetCustomProperty("Map5")),
 	(script:GetCustomProperty("Map6")),
-	(script:GetCustomProperty("Map7"))
+	(script:GetCustomProperty("Map7")),
+	(script:GetCustomProperty("Map8")),
+	(script:GetCustomProperty("Map9"))
 }
 
 local NAMETAG = script:GetCustomProperty("Nametag")

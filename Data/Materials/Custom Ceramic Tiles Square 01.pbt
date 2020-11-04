@@ -7,31 +7,8 @@
     BaseMaterialId: 14797755684488147728
     ParameterOverrides {
       Overrides {
-        Name: "color"
-        Color {
-          R: 0.429999948
-          A: 1
-        }
-      }
-      Overrides {
-        Name: "roughness"
-        Float: 0
-      }
-      Overrides {
-        Name: "variation"
-        Float: 0
-      }
-      Overrides {
-        Name: "grout_color"
-        Color {
-          G: 0.266953558
-          B: 0.289999962
-          A: 1
-        }
-      }
-      Overrides {
         Name: "discoloration_amount"
-        Float: 0.351785779
+        Float: 0.911412656
       }
       Overrides {
         Name: "damage_amount"
@@ -69,7 +46,33 @@
       }
       Overrides {
         Name: "roughness_multiplier"
-        Float: 0.534936368
+        Float: -7.30504227
+      }
+      Overrides {
+        Name: "gradient_worldspace"
+        Bool: false
+      }
+      Overrides {
+        Name: "grout_color"
+        Color {
+          G: 0.413244903
+          B: 0.480000019
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "roughness"
+        Float: 0
+      }
+      Overrides {
+        Name: "variation"
+        Float: 0
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          A: 1
+        }
       }
     }
     Assets {
