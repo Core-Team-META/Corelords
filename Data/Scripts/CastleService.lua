@@ -11,8 +11,10 @@ function CastleService.Setup(dependencies)
 end
 
 function CastleService.CreateCastle(sideX, sideY)
-	local position = Vector3.New(sideX * (utils.FLOOR_HEIGHT / 2 - utils.CASTLE_INSET), sideY * (utils.FLOOR_WIDTH / 2 - utils.CASTLE_INSET), 0)
-	local castleObject = utils.spawnDefaultAsset(CASTLE, {position = position})
+	local boxWidth = utils.BRICK_WIDTH * (utils.CORNER_WIDTH - utils.CORNER_THICKNESS)
+	local boxHeight = utils.BRICK_HEIGHT * (utils.CORNER_HEIGHT - utils.CORNER_THICKNESS)
+	local position = Vector3.New(sideX * (utils.FLOOR_HEIGHT / 2 - boxHeight / 2), sideY * (utils.FLOOR_WIDTH / 2 - boxWidth / 2), 0)
+	local castleObject = utils.spawnDefaultAsset(CASTLE, {position = position, rotation = Rotation.New(-position, Vector3.UP)})
 	local castle = {
 		object = castleObject,
 		position = position,
