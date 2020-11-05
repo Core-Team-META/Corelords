@@ -23,9 +23,51 @@
         }
       }
       Overrides {
+        Name: "cs:Map4"
+        AssetReference {
+          Id: 662803669014705547
+        }
+      }
+      Overrides {
         Name: "cs:Nametag"
         AssetReference {
           Id: 10816911584593674529
+        }
+      }
+      Overrides {
+        Name: "cs:Map5"
+        AssetReference {
+          Id: 17208141850705169281
+        }
+      }
+      Overrides {
+        Name: "cs:Map6"
+        AssetReference {
+          Id: 12095725374660707439
+        }
+      }
+      Overrides {
+        Name: "cs:Map7"
+        AssetReference {
+          Id: 6150484985265496920
+        }
+      }
+      Overrides {
+        Name: "cs:Map8"
+        AssetReference {
+          Id: 12749635948260690712
+        }
+      }
+      Overrides {
+        Name: "cs:Map9"
+        AssetReference {
+          Id: 3872276035659496312
+        }
+      }
+      Overrides {
+        Name: "cs:Map10"
+        AssetReference {
+          Id: 10801624885801143142
         }
       }
     }
