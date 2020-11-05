@@ -37,18 +37,18 @@
         Name: "Craftsman Roof 01 Eaves End"
         Transform {
           Location {
-            X: -1010
+            X: 1973.34375
             Y: -2150
-            Z: -26.7479858
+            Z: 1235.89331
           }
           Rotation {
             Yaw: 89.9999924
             Roll: -179.999985
           }
           Scale {
-            X: 10.9999943
-            Y: 5
-            Z: -26.5
+            X: 10.8137293
+            Y: 7.46368265
+            Z: 28.0303936
           }
         }
         ParentId: 7929033306477666292
@@ -56,13 +56,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 305775141639857906
+              Id: 11918547397350143104
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 11037954362083570912
+              Id: 581063974361107131
             }
           }
           Overrides {
@@ -102,18 +102,18 @@
         Name: "Craftsman Roof 01 Eaves End"
         Transform {
           Location {
-            X: 970
-            Y: 2530
-            Z: -1614.23535
+            X: -1950.99854
+            Y: 2355.44287
+            Z: 1362.15454
           }
           Rotation {
             Yaw: -90
             Roll: 180
           }
           Scale {
-            X: 12.4999971
-            Y: 5
-            Z: -26.5
+            X: 11.204937
+            Y: 7.46367407
+            Z: 28.0303936
           }
         }
         ParentId: 7929033306477666292
@@ -121,13 +121,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 305775141639857906
+              Id: 11918547397350143104
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 11037954362083570912
+              Id: 581063974361107131
             }
           }
           Overrides {
@@ -167,18 +167,18 @@
         Name: "Craftsman Roof 01 Eaves End"
         Transform {
           Location {
-            X: 2580
-            Y: -1440
-            Z: -26.7479858
+            X: 2256.0625
+            Y: 2557.83154
+            Z: 554.488037
           }
           Rotation {
             Yaw: -179.999985
             Roll: -179.999985
           }
           Scale {
-            X: 14.5
-            Y: 5
-            Z: -26.5
+            X: 10.8595877
+            Y: 7.46366549
+            Z: 28.0303936
           }
         }
         ParentId: 7929033306477666292
@@ -186,13 +186,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 305775141639857906
+              Id: 11918547397350143104
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 11037954362083570912
+              Id: 581063974361107131
             }
           }
           Overrides {
@@ -233,16 +233,16 @@
         Transform {
           Location {
             X: -2210
-            Y: 1460
-            Z: -26.7479858
+            Y: -2241.01123
+            Z: 998.523193
           }
           Rotation {
             Roll: 180
           }
           Scale {
-            X: 10.5
-            Y: 5
-            Z: -26.5
+            X: 10.322197
+            Y: 7.46368265
+            Z: 28.0303936
           }
         }
         ParentId: 7929033306477666292
@@ -250,13 +250,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 305775141639857906
+              Id: 11918547397350143104
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 11037954362083570912
+              Id: 581063974361107131
             }
           }
           Overrides {
@@ -367,9 +367,9 @@
             Z: 1925.30786
           }
           Rotation {
-            Pitch: -87.122467
-            Yaw: 8.28559303
-            Roll: 132.293335
+            Pitch: -85.4838562
+            Yaw: 18.1826401
+            Roll: 122.362381
           }
           Scale {
             X: 1
@@ -381,7 +381,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "bp:Intensity"
-            Float: 1.57018042
+            Float: 0.5
           }
           Overrides {
             Name: "bp:Indirect Lighting Intensity"
@@ -394,8 +394,8 @@
           Overrides {
             Name: "bp:Light Color"
             Color {
-              R: 0.110000014
-              G: 0.0327814631
+              G: 0.665099263
+              B: 0.830000043
               A: 1
             }
           }

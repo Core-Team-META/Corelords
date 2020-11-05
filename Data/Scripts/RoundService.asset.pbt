@@ -64,6 +64,12 @@
           Id: 3872276035659496312
         }
       }
+      Overrides {
+        Name: "cs:Map10"
+        AssetReference {
+          Id: 10801624885801143142
+        }
+      }
     }
   }
   SerializationVersion: 65

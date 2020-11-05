@@ -22,7 +22,7 @@
       }
       Overrides {
         Name: "roughness_multiplier"
-        Float: 1
+        Float: 0.555286467
       }
       Overrides {
         Name: "gradient_shift"
