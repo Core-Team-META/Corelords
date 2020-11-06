@@ -24,9 +24,6 @@ Objects {
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
-  ChildIds: 32268650670571415
-  ChildIds: 12101102882035277852
-  ChildIds: 11828565875272558227
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,93 +33,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 11828565875272558227
-  Name: "Julieta"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Julieta"
-  }
-}
-Objects {
-  Id: 12101102882035277852
-  Name: "Map6"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7929033306477666292
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Map6"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 70
-            Y: -450
-            Z: -30
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12095725374660707439
-    }
-  }
-}
-Objects {
-  Id: 32268650670571415
-  Name: "Erica"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Erica"
   }
 }
 Objects {

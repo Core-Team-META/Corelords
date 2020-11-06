@@ -7,7 +7,7 @@
       Overrides {
         Name: "cs:Castle"
         AssetReference {
-          Id: 12265685017042740865
+          Id: 10689857958231305652
         }
       }
     }
