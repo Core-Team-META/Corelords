@@ -177,8 +177,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: 1604.94751
-            Y: 0.00280761719
+            X: 1579.99756
+            Y: 0.00354003906
             Z: -5
           }
           Rotation {
@@ -235,8 +235,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: -1615.04187
-            Y: -0.00134277344
+            X: -1569.99683
+            Y: -0.00463867188
             Z: -5
           }
           Rotation {
@@ -293,7 +293,7 @@
         Name: "wall"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 30.0004883
             Y: -1145.05957
             Z: -5
           }
@@ -351,7 +351,8 @@
         Name: "wall"
         Transform {
           Location {
-            Y: 1084.94019
+            X: -0.000732421875
+            Y: 1119.99829
             Z: -5
           }
           Rotation {
@@ -407,17 +408,15 @@
         Name: "DO NOT TOUCH"
         Transform {
           Location {
-            X: -9.99996567
-            Y: -40
-            Z: -530
+            Z: -163.867676
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 24
-            Y: 36
-            Z: 1.5
+            X: 20
+            Y: 30
+            Z: 1
           }
         }
         ParentId: 3553133858169891051
@@ -461,8 +460,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: 1604.94739
-            Y: 0.00268554688
+            X: 1579.99756
+            Y: 0.00354003906
             Z: -5
           }
           Rotation {
@@ -520,8 +519,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: 0.000122070313
-            Y: 1084.94006
+            X: 29.9996338
+            Y: 1119.99829
             Z: -5
           }
           Rotation {
@@ -578,8 +577,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: -1615.04163
-            Y: -0.00134277344
+            X: -1569.99683
+            Y: -0.00463867188
             Z: -5
           }
           Rotation {
