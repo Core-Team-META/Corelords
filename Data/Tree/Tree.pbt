@@ -446,6 +446,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 12095280123006123146
+  ChildIds: 7821932800461059452
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -478,6 +479,36 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 7821932800461059452
+  Name: "utils"
+  Transform {
+    Location {
+      X: -1.8499999
+      Y: 4.5666666
+      Z: 55
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.005
+      Y: 0.00333333341
+      Z: 1
+    }
+  }
+  ParentId: 8128143991820770139
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10067007158274220082
     }
   }
 }

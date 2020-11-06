@@ -13,7 +13,7 @@
       Overrides {
         Name: "cs:Map2"
         AssetReference {
-          Id: 10417114810803872343
+          Id: 7257398902487333958
         }
       }
       Overrides {
@@ -55,7 +55,7 @@
       Overrides {
         Name: "cs:Map8"
         AssetReference {
-          Id: 12749635948260690712
+          Id: 9391406397569679519
         }
       }
       Overrides {

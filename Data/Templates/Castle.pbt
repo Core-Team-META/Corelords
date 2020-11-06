@@ -44,6 +44,7 @@
           Location {
           }
           Rotation {
+            Yaw: -45
           }
           Scale {
             X: 1.06057954
@@ -65,7 +66,6 @@
         ChildIds: 12054671335927153185
         ChildIds: 154634003555541213
         ChildIds: 1673626273566703245
-        ChildIds: 16233833886971546203
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -779,65 +779,6 @@
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 2894107401877562722
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.96999979
-              B: 0.97
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12095835209017042614
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16233833886971546203
-        Name: "Cube"
-        Transform {
-          Location {
-            Y: -220.441498
-            Z: -89.5736618
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2.57012391
-            Y: 4.07590675
-            Z: 0.227527961
-          }
-        }
-        ParentId: 16110553790373292798
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2356468609509605210
             }
           }
           Overrides {
