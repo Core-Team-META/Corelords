@@ -72,7 +72,12 @@ function RoundService.StartRound()
 		RoundService.currentMap:Destroy()
 	end
 	RoundService.mapIndex = (math.random(#MAPS - 1) + RoundService.mapIndex)%#MAPS + 1 -- choose a random different map
-	RoundService.currentMap = utils.spawnDefaultAsset(MAPS[RoundService.mapIndex])
+
+	if utils.ART_REVIEW and _G.levelSelect ~= nil then
+		RoundService.currentMap = utils.spawnDefaultAsset(MAPS[_G.levelSelect])
+	else
+		RoundService.currentMap = utils.spawnDefaultAsset(MAPS[RoundService.mapIndex])
+	end
 
 	local castles = {}
 	for sideX = -1, 1, 2 do
@@ -191,6 +196,20 @@ function RoundService.AddPlayer(player)
 				PaddleService.ReleaseBall(paddle)
 			end
 		end
+		
+		if utils.ART_REVIEW then
+			if binding == "ability_extra_22" then
+				RoundService.EndRound()
+			end
+			if  #binding == 15 then
+				if tonumber(string.sub(binding, 15)) == 0 then
+					_G.levelSelect = 10
+				else
+					_G.levelSelect = tonumber(string.sub(binding, 15))
+				end
+			end
+		end
+
 	end)
 end
 

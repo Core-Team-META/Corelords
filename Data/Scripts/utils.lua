@@ -2,6 +2,7 @@
 isClientContext = #script:GetCustomProperty("ClientContext"):WaitForObject():GetChildren() ~= 0
 isServerContext = #script:GetCustomProperty("ServerContext"):WaitForObject():GetChildren() ~= 0
 DEBUG = false
+ART_REVIEW = true
 
 if isClientContext then
 	local clientQueue = 0
