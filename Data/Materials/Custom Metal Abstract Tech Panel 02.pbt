@@ -30,6 +30,10 @@
         Name: "material_scale"
         Float: 8
       }
+      Overrides {
+        Name: "roughness_multiplier"
+        Float: 0.595986605
+      }
     }
     Assets {
       Id: 3696933174582909396

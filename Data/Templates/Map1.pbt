@@ -51,7 +51,10 @@
         ChildIds: 2987654927455799555
         ChildIds: 15563208517827611601
         ChildIds: 4163061145564386311
-        ChildIds: 3075680078676942170
+        ChildIds: 11677166265950783709
+        ChildIds: 17790939877667450607
+        ChildIds: 14497528835608723258
+        ChildIds: 10013556493807995850
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -404,14 +407,16 @@
         Name: "DO NOT TOUCH"
         Transform {
           Location {
-            Z: -169.879547
+            X: -9.99996567
+            Y: -40
+            Z: -530
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 22.3954277
-            Y: 33.8415565
+            X: 24
+            Y: 36
             Z: 1.5
           }
         }
@@ -452,19 +457,23 @@
         }
       }
       Objects {
-        Id: 3075680078676942170
-        Name: "glass"
+        Id: 11677166265950783709
+        Name: "wall"
         Transform {
           Location {
-            Z: -79.6463547
+            X: 1604.94739
+            Y: 0.00268554688
+            Z: -5
           }
           Rotation {
-            Yaw: -90
+            Pitch: -44.9998474
+            Yaw: -179.999908
+            Roll: -179.999954
           }
           Scale {
-            X: 22.3954277
-            Y: 33.8415565
-            Z: 1.5
+            X: 2.5
+            Y: 29.289444
+            Z: 1
           }
         }
         ParentId: 3553133858169891051
@@ -472,13 +481,191 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4741415883477865908
+              Id: 12403612971131716385
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              A: 0.321
+              R: 0.949669063
+              G: 0.0500000119
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17790939877667450607
+        Name: "wall"
+        Transform {
+          Location {
+            X: 0.000122070313
+            Y: 1084.94006
+            Z: -5
+          }
+          Rotation {
+            Pitch: -44.9999695
+            Yaw: -90
+          }
+          Scale {
+            X: 2.5
+            Y: 42.0000114
+            Z: 1
+          }
+        }
+        ParentId: 3553133858169891051
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12403612971131716385
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.949669063
+              G: 0.0500000119
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14497528835608723258
+        Name: "wall"
+        Transform {
+          Location {
+            X: -1615.04163
+            Y: -0.00134277344
+            Z: -5
+          }
+          Rotation {
+            Pitch: -44.9999695
+            Yaw: -3.05175781e-05
+          }
+          Scale {
+            X: 2.5
+            Y: 29.289444
+            Z: 1
+          }
+        }
+        ParentId: 3553133858169891051
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12403612971131716385
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.949669063
+              G: 0.0500000119
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10013556493807995850
+        Name: "wall"
+        Transform {
+          Location {
+            X: 0.000122070313
+            Y: -1145.05957
+            Z: -5
+          }
+          Rotation {
+            Pitch: -44.9999695
+            Yaw: 89.9999695
+            Roll: -179.999969
+          }
+          Scale {
+            X: 2.5
+            Y: 42.0000114
+            Z: 1
+          }
+        }
+        ParentId: 3553133858169891051
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12403612971131716385
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.949669063
+              G: 0.0500000119
+              B: 1
+              A: 1
             }
           }
         }
@@ -548,6 +735,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 12403612971131716385
+      Name: "Electric Surface"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_electrical_surface"
       }
     }
     Assets {
