@@ -88,7 +88,9 @@ function PaddleController.SetPaddle(container)
 			if mousePos then
 				local x, y = clientGroup.clientUserData.quadrantX, clientGroup.clientUserData.quadrantY
 				if x and y then
-					local pos, rot = utils.ClosestPointOnTrack(mousePos, x, y)
+					local alpha = y*mousePos.y/utils.HORIZONTAL_MOUSE_RANGE + .5
+					local pos, rot = utils.PointOnTrack(alpha, x, y)
+					--local pos, rot = utils.ClosestPointOnTrack(mousePos, x, y)
 					clientGroup:SetWorldPosition(pos)
 					clientGroup:SetWorldRotation(rot)
 				end

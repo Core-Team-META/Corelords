@@ -69,7 +69,9 @@ function PaddleService.CreateAbility(player)
 		local data = RoundService.players[player]
 		local paddle = data.paddle
 		if hit and paddle then
-			local pos, rot = utils.ClosestPointOnTrack(hit * Vector3.New(1, 1, 0), data.x, data.y)
+			local alpha = data.y*hit.y/utils.HORIZONTAL_MOUSE_RANGE + .5
+			local pos, rot = utils.PointOnTrack(alpha, data.x, data.y)
+			--local pos, rot = utils.ClosestPointOnTrack(hit * Vector3.New(1, 1, 0), data.x, data.y)
 			paddle.serverPosition:SetWorldPosition(pos)
 			paddle.serverPosition:SetWorldRotation(rot)
 			paddle.position = pos

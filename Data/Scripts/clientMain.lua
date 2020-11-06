@@ -24,8 +24,8 @@ end
 
 local utils = DEPENDENCIES.utils
 
-UI.SetCursorVisible(true)
-UI.SetCanCursorInteractWithUI(true)
+--UI.SetCursorVisible(true)
+--UI.SetCanCursorInteractWithUI(true)
 
 local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false

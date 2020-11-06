@@ -56,10 +56,12 @@ CORNER_THICKNESS = 4
 
 BALL_SCALE = .75
 BALL_RADIUS = BALL_SCALE * 50
-BALL_SPEED = 2000
-BALL_THROW_SPEED = 5000
+BALL_SPEED = 1800
+BALL_THROW_SPEED = 4500
 
 FIXED_DELTA_TIME = 1/300 -- updates per second
+
+HORIZONTAL_MOUSE_RANGE = 3000 -- distance on the ground where mouse movement controls the paddle
 
 TEAM_COLORS = {
 	Color.New(0, .1, 1), -- blue
