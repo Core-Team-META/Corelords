@@ -39,8 +39,10 @@ function PaddleService.DestroyPaddle(player)
 	local paddle = data.paddle
 	if not data.paddle then return end
 	PaddleService.ReleaseBall(paddle)
-	paddle.object:Destroy()
 	data.paddle = nil
+	Task.Spawn(function() -- delay to give time for the ball release to replicate
+		paddle.object:Destroy()
+	end, 1)
 end
 
 function PaddleService.ReleaseBall(paddle)

@@ -217,6 +217,10 @@ function RoundService.RemovePlayer(player)
 	local data = RoundService.players[player]
 	data.ability:Destroy()
 	PaddleService.DestroyPaddle(player)
+	if data.castle then
+		data.castle.owner = nil
+	end
+	
 	RoundService.players[player] = nil
 	
 	local nametagIndex = (data.x + 2) + (data.y + 1)/2
