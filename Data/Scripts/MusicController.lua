@@ -5,7 +5,11 @@ function OnPlayTrack(track)
     for i = 1, #musicList do
         musicList[i]:Stop()
     end
-    musicList[track]:Play()
+    if track > #musicList and #musicList > 0 then
+        musicList[#musicList]:Play()
+    elseif #musicList > 0 then 
+        musicList[track]:Play()
+    end
 end
 
 function OnResourceChanged(player, resourceId, newValue)
