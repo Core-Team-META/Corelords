@@ -2,7 +2,7 @@
   Id: 305775141639857906
   Name: "Lines"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 9824246533745550585
     ParameterOverrides {

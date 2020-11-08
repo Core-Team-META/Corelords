@@ -2,7 +2,7 @@
   Id: 10485141533479566439
   Name: "Custom Fabric Space Insulation 02"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 1151672837619354382
     ParameterOverrides {

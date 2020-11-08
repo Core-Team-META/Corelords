@@ -2,7 +2,7 @@
   Id: 16974966470577672953
   Name: "Castle Grid Glow"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 7050575655628788180
     ParameterOverrides {
