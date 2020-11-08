@@ -136,6 +136,7 @@
         ChildIds: 14144746890354758477
         ChildIds: 13543879640531252408
         ChildIds: 4267066614553872220
+        ChildIds: 8181633776395279892
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -487,6 +488,341 @@
           }
         }
       }
+      Objects {
+        Id: 8181633776395279892
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: 7.79305267
+            Y: 4.25997925
+            Z: 114.001862
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2230859682754589401
+        ChildIds: 4798900824797176278
+        ChildIds: 5609350466116413581
+        ChildIds: 11242539600033019840
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 4798900824797176278
+        Name: "Plasma Charge Up Start VFX"
+        Transform {
+          Location {
+            X: 1.82217407
+            Y: -1.349823
+            Z: 141.142242
+          }
+          Rotation {
+          }
+          Scale {
+            X: 5.80972767
+            Y: 5.80972767
+            Z: 5.80972767
+          }
+        }
+        ParentId: 8181633776395279892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              G: 0.429999948
+              B: 0.250596046
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Inner Core Color"
+            Color {
+              G: 0.220000029
+              B: 0.115099408
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.8366699
+          }
+          Overrides {
+            Name: "bp:Large Charge Ring Size"
+            Float: 0.346505702
+          }
+          Overrides {
+            Name: "bp:Arc Size"
+            Float: 0.346505702
+          }
+          Overrides {
+            Name: "bp:Arc Density"
+            Float: 4.34064293
+          }
+          Overrides {
+            Name: "bp:Outer Core Color"
+            Color {
+              G: 0.690000057
+              B: 0.580331206
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Arc Color"
+            Color {
+              G: 0.340000033
+              B: 0.110331178
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Hot Spot Color"
+            Color {
+              G: 0.340000033
+              B: 0.150860965
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 3164364020326874740
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 5609350466116413581
+        Name: "Plasma Charge Up Hold VFX"
+        Transform {
+          Location {
+            X: 1.82217407
+            Y: -1.35177612
+            Z: 141.142731
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.54040289
+            Y: 3.54040289
+            Z: 3.54040289
+          }
+        }
+        ParentId: 8181633776395279892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              G: 0.320000052
+              B: 0.129271567
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Inner Core Color"
+            Color {
+              G: 0.478675365
+              B: 0.52
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Arc Size"
+            Float: 0.525897384
+          }
+          Overrides {
+            Name: "bp:Outer Core Color"
+            Color {
+              G: 0.26
+              B: 0.192847744
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Arc Color"
+            Color {
+              G: 0.478675365
+              B: 0.52
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Hot Spot Color"
+            Color {
+              G: 0.478675365
+              B: 0.52
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 3.09351206
+          }
+          Overrides {
+            Name: "bp:Energy Particle Life"
+            Float: 1.07283831
+          }
+          Overrides {
+            Name: "bp:Inner Core Size"
+            Float: 0.658973277
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 18322083209027112941
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 11242539600033019840
+        Name: "Plasma Laser"
+        Transform {
+          Location {
+            X: -3.64437866
+            Y: 2.70159912
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
+          }
+        }
+        ParentId: 8181633776395279892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              G: 0.644370794
+              B: 0.700000048
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Central Core Color"
+            Color {
+              G: 0.220000029
+              B: 0.0757615939
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              G: 0.810596168
+              B: 0.9
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Length"
+            Float: 9.27925777
+          }
+          Overrides {
+            Name: "bp:Speed"
+            Float: 3.34229469
+          }
+          Overrides {
+            Name: "bp:Plasma Intensity Adjustment"
+            Float: 1.05403399
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.7907419
+          }
+          Overrides {
+            Name: "bp:Opacity"
+            Float: 0.141057819
+          }
+          Overrides {
+            Name: "bp:Plasma Scale"
+            Float: 3.72259307
+          }
+          Overrides {
+            Name: "bp:Color By Length"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Core Tightness"
+            Float: 9.75763512
+          }
+          Overrides {
+            Name: "bp:Plasma Tightness"
+            Float: 2.70156193
+          }
+          Overrides {
+            Name: "bp:Hot Core Color"
+            Color {
+              R: 0.339999974
+              G: 0.960662186
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              G: 0.539999962
+              B: 0.164503306
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color C"
+            Color {
+              G: 0.524701893
+              B: 0.570000052
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 12022824903258480392
+          }
+          TeamSettings {
+          }
+        }
+      }
     }
     Assets {
       Id: 7868517847701333346
@@ -576,6 +912,33 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_add_edgeline"
+      }
+    }
+    Assets {
+      Id: 3164364020326874740
+      Name: "Plasma Charge Up Start VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ChargeUp"
+      }
+    }
+    Assets {
+      Id: 18322083209027112941
+      Name: "Plasma Charge Up Hold VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ChargeUp_Hold"
+      }
+    }
+    Assets {
+      Id: 12022824903258480392
+      Name: "Plasma Laser"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_plasma_laser"
       }
     }
     PrimaryAssetId {
