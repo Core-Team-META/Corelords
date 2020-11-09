@@ -255,6 +255,8 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 2824740615320921248
   ChildIds: 12535147227088452243
+  ChildIds: 7232274016867734611
+  ChildIds: 13313389828636008364
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -273,6 +275,67 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 13313389828636008364
+  Name: "MusicController"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MUSIC_FOLDER"
+      ObjectReference {
+        SelfId: 7232274016867734611
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10356666814202891439
+    }
+  }
+}
+Objects {
+  Id: 7232274016867734611
+  Name: "MUSIC_FOLDER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "MUSIC_FOLDER"
   }
 }
 Objects {
