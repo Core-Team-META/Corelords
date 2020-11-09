@@ -8,11 +8,11 @@
   }
 }
 Assets {
-  Id: 449229339179069243
-  Name: "Animated Glowing Hex"
+  Id: 2359295207963974150
+  Name: "Metal Floor Panel 03"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxma_hex_animated"
+    AssetId: "mi_scf_simple_floor_panel_003_uv"
   }
 }
