@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 11199168865757551476
-  Name: "Paddle"
+  Id: 14395409529532110913
+  Name: "Paddle_GEO"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 2297416799454646599
       Objects {
         Id: 2297416799454646599
-        Name: "Paddle"
+        Name: "Paddle_GEO"
         Transform {
           Scale {
             X: 1
@@ -34,7 +34,7 @@
           Overrides {
             Name: "cs:ClientGroup"
             ObjectReference {
-              SubObjectId: 6407417176911637607
+              SubObjectId: 7342642608806997588
             }
           }
         }
@@ -64,12 +64,12 @@
           }
         }
         ParentId: 2297416799454646599
-        ChildIds: 6407417176911637607
+        ChildIds: 7342642608806997588
         UnregisteredParameters {
           Overrides {
             Name: "cs:Group"
             ObjectReference {
-              SubObjectId: 6407417176911637607
+              SubObjectId: 7342642608806997588
             }
           }
         }
@@ -84,26 +84,24 @@
         }
       }
       Objects {
-        Id: 6407417176911637607
+        Id: 7342642608806997588
         Name: "Group"
         Transform {
           Location {
-            X: 0.649219513
-            Y: -7.69500732
           }
           Rotation {
           }
           Scale {
-            X: 0.888642073
-            Y: 0.888642073
-            Z: 0.888642073
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 1105806842249883082
-        ChildIds: 17986148715288973580
-        ChildIds: 7092934605198305599
-        ChildIds: 17385012579161380312
-        ChildIds: 5597968275585105597
+        ChildIds: 14165610300220281663
+        ChildIds: 6873287996711430924
+        ChildIds: 14721706024860375019
+        ChildIds: 8116052815886728334
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -115,7 +113,7 @@
         }
       }
       Objects {
-        Id: 17986148715288973580
+        Id: 14165610300220281663
         Name: "Paddle"
         Transform {
           Location {
@@ -132,7 +130,7 @@
             Z: 2.32403111
           }
         }
-        ParentId: 6407417176911637607
+        ParentId: 7342642608806997588
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -184,7 +182,7 @@
         }
       }
       Objects {
-        Id: 7092934605198305599
+        Id: 6873287996711430924
         Name: "Object Rotator Continuous"
         Transform {
           Scale {
@@ -193,12 +191,12 @@
             Z: 1
           }
         }
-        ParentId: 6407417176911637607
+        ParentId: 7342642608806997588
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 17986148715288973580
+              SubObjectId: 14165610300220281663
             }
           }
           Overrides {
@@ -255,7 +253,7 @@
         }
       }
       Objects {
-        Id: 17385012579161380312
+        Id: 14721706024860375019
         Name: "Edge"
         Transform {
           Location {
@@ -272,7 +270,7 @@
             Z: 0.082512632
           }
         }
-        ParentId: 6407417176911637607
+        ParentId: 7342642608806997588
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim2:id"
@@ -327,7 +325,7 @@
         }
       }
       Objects {
-        Id: 5597968275585105597
+        Id: 8116052815886728334
         Name: "Edge"
         Transform {
           Location {
@@ -344,7 +342,7 @@
             Z: 0.082512632
           }
         }
-        ParentId: 6407417176911637607
+        ParentId: 7342642608806997588
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim2:id"
