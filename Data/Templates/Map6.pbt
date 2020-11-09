@@ -223,7 +223,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -840
+            X: -960.937744
             Z: -75
           }
           Rotation {
@@ -290,7 +290,7 @@
         Transform {
           Location {
             X: 10
-            Y: 1490
+            Y: 1790.07886
             Z: -75
           }
           Rotation {
@@ -425,8 +425,8 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 140
-            Y: -1500
+            X: 140.000031
+            Y: -1517.57788
             Z: -75
           }
           Rotation {
@@ -632,7 +632,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -840
+            X: -960.937744
             Z: -75
           }
           Rotation {
@@ -700,7 +700,7 @@
         Transform {
           Location {
             X: 20
-            Y: 1490
+            Y: 1790.07886
             Z: -75
           }
           Rotation {
@@ -768,7 +768,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -1050
+            X: -1170.93774
             Z: -75
           }
           Rotation {
@@ -836,7 +836,7 @@
         Transform {
           Location {
             X: 10
-            Y: 1650
+            Y: 1950.07886
             Z: -75
           }
           Rotation {
@@ -1043,8 +1043,8 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 70
-            Y: 1490
+            X: 40.750885
+            Y: 1538.74915
             Z: -840
           }
           Rotation {
@@ -1054,8 +1054,8 @@
           }
           Scale {
             X: 20
-            Y: 18.5000019
-            Z: -0.5
+            Y: 20.4145374
+            Z: -0.499999642
           }
         }
         ParentId: 7929033306477666292
@@ -1113,19 +1113,19 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 70
-            Y: -1500
+            X: 3.9414978
+            Y: -1462.97839
             Z: -840
           }
           Rotation {
             Pitch: -90
-            Yaw: 38.6597862
-            Roll: 51.3398552
+            Yaw: 33.6900826
+            Roll: 56.3094749
           }
           Scale {
             X: 20
-            Y: 18.5000019
-            Z: -0.5
+            Y: 20.373188
+            Z: -0.499998569
           }
         }
         ParentId: 7929033306477666292
@@ -1183,7 +1183,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -840
+            X: -1020.39624
             Z: -840
           }
           Rotation {
@@ -1250,14 +1250,14 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 990
+            X: 1058.72754
             Y: -10.0004883
             Z: -840
           }
           Rotation {
             Pitch: -90
-            Yaw: -179.999893
-            Roll: -6.10351563e-05
+            Yaw: 4.55345908e-05
+            Roll: 180
           }
           Scale {
             X: 20
