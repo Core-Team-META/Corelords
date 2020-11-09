@@ -54,7 +54,7 @@ function PaddleController.Setup(dependencies)
 			clientGroup.clientUserData.quadrantX = pos.x < 0 and -1 or 1
 			clientGroup.clientUserData.quadrantY = pos.y < 0 and -1 or 1
 			for _, object in pairs(clientGroup:GetChildren()) do
-				if object.name ~= "Paddle" then
+				if object.name ~= "Paddle" and object:IsA("CoreMesh") then
 					object:SetColor(utils.TEAM_COLORS[colorIndex])
 				end
 			end

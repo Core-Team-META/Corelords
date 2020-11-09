@@ -74,9 +74,10 @@ function RoundService.StartRound()
 	if RoundService.currentMap then
 		RoundService.currentMap:Destroy()
 	end
-	RoundService.mapIndex = (math.random(#MAPS - 1) + RoundService.mapIndex)%#MAPS + 1 -- choose a random different map
 	if utils.ART_REVIEW and levelSelect ~= nil then
 		RoundService.mapIndex = levelSelect
+	else
+		RoundService.mapIndex = (math.random(#MAPS - 1) + RoundService.mapIndex)%#MAPS + 1 -- choose a random different map
 	end
 	RoundService.currentMap = utils.spawnDefaultAsset(MAPS[RoundService.mapIndex])
 	local castles = {}
