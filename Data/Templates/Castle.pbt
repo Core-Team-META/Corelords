@@ -86,6 +86,8 @@
         ChildIds: 16630645774357962551
         ChildIds: 16828430497219745388
         ChildIds: 4059842046109845793
+        ChildIds: 9303588347591639805
+        ChildIds: 15766199476453832055
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -404,6 +406,87 @@
             Id: 12022824903258480392
           }
           TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 9303588347591639805
+        Name: "World Text"
+        Transform {
+          Location {
+            X: 15.7255707
+            Y: -17.2935181
+            Z: 94.0139771
+          }
+          Rotation {
+            Roll: 90
+          }
+          Scale {
+            X: 2.49999952
+            Y: 2.49999952
+            Z: 2.49999952
+          }
+        }
+        ParentId: 10150055419635286625
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "AGGRIPINA"
+          Color {
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 15766199476453832055
+        Name: "World Text"
+        Transform {
+          Location {
+            X: -24.2744141
+            Y: -17.293457
+            Z: 94.0139771
+          }
+          Rotation {
+            Pitch: 180
+            Roll: 90
+          }
+          Scale {
+            X: 2.49999952
+            Y: 2.49999952
+            Z: 2.49999952
+          }
+        }
+        ParentId: 10150055419635286625
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "AGGRIPINA"
+          Color {
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:right"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
           }
         }
       }

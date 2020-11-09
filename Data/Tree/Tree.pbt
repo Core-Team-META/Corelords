@@ -24,7 +24,6 @@ Objects {
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
-  ChildIds: 14732625559126416030
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,46 +33,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 14732625559126416030
-  Name: "Map1"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9596351504941483050
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Map1"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -17.3557281
-            Y: 825.48468
-            Z: -25
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 3116903276507662455
-    }
   }
 }
 Objects {
