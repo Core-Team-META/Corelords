@@ -253,10 +253,8 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 17571772677436214500
   ChildIds: 2824740615320921248
   ChildIds: 12535147227088452243
-  ChildIds: 6220176209026834439
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -275,32 +273,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 6220176209026834439
-  Name: "MUSIC_FOLDER"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17917873266452412741
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "MUSIC_FOLDER"
   }
 }
 Objects {
@@ -397,33 +369,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 12045856215708368520
-    }
-  }
-}
-Objects {
-  Id: 17571772677436214500
-  Name: "MusicController"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17917873266452412741
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14966894858425761607
     }
   }
 }
@@ -784,9 +729,6 @@ Objects {
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
-      CanMoveUp: true
-      CanMoveDown: true
-      IsMountEnabled: true
     }
   }
 }
@@ -848,23 +790,6 @@ Objects {
         Value: "mc:echatmode:teamandall"
       }
       EnablePlayModeProfiler: true
-      ChatSettings {
-        ChatMode {
-        }
-        ChatPosition {
-          X: 40
-        }
-        ChatSize {
-          X: 450
-          Y: 400
-        }
-        ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:left"
-        }
-        ChatVerticalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
-        }
-      }
     }
   }
 }

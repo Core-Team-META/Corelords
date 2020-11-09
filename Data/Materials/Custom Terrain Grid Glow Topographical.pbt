@@ -2,7 +2,7 @@
   Id: 14744407516531347406
   Name: "Custom Terrain Grid Glow Topographical"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 235214782860293960
     ParameterOverrides {

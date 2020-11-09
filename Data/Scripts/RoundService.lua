@@ -14,7 +14,6 @@ local MAPS = {
 }
 
 local NAMETAG = script:GetCustomProperty("Nametag")
-local levelSelect = nil
 
 local RoundService = {
 	players = {},
@@ -73,10 +72,13 @@ function RoundService.StartRound()
 		RoundService.currentMap:Destroy()
 	end
 	RoundService.mapIndex = (math.random(#MAPS - 1) + RoundService.mapIndex)%#MAPS + 1 -- choose a random different map
-	if utils.ART_REVIEW and levelSelect ~= nil then
-		RoundService.mapIndex = levelSelect
+
+	if utils.ART_REVIEW and _G.levelSelect ~= nil then
+		RoundService.currentMap = utils.spawnDefaultAsset(MAPS[_G.levelSelect])
+	else
+		RoundService.currentMap = utils.spawnDefaultAsset(MAPS[RoundService.mapIndex])
 	end
-	RoundService.currentMap = utils.spawnDefaultAsset(MAPS[RoundService.mapIndex])
+
 	local castles = {}
 	for sideX = -1, 1, 2 do
 		for sideY = -1, 1, 2 do
@@ -144,7 +146,6 @@ function RoundService.AssignPlayer(player)
 	local round = RoundService.currentRound
 	local data = RoundService.players[player]
 	player:SetResource("Score", 0)
-	player:SetResource("MusicTrack", RoundService.mapIndex)
 	local randomOffset = math.random(4)
 	local castleList = {}
 	for object, castle in pairs(round.castles) do
@@ -195,16 +196,16 @@ function RoundService.AddPlayer(player)
 				PaddleService.ReleaseBall(paddle)
 			end
 		end
-
+		
 		if utils.ART_REVIEW then
 			if binding == "ability_extra_22" then
 				RoundService.EndRound()
 			end
 			if  #binding == 15 then
 				if tonumber(string.sub(binding, 15)) == 0 then
-					levelSelect = 10
+					_G.levelSelect = 10
 				else
-					levelSelect = tonumber(string.sub(binding, 15))
+					_G.levelSelect = tonumber(string.sub(binding, 15))
 				end
 			end
 		end
