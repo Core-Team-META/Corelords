@@ -203,11 +203,22 @@ function RoundService.AddPlayer(player)
 			if binding == "ability_extra_22" then
 				RoundService.EndRound()
 			end
-			if  #binding == 15 then
-				if tonumber(string.sub(binding, 15)) == 0 then
-					levelSelect = 10
+			if binding == "ability_extra_48" then
+				if levelSelect == nil then
+					levelSelect = #MAPS
+				elseif levelSelect == 1 then
+					levelSelect = #MAPS
 				else
-					levelSelect = tonumber(string.sub(binding, 15))
+					levelSelect = levelSelect - 1
+				end
+			end
+			if binding == "ability_extra_49" then
+				if levelSelect == nil then
+					levelSelect = 1
+				elseif levelSelect == #MAPS then
+					levelSelect = 1
+				else
+					levelSelect = levelSelect + 1
 				end
 			end
 		end
