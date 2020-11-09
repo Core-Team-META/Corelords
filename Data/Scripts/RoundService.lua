@@ -158,6 +158,7 @@ function RoundService.AssignPlayer(player)
 		local castle = castleList[i]
 		if not castle.owner then
 			castle.owner = player
+			castle.nametag.text = player.name
 			data.castle = castle
 			data.x = castle.x
 			data.y = castle.y
@@ -221,6 +222,7 @@ function RoundService.RemovePlayer(player)
 	PaddleService.DestroyPaddle(player)
 	if data.castle then
 		data.castle.owner = nil
+		data.castle.nametag.text = ""
 	end
 	
 	RoundService.players[player] = nil

@@ -27,6 +27,18 @@
               SubObjectId: 7832331854387106338
             }
           }
+          Overrides {
+            Name: "cs:LeftText"
+            ObjectReference {
+              SubObjectId: 15766199476453832055
+            }
+          }
+          Overrides {
+            Name: "cs:RightText"
+            ObjectReference {
+              SubObjectId: 9303588347591639805
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -86,8 +98,6 @@
         ChildIds: 16630645774357962551
         ChildIds: 16828430497219745388
         ChildIds: 4059842046109845793
-        ChildIds: 9303588347591639805
-        ChildIds: 15766199476453832055
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -410,87 +420,6 @@
         }
       }
       Objects {
-        Id: 9303588347591639805
-        Name: "World Text"
-        Transform {
-          Location {
-            X: 15.7255707
-            Y: -17.2935181
-            Z: 94.0139771
-          }
-          Rotation {
-            Roll: 90
-          }
-          Scale {
-            X: 2.49999952
-            Y: 2.49999952
-            Z: 2.49999952
-          }
-        }
-        ParentId: 10150055419635286625
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Text {
-          Text: "AGGRIPINA"
-          Color {
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 15766199476453832055
-        Name: "World Text"
-        Transform {
-          Location {
-            X: -24.2744141
-            Y: -17.293457
-            Z: 94.0139771
-          }
-          Rotation {
-            Pitch: 180
-            Roll: 90
-          }
-          Scale {
-            X: 2.49999952
-            Y: 2.49999952
-            Z: 2.49999952
-          }
-        }
-        ParentId: 10150055419635286625
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Text {
-          Text: "AGGRIPINA"
-          Color {
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:right"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
         Id: 7832331854387106338
         Name: "Trigger"
         Transform {
@@ -583,6 +512,8 @@
           }
         }
         ParentId: 3631262733810681537
+        ChildIds: 9303588347591639805
+        ChildIds: 15766199476453832055
         ChildIds: 16200026035121394141
         ChildIds: 7466425861247029439
         ChildIds: 14144746890354758477
@@ -597,6 +528,87 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9303588347591639805
+        Name: "RightText"
+        Transform {
+          Location {
+            X: 10
+            Z: 305.144104
+          }
+          Rotation {
+            Roll: 90
+          }
+          Scale {
+            X: 2.49999952
+            Y: 2.49999952
+            Z: 2.49999952
+          }
+        }
+        ParentId: 2230859682754589401
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "AGGRIPINA"
+          Color {
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 15766199476453832055
+        Name: "LeftText"
+        Transform {
+          Location {
+            X: 10
+            Y: 6.10351563e-05
+            Z: 305.144104
+          }
+          Rotation {
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 2.49999952
+            Y: 2.49999952
+            Z: 2.49999952
+          }
+        }
+        ParentId: 2230859682754589401
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "AGGRIPINA"
+          Color {
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:right"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
         }
       }
       Objects {

@@ -21,8 +21,21 @@ function CastleService.CreateCastle(sideX, sideY)
 		trigger = castleObject:GetCustomProperty("Trigger"):WaitForObject(),
 		x = sideX, y = sideY,
 		color = utils.TEAM_COLORS[(sideX > 0 and 2 or 0) + (sideY > 0 and 2 or 1)],
-		owner = nil
+		owner = nil,
+		nametag = nil
 	}
+	local leftText = castleObject:GetCustomProperty("LeftText"):WaitForObject()
+	local rightText = castleObject:GetCustomProperty("RightText"):WaitForObject()
+	castle.nametag = sideY == 1 and rightText or leftText
+	if castle.nametag == leftText then
+		rightText.visibility = Visibility.FORCE_OFF
+	else
+		leftText.visibility = Visibility.FORCE_OFF
+	end
+	castle.nametag.text = ""
+	local nametagIndex = (castle.x + 2) + (castle.y + 1)/2
+	RoundService.nametags[nametagIndex].main.visibility = Visibility.FORCE_OFF
+	RoundService.nametags[nametagIndex].shadow.visibility = Visibility.FORCE_OFF
 	return castle
 end
 
@@ -36,6 +49,9 @@ function CastleService.DestroyCastle(castleObject)
 			PaddleService.DestroyPaddle(castle.owner)
 		end
 	end
+	local nametagIndex = (castle.x + 2) + (castle.y + 1)/2
+	RoundService.nametags[nametagIndex].main.visibility = Visibility.INHERIT
+	RoundService.nametags[nametagIndex].shadow.visibility = Visibility.INHERIT
 end
 
 return CastleService
