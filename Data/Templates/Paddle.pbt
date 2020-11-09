@@ -99,8 +99,9 @@
         }
         ParentId: 1105806842249883082
         ChildIds: 14165610300220281663
+        ChildIds: 6873287996711430924
         ChildIds: 14721706024860375019
-        ChildIds: 6549360366819860608
+        ChildIds: 8116052815886728334
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -116,18 +117,17 @@
         Name: "Paddle"
         Transform {
           Location {
-            X: 22.9997826
-            Z: 6.7949295e-05
+            X: -1.34817505
+            Y: 129.549255
+            Z: 6.10351563e-05
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.9999695
-            Roll: -89.9999695
+            Roll: -90
           }
           Scale {
-            X: 3
-            Y: 3.60000014
-            Z: 2.83008695
+            X: 0.58724761
+            Y: 0.704696834
+            Z: 2.32403111
           }
         }
         ParentId: 7342642608806997588
@@ -135,16 +135,29 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6177909332428163448
+              Id: 7798300798340086960
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2.84852695
+            Float: 4.17163944
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2.84852695
+            Float: 7.07530832
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -155,7 +168,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3628780303828917058
+            Id: 18004596441774005190
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -169,13 +182,84 @@
         }
       }
       Objects {
+        Id: 6873287996711430924
+        Name: "Object Rotator Continuous"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7342642608806997588
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Object"
+            ObjectReference {
+              SubObjectId: 14165610300220281663
+            }
+          }
+          Overrides {
+            Name: "cs:RotateVelocity"
+            Rotator {
+              Yaw: 50
+            }
+          }
+          Overrides {
+            Name: "cs:RotationMultiplier"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:LocalSpace"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:StartDelayRange"
+            Vector2 {
+              Y: 1
+            }
+          }
+          Overrides {
+            Name: "cs:RotationMultiplier:tooltip"
+            String: "Optional multiplier for very fast rotations."
+          }
+          Overrides {
+            Name: "cs:StartDelayRange:tooltip"
+            String: "Random delay range for the object to take action at the start of the game."
+          }
+          Overrides {
+            Name: "cs:LocalSpace:tooltip"
+            String: "Whether RotateTo is in local space"
+          }
+          Overrides {
+            Name: "cs:Object:tooltip"
+            String: "Object to transform"
+          }
+          Overrides {
+            Name: "cs:RotateVelocity:tooltip"
+            String: "Smoothly rotates the object over time by the given angular velocity."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2331688389429807128
+          }
+        }
+      }
+      Objects {
         Id: 14721706024860375019
         Name: "Edge"
         Transform {
           Location {
-            X: 0.536205292
-            Y: -72
-            Z: 0.939475298
+            X: 0.536224365
+            Y: -95.1634521
+            Z: 0.939483643
           }
           Rotation {
             Roll: -90
@@ -183,7 +267,7 @@
           Scale {
             X: 0.159950688
             Y: 0.159950808
-            Z: 0.0995670408
+            Z: 0.082512632
           }
         }
         ParentId: 7342642608806997588
@@ -241,21 +325,21 @@
         }
       }
       Objects {
-        Id: 6549360366819860608
+        Id: 8116052815886728334
         Name: "Edge"
         Transform {
           Location {
-            X: 0.536205292
-            Y: 72
-            Z: 0.939475298
+            X: 0.536224365
+            Y: 111.803833
+            Z: 0.939483643
           }
           Rotation {
-            Roll: 89.9999542
+            Roll: 90
           }
           Scale {
             X: 0.159950688
             Y: 0.159950808
-            Z: 0.0995670408
+            Z: 0.082512632
           }
         }
         ParentId: 7342642608806997588
@@ -340,21 +424,21 @@
       }
     }
     Assets {
-      Id: 3628780303828917058
-      Name: "Sci-fi Console Hinge 01"
+      Id: 18004596441774005190
+      Name: "Column Segment 1m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_scf_hinge_001_ref"
+        AssetId: "sm_column_segment_001"
       }
     }
     Assets {
-      Id: 6177909332428163448
-      Name: "Metal Floor Panel 01"
+      Id: 7798300798340086960
+      Name: "Tech Panel 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_simple_floor_panel_001_uv"
+        AssetId: "mi_sf_gen_tech-panel_001"
       }
     }
     Assets {
