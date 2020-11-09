@@ -30,8 +30,9 @@ function PaddleController.Setup(dependencies)
 					local currentAlpha = clientGroup.clientUserData.alpha or 0
 					if alpha ~= currentAlpha then
 						clientGroup.clientUserData.alpha = currentAlpha + math.min(.05, math.abs(alpha - currentAlpha)) * (alpha > currentAlpha and 1 or -1)
+						alpha = clientGroup.clientUserData.alpha
 					end
-					local position, rotation = utils.PointOnTrack(clientGroup.clientUserData.alpha, sideX, sideY)
+					local position, rotation = utils.PointOnTrack(alpha, sideX, sideY)
 					clientGroup:MoveTo(position, .02)
 					clientGroup:RotateTo(rotation, .02)
 				else
