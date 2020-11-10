@@ -618,7 +618,7 @@
           Location {
             X: -1.38934326
             Y: -0.10345459
-            Z: 191.051025
+            Z: 179.010666
           }
           Rotation {
           }
@@ -639,27 +639,28 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 10954142959189553696
+              Id: 15608273601510865572
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              G: 0.087615788
-              B: 0.269999981
+              R: 0.269999981
+              G: 0.608410358
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 3702191406046426907
+              Id: 8869213737835547998
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.350000024
+              R: 0.53
               A: 1
             }
           }
@@ -667,7 +668,8 @@
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.220000029
-              G: 0.170463592
+              G: 0.876026154
+              B: 1
               A: 1
             }
           }
@@ -1013,24 +1015,6 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_sf_gen_tech-panel_001"
-      }
-    }
-    Assets {
-      Id: 10954142959189553696
-      Name: "Wireframe"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "wireframe_glow_001"
-      }
-    }
-    Assets {
-      Id: 3702191406046426907
-      Name: "Emissive Glow Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
       }
     }
     Assets {
