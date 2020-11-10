@@ -82,6 +82,18 @@
           Id: 356591568397612983
         }
       }
+      Overrides {
+        Name: "cs:Map13"
+        AssetReference {
+          Id: 10165689105251651261
+        }
+      }
+      Overrides {
+        Name: "cs:Map14"
+        AssetReference {
+          Id: 694460306534392365
+        }
+      }
     }
   }
   SerializationVersion: 65
