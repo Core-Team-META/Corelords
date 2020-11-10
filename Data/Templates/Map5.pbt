@@ -688,7 +688,7 @@
           }
           Overrides {
             Name: "bp:Intensity"
-            Float: 0.271702915
+            Float: 0.160324708
           }
         }
         Collidable_v2 {
@@ -1509,5 +1509,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

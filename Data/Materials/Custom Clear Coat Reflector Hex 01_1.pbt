@@ -2,7 +2,7 @@
   Id: 4240366066134951163
   Name: "Custom Clear Coat Reflector Hex 01_1"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 2370461751576698015
     ParameterOverrides {

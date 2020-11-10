@@ -2,7 +2,7 @@
   Id: 12770049859636297066
   Name: "Custom Base Material from Sci-fi Circuits Ring 03"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 1599118085708184458
     ParameterOverrides {

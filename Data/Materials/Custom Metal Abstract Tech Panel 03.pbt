@@ -2,7 +2,7 @@
   Id: 6491703197921585895
   Name: "Custom Metal Abstract Tech Panel 03"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 4228111260449427677
     ParameterOverrides {

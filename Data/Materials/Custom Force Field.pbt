@@ -2,7 +2,7 @@
   Id: 17910177375479439088
   Name: "Custom Force Field"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 6776072886392568238
     ParameterOverrides {

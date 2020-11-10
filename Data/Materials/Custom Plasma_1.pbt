@@ -2,7 +2,7 @@
   Id: 13832897873389047681
   Name: "Custom Plasma_1"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 3427087015692538248
     ParameterOverrides {

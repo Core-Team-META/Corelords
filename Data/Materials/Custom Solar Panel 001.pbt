@@ -2,7 +2,7 @@
   Id: 15771883307625539575
   Name: "Custom Solar Panel 001"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 9187649058241804741
     ParameterOverrides {

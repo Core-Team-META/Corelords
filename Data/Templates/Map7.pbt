@@ -16,10 +16,13 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15296924969789236918
         ChildIds: 15119516993684682719
         ChildIds: 4631555019377530144
         ChildIds: 8809100292642805882
+        ChildIds: 15696609518116206584
+        ChildIds: 757746686968615488
+        ChildIds: 14322697583833623221
+        ChildIds: 7429465834108084018
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -31,68 +34,17 @@
         }
       }
       Objects {
-        Id: 15296924969789236918
-        Name: "Skylight"
-        Transform {
-          Location {
-            X: 225.438812
-            Y: 286.964783
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1295501242763573055
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Cast Shadows"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Tint Color"
-            Color {
-              G: 0.429006517
-              B: 0.789999962
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Ambient Image"
-            Enum {
-              Value: "mc:eambientcubemapssmall:14"
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 11515840070784317904
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
         Id: 15119516993684682719
         Name: "Sun Light"
         Transform {
           Location {
             X: -419.155823
-            Y: 585.660706
+            Y: 585.660767
           }
           Rotation {
-            Pitch: -82.5976791
-            Yaw: 165.394623
-            Roll: -165.277252
+            Pitch: -89.2807
+            Yaw: 3.10288334
+            Roll: -1.54650879
           }
           Scale {
             X: 1
@@ -104,14 +56,13 @@
         UnregisteredParameters {
           Overrides {
             Name: "bp:Intensity"
-            Float: 0.984179199
+            Float: 0.243089795
           }
           Overrides {
             Name: "bp:Light Color"
             Color {
-              R: 1
-              G: 0.58874166
-              B: 0.459999979
+              G: 0.348079324
+              B: 0.72
               A: 1
             }
           }
@@ -146,8 +97,6 @@
           }
         }
         ParentId: 1295501242763573055
-        ChildIds: 3824444646508255409
-        ChildIds: 497070987341005214
         ChildIds: 18296550878751069075
         ChildIds: 11616388351988432444
         ChildIds: 3698025309168358577
@@ -168,110 +117,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 3824444646508255409
-        Name: "Point Light"
-        Transform {
-          Location {
-            X: 823.591858
-            Y: -377.268433
-            Z: 974.046143
-          }
-          Rotation {
-            Yaw: -66.017395
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4631555019377530144
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Light {
-          Intensity: 15.5235748
-          Color {
-            G: 0.0287417322
-            B: 0.62
-            A: 1
-          }
-          VolumetricIntensity: 64.0632248
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 5046.19873
-              PointLight {
-                SourceRadius: 425.009491
-                SoftSourceRadius: 500
-                SourceLength: 263.210663
-                FallOffExponent: 14.5664968
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
-          }
-        }
-      }
-      Objects {
-        Id: 497070987341005214
-        Name: "Point Light"
-        Transform {
-          Location {
-            X: -769.69281
-            Y: 409.843811
-            Z: 974.046631
-          }
-          Rotation {
-            Yaw: -66.017395
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4631555019377530144
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Light {
-          Intensity: 15.5235748
-          Color {
-            R: 0.51
-            G: 0.02026489
-            A: 1
-          }
-          VolumetricIntensity: 64.0632248
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 5046.19873
-              PointLight {
-                SourceRadius: 425.009491
-                SoftSourceRadius: 500
-                SourceLength: 263.210663
-                FallOffExponent: 14.5664968
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
-          }
         }
       }
       Objects {
@@ -1484,14 +1329,229 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 11515840070784317904
-      Name: "Skylight"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "CORESKY_Skylight"
+      Objects {
+        Id: 15696609518116206584
+        Name: "Candle 01"
+        Transform {
+          Location {
+            X: 1318.50134
+            Y: -1861.521
+            Z: 0.000244140625
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1.96471906
+            Y: -1.96471906
+            Z: 11.9436436
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11918547397350143104
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.987682045
+              G: 1
+              B: 0.0699999928
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 757746686968615488
+        Name: "Candle 01"
+        Transform {
+          Location {
+            X: -1227.98328
+            Y: -1747.31812
+            Z: 0.000244140625
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1.96471906
+            Y: -1.96471906
+            Z: 11.9436436
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11918547397350143104
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.987682045
+              G: 1
+              B: 0.0699999928
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14322697583833623221
+        Name: "Candle 01"
+        Transform {
+          Location {
+            X: -1280.31445
+            Y: 1734.55688
+            Z: -0.000732421875
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1.96471906
+            Y: -1.96471906
+            Z: 11.9436436
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11918547397350143104
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.987682045
+              G: 1
+              B: 0.0699999928
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7429465834108084018
+        Name: "Candle 01"
+        Transform {
+          Location {
+            X: 1280.91614
+            Y: 1757.19775
+            Z: -0.000244140625
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1.96471906
+            Y: -1.96471906
+            Z: 11.9436436
+          }
+        }
+        ParentId: 1295501242763573055
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11918547397350143104
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.987682045
+              G: 1
+              B: 0.0699999928
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
       }
     }
     Assets {
@@ -1539,10 +1599,19 @@
         AssetId: "sm_cube_002"
       }
     }
+    Assets {
+      Id: 3987864784396419859
+      Name: "Cylinder"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_002"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

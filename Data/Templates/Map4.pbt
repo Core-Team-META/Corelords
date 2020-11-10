@@ -18,7 +18,6 @@
         ParentId: 4781671109827199097
         ChildIds: 2351687759321148694
         ChildIds: 14363209611437258332
-        ChildIds: 635349287185641424
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -1371,59 +1370,6 @@
           }
         }
       }
-      Objects {
-        Id: 635349287185641424
-        Name: "Skylight"
-        Transform {
-          Location {
-            X: -196.300766
-            Y: 867.397705
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14511115534738435738
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Cast Shadows"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Intensity"
-            Float: 0.777860403
-          }
-          Overrides {
-            Name: "bp:Blend Target Image"
-            Enum {
-              Value: "mc:eambientcubemapssmall:17"
-            }
-          }
-          Overrides {
-            Name: "bp:Ambient Image"
-            Enum {
-              Value: "mc:eambientcubemapssmall:14"
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 11515840070784317904
-          }
-          TeamSettings {
-          }
-        }
-      }
     }
     Assets {
       Id: 3953655893540855024
@@ -1452,19 +1398,10 @@
         AssetId: "sm_cube_002"
       }
     }
-    Assets {
-      Id: 11515840070784317904
-      Name: "Skylight"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "CORESKY_Skylight"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

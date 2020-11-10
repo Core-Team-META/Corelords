@@ -200,9 +200,8 @@
         Light {
           Intensity: 5.99320364
           Color {
-            R: 0.350000024
-            G: 1
-            B: 0.909602642
+            G: 0.537615776
+            B: 0.99
             A: 1
           }
           CastShadows: true
@@ -240,5 +239,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

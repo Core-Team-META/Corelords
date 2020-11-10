@@ -273,7 +273,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 5.43405819
+          Intensity: 2.38025737
           Color {
             G: 0.73172152
             B: 0.87
@@ -304,8 +304,8 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: 388.189209
-            Y: 819.236877
+            X: 270.860107
+            Y: 711.903
             Z: 780.603394
           }
           Rotation {
@@ -324,7 +324,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 5.43405819
+          Intensity: 2.38025737
           Color {
             R: 0.551656187
             B: 0.700000048
@@ -870,9 +870,9 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 47.6367645
+            X: 47.6367035
             Y: -5.76319313
-            Z: 1991.86768
+            Z: 2421.64697
           }
           Rotation {
             Yaw: 6.83018516e-06
@@ -880,7 +880,7 @@
           Scale {
             X: 29.8144875
             Y: 39.6311417
-            Z: 9.80331421
+            Z: 15.9168682
           }
         }
         ParentId: 4010025449840113172
@@ -966,5 +966,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

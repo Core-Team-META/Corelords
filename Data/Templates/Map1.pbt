@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 3553133858169891051
-        ChildIds: 5006422851531077149
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -689,43 +688,6 @@
           }
         }
       }
-      Objects {
-        Id: 5006422851531077149
-        Name: "Skylight"
-        Transform {
-          Location {
-            X: -142.750824
-            Y: 685.321594
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9596351504941483050
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Cast Shadows"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 11515840070784317904
-          }
-          TeamSettings {
-          }
-        }
-      }
     }
     Assets {
       Id: 12095835209017042614
@@ -745,19 +707,10 @@
         AssetId: "fxma_electrical_surface"
       }
     }
-    Assets {
-      Id: 11515840070784317904
-      Name: "Skylight"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "CORESKY_Skylight"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

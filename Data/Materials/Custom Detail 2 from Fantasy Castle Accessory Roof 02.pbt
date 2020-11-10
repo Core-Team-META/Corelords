@@ -2,7 +2,7 @@
   Id: 11952272510735519121
   Name: "Custom Detail 2 from Fantasy Castle Accessory Roof 02"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 11591738918784855542
     ParameterOverrides {

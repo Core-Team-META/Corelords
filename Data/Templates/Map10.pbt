@@ -1427,13 +1427,13 @@
         Name: "Sun Light"
         Transform {
           Location {
-            X: -419.155823
+            X: -419.155762
             Y: 585.660706
           }
           Rotation {
-            Pitch: -82.5976791
-            Yaw: 165.394623
-            Roll: -165.277252
+            Pitch: -77.130127
+            Yaw: 137.424683
+            Roll: -137.052414
           }
           Scale {
             X: 1
@@ -1445,7 +1445,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "bp:Intensity"
-            Float: 0.984179199
+            Float: 0.111255258
           }
           Overrides {
             Name: "bp:Light Color"
@@ -1698,5 +1698,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

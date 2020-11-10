@@ -2,7 +2,7 @@
   Id: 7892135482732796705
   Name: "Map 1 Electric"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 11607984489367075297
     ParameterOverrides {
