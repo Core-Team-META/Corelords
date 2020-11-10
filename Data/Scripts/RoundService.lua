@@ -162,7 +162,7 @@ function RoundService.AssignPlayer(player)
 		local castle = castleList[i]
 		if not castle.owner then
 			castle.owner = player
-			castle.nametag.text = player.name
+			castle.nametag.text = string.upper(player.name)
 			data.castle = castle
 			data.x = castle.x
 			data.y = castle.y
@@ -171,8 +171,8 @@ function RoundService.AssignPlayer(player)
 			data.round = round
 			local nametagIndex = (castle.x + 2) + (castle.y + 1)/2
 			local nametag = RoundService.nametags[nametagIndex]
-			nametag.main.text = player.name
-			nametag.shadow.text = player.name
+			nametag.main.text = string.upper(player.name)
+			nametag.shadow.text = string.upper(player.name)
 			break
 		end
 	end
