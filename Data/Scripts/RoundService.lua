@@ -207,6 +207,8 @@ function RoundService.AddPlayer(player)
 		if utils.ART_REVIEW then
 			if binding == "ability_extra_22" then
 				RoundService.EndRound()
+				local resultCode, errorMsg = Events.BroadcastToAllPlayers("LevelSelect", tostring(levelSelect))
+				-- if it doen't make it, doesn't really matter.
 			end
 			if binding == "ability_extra_48" then
 				if levelSelect == nil then
