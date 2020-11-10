@@ -14,7 +14,9 @@ local MAPS = {
 	(script:GetCustomProperty("Map11")),
 	(script:GetCustomProperty("Map12")),
 	(script:GetCustomProperty("Map13")),
-	(script:GetCustomProperty("Map14"))
+	(script:GetCustomProperty("Map14")),
+	(script:GetCustomProperty("Map15")),
+	(script:GetCustomProperty("Map16"))
 }
 
 local NAMETAG = script:GetCustomProperty("Nametag")

@@ -22,6 +22,8 @@
         ChildIds: 2351687759321148694
         ChildIds: 1514909599985381011
         ChildIds: 3912135743532633468
+        ChildIds: 9239872961688773530
+        ChildIds: 4765907379468859589
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -260,15 +262,16 @@
         Transform {
           Location {
             X: 36.2219849
-            Y: -196.120697
+            Y: -196.120728
+            Z: -1165.63184
           }
           Rotation {
             Yaw: 89.9999542
           }
           Scale {
-            X: 1.1425
-            Y: 1.1425
-            Z: 1.1425
+            X: 0.868232071
+            Y: 0.868232071
+            Z: 0.868232071
           }
         }
         ParentId: 14511115534738435738
@@ -291,17 +294,17 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: 1040.68652
-            Y: -197.940765
-            Z: 2168.00781
+            X: 2158.41235
+            Y: -73.5161667
+            Z: 1689.73706
           }
           Rotation {
-            Yaw: -66.017395
+            Yaw: -10.0714722
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.999988
+            Y: 0.999988
+            Z: 0.999988
           }
         }
         ParentId: 2351687759321148694
@@ -312,29 +315,29 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 74.986496
+          Intensity: 1.15112638
           Color {
             G: 0.218940124
             B: 0.570000052
             A: 1
           }
           CastShadows: true
-          VolumetricIntensity: 41.5253143
+          VolumetricIntensity: 45.6840935
           TeamSettings {
           }
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 5389.24072
+              AttenuationRadius: 4472.6626
               PointLight {
-                SoftSourceRadius: 95.0168304
-                SourceLength: 263.210663
+                SoftSourceRadius: 177.03627
+                SourceLength: 211.292404
                 FallOffExponent: 15.2007427
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 10000
+            MaxDistanceFadeRange: 2000
           }
         }
       }
@@ -343,9 +346,9 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: -1096.28894
-            Y: 734.135254
-            Z: 1057.28015
+            X: 141.87738
+            Y: -1111.23767
+            Z: 1601.44507
           }
           Rotation {
             Yaw: -66.017395
@@ -364,7 +367,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 15.1424599
+          Intensity: 1.15112638
           Color {
             R: 1
             G: 0.269999981
@@ -378,18 +381,17 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 2811.05664
+              AttenuationRadius: 6000
               PointLight {
-                SoftSourceRadius: 49.9729309
-                SourceLength: 233.365936
+                SoftSourceRadius: 101.672791
+                SourceLength: 310.635162
                 FallOffExponent: 4.21003246
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 9062.15137
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 10000
+            MaxDistanceFadeRange: 2000
           }
-          CastVolumetricShadows: true
         }
       }
       Objects {
@@ -397,9 +399,9 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: 1278.75098
-            Y: -468.92038
-            Z: 1057.28015
+            X: 246.487
+            Y: 1124.10181
+            Z: 1601.44324
           }
           Rotation {
             Yaw: -66.0174561
@@ -418,7 +420,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 15.1424599
+          Intensity: 1.15112638
           Color {
             R: 1
             G: 0.269999981
@@ -432,18 +434,17 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 2811.05664
+              AttenuationRadius: 6000
               PointLight {
-                SoftSourceRadius: 49.9729309
-                SourceLength: 233.365936
+                SoftSourceRadius: 101.672791
+                SourceLength: 310.635162
                 FallOffExponent: 4.21003246
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 9062.15137
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 10000
+            MaxDistanceFadeRange: 2000
           }
-          CastVolumetricShadows: true
         }
       }
       Objects {
@@ -451,17 +452,17 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: -864.861694
-            Y: 762.583191
-            Z: 2168.00781
+            X: -1649.88281
+            Y: -33.8695335
+            Z: 1689.74158
           }
           Rotation {
-            Yaw: -66.0174561
+            Yaw: -10.0714722
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.999988
+            Y: 0.999988
+            Z: 0.999988
           }
         }
         ParentId: 2351687759321148694
@@ -472,29 +473,29 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 74.986496
+          Intensity: 1.15112638
           Color {
             G: 0.218940124
             B: 0.570000052
             A: 1
           }
           CastShadows: true
-          VolumetricIntensity: 41.5253143
+          VolumetricIntensity: 45.6840935
           TeamSettings {
           }
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 5389.24072
+              AttenuationRadius: 4472.6626
               PointLight {
-                SoftSourceRadius: 95.0168304
-                SourceLength: 263.210663
+                SoftSourceRadius: 177.03627
+                SourceLength: 211.292404
                 FallOffExponent: 15.2007427
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
+            MaxDrawDistance: 10000
+            MaxDistanceFadeRange: 2000
           }
         }
       }
@@ -596,6 +597,171 @@
           Scale {
             Y: 5.50000238
             Z: 7.00000381
+          }
+        }
+        ParentId: 14511115534738435738
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Pattern Scale"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Pattern Index"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 4.95142508
+          }
+          Overrides {
+            Name: "bp:Shape Erosion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:evfxshieldpanels:8"
+            }
+          }
+          Overrides {
+            Name: "bp:Edge Color"
+            Color {
+              R: 1
+              G: 0.269999981
+              B: 0.676092505
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Pattern Opacity"
+            Float: 0.292991132
+          }
+          Overrides {
+            Name: "bp:Pattern Blend Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Overall Opacity"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13903630212330762611
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 9239872961688773530
+        Name: "Energy Shield Panel"
+        Transform {
+          Location {
+            X: -12.9747314
+            Y: -1452.57861
+            Z: -376.351563
+          }
+          Rotation {
+            Pitch: -11.2499695
+            Yaw: -89.9999695
+            Roll: -179.999985
+          }
+          Scale {
+            X: 1.03828813e-06
+            Y: 1.70586061
+            Z: 7.00000811
+          }
+        }
+        ParentId: 14511115534738435738
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Pattern Scale"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Pattern Index"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 4.95142508
+          }
+          Overrides {
+            Name: "bp:Shape Erosion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:evfxshieldpanels:8"
+            }
+          }
+          Overrides {
+            Name: "bp:Edge Color"
+            Color {
+              R: 1
+              G: 0.269999981
+              B: 0.676092505
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Pattern Opacity"
+            Float: 0.292991132
+          }
+          Overrides {
+            Name: "bp:Pattern Blend Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Overall Opacity"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13903630212330762611
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 4765907379468859589
+        Name: "Energy Shield Panel"
+        Transform {
+          Location {
+            X: 18.2501221
+            Y: 1573.70874
+            Z: -376.351563
+          }
+          Rotation {
+            Yaw: 89.9999619
+            Roll: -179.999969
+          }
+          Scale {
+            X: 1.03828813e-06
+            Y: 1.70586061
+            Z: 7.00000811
           }
         }
         ParentId: 14511115534738435738

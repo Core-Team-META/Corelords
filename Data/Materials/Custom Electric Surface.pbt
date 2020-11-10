@@ -41,8 +41,8 @@
       Overrides {
         Name: "outer color"
         Color {
-          R: 0.653443873
-          B: 0.690000057
+          G: 0.0561588667
+          B: 0.53
           A: 1
         }
       }

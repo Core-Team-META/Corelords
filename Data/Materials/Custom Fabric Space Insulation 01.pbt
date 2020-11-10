@@ -22,6 +22,10 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "roughness_multiplier"
+        Float: 0
+      }
     }
     Assets {
       Id: 8745342410979708800

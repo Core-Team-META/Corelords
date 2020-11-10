@@ -9,26 +9,55 @@
       Overrides {
         Name: "color outer"
         Color {
-          G: 0.788344383
-          B: 0.960000038
           A: 1
         }
       }
       Overrides {
         Name: "height"
-        Float: 0.497404724
+        Float: 0.351785779
       }
       Overrides {
         Name: "pulse scale amount"
-        Float: 0.353954285
+        Float: 0.215169922
       }
       Overrides {
         Name: "pulse speed"
-        Float: 0.709984899
+        Float: 0.459370732
       }
       Overrides {
         Name: "pulse width"
-        Float: 0.10577102
+        Float: 0.16863516
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "pulse color"
+        Color {
+          R: 0.170000017
+          G: 1
+          B: 0.983510256
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "u_tiles"
+        Float: 0.334424108
+      }
+      Overrides {
+        Name: "v_tiles"
+        Float: 0.487049639
+      }
+      Overrides {
+        Name: "pulse"
+        Float: 1.47687411
+      }
+      Overrides {
+        Name: "edge fade"
+        Float: 1
       }
     }
     Assets {
