@@ -17,6 +17,8 @@
       Overrides {
         Name: "tile color"
         Color {
+          R: 0.100000024
+          G: 0.892715096
           B: 1
           A: 1
         }
