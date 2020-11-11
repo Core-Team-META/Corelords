@@ -1,19 +1,19 @@
 ﻿Assets {
-  Id: 17875470223285871581
-  Name: "\"Tranquil Abstract Anomaly\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_tranquil_abstract_anomaly_sections_kit_ref"
-  }
-}
-Assets {
   Id: 17652667999298900980
   Name: "\342\200\234Skeleton Rave\342\200\235 Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_skeleton_rave_sections_kit_ref"
+  }
+}
+Assets {
+  Id: 17483899528591743306
+  Name: "\"Mega Spooky EDM Party\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_MegaSpookyEDMParty_sections_kit_ref"
   }
 }
 Assets {
@@ -44,21 +44,21 @@ Assets {
   }
 }
 Assets {
-  Id: 14272608248246154407
-  Name: "\"Astral Dream\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_astral_dream_sections_kit_ref"
-  }
-}
-Assets {
   Id: 11537784429464795345
   Name: "\"Cyberpunk EDM Fusion\" Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_cyberpunk_edm_fusion_sections_kit_ref"
+  }
+}
+Assets {
+  Id: 8821617896802028778
+  Name: "Electronic Music Score Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_ElectronicMusic_ref"
   }
 }
 Assets {

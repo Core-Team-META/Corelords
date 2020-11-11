@@ -1,8 +1,8 @@
 ﻿Name: "MUSIC_FOLDER"
 RootId: 7232274016867734611
 Objects {
-  Id: 16140436683757378173
-  Name: "\"Tranquil Abstract Anomaly\" Music Construction Kit (Sections) 01"
+  Id: 9035512413463770914
+  Name: "Electronic Music Score Set 01"
   Transform {
     Location {
     }
@@ -15,6 +15,14 @@ Objects {
     }
   }
   ParentId: 7232274016867734611
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_electronicmusic:51"
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -23,7 +31,52 @@ Objects {
   }
   Blueprint {
     BlueprintAsset {
-      Id: 17875470223285871581
+      Id: 8821617896802028778
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+}
+Objects {
+  Id: 1475341583454958610
+  Name: "Electronic Music Score Set 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7232274016867734611
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_electronicmusic:49"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 8821617896802028778
     }
     TeamSettings {
     }
@@ -75,8 +128,8 @@ Objects {
   }
 }
 Objects {
-  Id: 13469205031472846104
-  Name: "\"Astral Dream\" Music Construction Kit (Sections) 01"
+  Id: 12364964184230413458
+  Name: "\"Mega Spooky EDM Party\" Music Construction Kit (Sections) 01"
   Transform {
     Location {
     }
@@ -89,6 +142,14 @@ Objects {
     }
   }
   ParentId: 7232274016867734611
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_megaspooky_edm_sections_kit:30"
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -97,7 +158,7 @@ Objects {
   }
   Blueprint {
     BlueprintAsset {
-      Id: 14272608248246154407
+      Id: 17483899528591743306
     }
     TeamSettings {
     }
