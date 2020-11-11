@@ -2,17 +2,12 @@
 
 local MAPS = {
 	(script:GetCustomProperty("Map1")),
-	(script:GetCustomProperty("Map2")),
-	(script:GetCustomProperty("Map3")),
 	(script:GetCustomProperty("Map4")),	
 	(script:GetCustomProperty("Map5")),
 	(script:GetCustomProperty("Map6")),
 	(script:GetCustomProperty("Map7")),
-	(script:GetCustomProperty("Map8")),
 	(script:GetCustomProperty("Map9")),
 	(script:GetCustomProperty("Map10")),
-	(script:GetCustomProperty("Map11")),
-	(script:GetCustomProperty("Map12")),
 	(script:GetCustomProperty("Map13")),
 	(script:GetCustomProperty("Map14")),
 	(script:GetCustomProperty("Map15")),
