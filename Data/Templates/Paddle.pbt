@@ -101,6 +101,7 @@
         ChildIds: 17986148715288973580
         ChildIds: 17385012579161380312
         ChildIds: 5597968275585105597
+        ChildIds: 13635579122173278997
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -134,7 +135,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14023272119238390955
+              Id: 18325121184074848657
             }
           }
           Overrides {
@@ -325,6 +326,75 @@
         }
       }
       Objects {
+        Id: 13635579122173278997
+        Name: "Paddle"
+        Transform {
+          Location {
+            X: -0.54882431
+            Y: 107.42791
+            Z: 5.34057617e-05
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 0.467373788
+            Y: 0.560848534
+            Z: 2.06782532
+          }
+        }
+        ParentId: 6407417176911637607
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11945761915720271572
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4.17163944
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 7.07530832
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0799999833
+              G: 0.98172152
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18004596441774005190
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 17010248220240084429
         Name: "ServerPosition"
         Transform {
@@ -376,6 +446,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_emissive_001"
+      }
+    }
+    Assets {
+      Id: 11945761915720271572
+      Name: "Basic Hologram"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxmi_basic_hologram"
       }
     }
     PrimaryAssetId {
