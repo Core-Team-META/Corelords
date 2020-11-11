@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 11515840070784317904
+  Name: "Skylight"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
   Id: 2359295207963974150
   Name: "Metal Floor Panel 03"
   PlatformAssetType: 2
