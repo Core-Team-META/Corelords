@@ -24,7 +24,6 @@ Objects {
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
-  ChildIds: 1313974737342626933
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,38 +33,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 1313974737342626933
-  Name: "Skylight"
-  Transform {
-    Location {
-      X: 390.003113
-      Y: 232.035522
-      Z: -24.9999695
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11515840070784317904
-    }
-    TeamSettings {
-    }
   }
 }
 Objects {

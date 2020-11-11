@@ -177,9 +177,9 @@
         Name: "Point Light"
         Transform {
           Location {
-            X: 159.182556
-            Y: -0.459662944
-            Z: 2243.89307
+            X: -9.80840683
+            Y: -0.459622681
+            Z: 1623
           }
           Rotation {
             Yaw: 6.83018516e-06
