@@ -113,6 +113,7 @@
         ChildIds: 3107509176391126455
         ChildIds: 1890372241760479817
         ChildIds: 1628703934406845945
+        ChildIds: 5943557867222784420
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -123,8 +124,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.0194702037
-              B: 0.419999957
+              G: 0.819138885
+              B: 0.929999948
               A: 1
             }
           }
@@ -304,6 +305,58 @@
         }
       }
       Objects {
+        Id: 5943557867222784420
+        Name: "Ball"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.88590765
+            Y: 0.88590765
+            Z: 0.88590765
+          }
+        }
+        ParentId: 14599857967596237095
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6321165524833125156
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              G: 0.819138885
+              B: 0.929999948
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7868517847701333346
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 4268072048000326780
         Name: "ServerPosition"
         Transform {
@@ -388,6 +441,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_magic_projectile"
+      }
+    }
+    Assets {
+      Id: 6321165524833125156
+      Name: " Wood 9 Slice Crate 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mat_advanced_9slice_wooden_crates_001_ref"
       }
     }
     PrimaryAssetId {
