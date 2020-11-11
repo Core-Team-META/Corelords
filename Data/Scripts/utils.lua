@@ -90,6 +90,13 @@ function PlaySound(name, position)
 	return World.SpawnAsset(SOUNDS[name], {position = position})
 end
 
+VFX = {
+	destroyBrickVFX = script:GetCustomProperty("destroyBrickVFX")
+}
+function PlayVFX(name, position)
+	return World.SpawnAsset(VFX[name], {position = position, scale = Vector3.New(.25, .25, 1)})
+end
+
 b64table = {}
 local b64string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz/="
 for i = 1, 64 do

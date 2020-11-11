@@ -204,6 +204,7 @@ Objects {
   ChildIds: 12535147227088452243
   ChildIds: 7232274016867734611
   ChildIds: 13313389828636008364
+  ChildIds: 11077277249048276310
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -222,6 +223,33 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 11077277249048276310
+  Name: "ArtReview"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9133805877198360861
+    }
   }
 }
 Objects {

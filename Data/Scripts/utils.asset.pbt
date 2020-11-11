@@ -52,6 +52,12 @@
           Id: 17153586369859599210
         }
       }
+      Overrides {
+        Name: "cs:destroyBrickVFX"
+        AssetReference {
+          Id: 13888811294408151324
+        }
+      }
     }
   }
   SerializationVersion: 68
