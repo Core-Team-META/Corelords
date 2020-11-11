@@ -24,7 +24,6 @@ Objects {
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
-  ChildIds: 2942718848448423861
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,46 +33,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 2942718848448423861
-  Name: "Castle2"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3631262733810681537
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Castle2"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -188.114929
-            Y: 118.201447
-            Z: -25
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15124538403774859143
-    }
   }
 }
 Objects {
