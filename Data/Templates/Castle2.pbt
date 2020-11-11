@@ -570,7 +570,7 @@
         Transform {
           Location {
             X: 10
-            Z: 275.904266
+            Z: 291.841553
           }
           Rotation {
             Roll: 90
@@ -611,7 +611,7 @@
           Location {
             X: 10
             Y: 6.10351563e-05
-            Z: 275.904266
+            Z: 291.841553
           }
           Rotation {
             Roll: -89.9999695
