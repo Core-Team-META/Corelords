@@ -511,6 +511,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 12095280123006123146
   ChildIds: 7821932800461059452
+  ChildIds: 16973049296608097425
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -543,6 +544,36 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 16973049296608097425
+  Name: "CastleService"
+  Transform {
+    Location {
+      X: -0.162059322
+      Y: -2.40801835
+      Z: 50.0000305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.005
+      Y: 0.00333333341
+      Z: 1
+    }
+  }
+  ParentId: 8128143991820770139
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4789939289866160584
     }
   }
 }
