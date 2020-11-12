@@ -38,7 +38,7 @@ else -- server
 end
 
 BRICK_POINT_VALUE = 10
-CASTLE_POINT_VALUE = 100 -- points awarded for destroying a castle
+CASTLE_POINT_VALUE = 600 -- points awarded for destroying a castle
 
 FLOOR_WIDTH = 3000
 FLOOR_HEIGHT = 2000

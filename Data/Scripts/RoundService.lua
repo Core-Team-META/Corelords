@@ -145,7 +145,7 @@ end
 function RoundService.AssignPlayer(player)
 	local round = RoundService.currentRound
 	local data = RoundService.players[player]
-	player:SetResource("Score", 0)
+	player:SetResource("Score", ((60 * utils.BRICK_POINT_VALUE) + utils.CASTLE_POINT_VALUE) * 4)
 	player:SetResource("MusicTrack", RoundService.mapIndex)
 	local randomOffset = math.random(4)
 	local castleList = {}
