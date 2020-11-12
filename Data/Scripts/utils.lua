@@ -1,6 +1,6 @@
 ﻿utils = _ENV
-isClientContext = #script:GetCustomProperty("ClientContext"):WaitForObject():GetChildren() ~= 0
-isServerContext = #script:GetCustomProperty("ServerContext"):WaitForObject():GetChildren() ~= 0
+isClientContext = Environment.IsClient()
+isServerContext = Environment.IsServer()
 DEBUG = false
 ART_REVIEW = true
 

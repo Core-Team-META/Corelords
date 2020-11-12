@@ -102,6 +102,7 @@ function BallPhysics.CheckCollisions(ball)
 			local clientGroup = paddleObject:GetCustomProperty("ClientGroup"):GetObject()
 			if clientGroup then
 				paddleList[#paddleList + 1] = {
+					object = paddleObject,
 					position = clientGroup:GetWorldPosition(),
 					rotation = clientGroup:GetWorldRotation()
 				}
@@ -134,9 +135,9 @@ function BallPhysics.CheckCollisions(ball)
 					end, 2)
 				end
 			else
-				if not paddle.lastHitSoundPlayedTime or time()-paddle.lastHitSoundPlayedTime > .1 then
+				if not paddle.object.clientUserData.lastHitSoundPlayedTime or time() - paddle.object.clientUserData.lastHitSoundPlayedTime > .1 then
+					paddle.object.clientUserData.lastHitSoundPlayedTime = time() -- client may detect multiple rapid hits if the paddle is moving, only play once
 					utils.PlaySound("paddleHit", paddle.position)
-					paddle.lastHitSoundPlayedTime = time() -- client may detect multiple rapid hits if the paddle is moving, only play once
 				end
 			end
 			break

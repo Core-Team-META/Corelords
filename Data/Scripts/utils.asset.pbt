@@ -5,18 +5,6 @@
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:ClientContext"
-        ObjectReference {
-          SelfId: 17917873266452412741
-        }
-      }
-      Overrides {
-        Name: "cs:ServerContext"
-        ObjectReference {
-          SelfId: 16747225438119934541
-        }
-      }
-      Overrides {
         Name: "cs:destroyBrickSound"
         AssetReference {
           Id: 16834798517672184806

@@ -103,6 +103,8 @@ function BallController.AddBall(ballObject)
 	clientTrigger.beginOverlapEvent:Connect(function(_, trigger)
 		local brick = BrickController.brickLookup[trigger.parent]
 		if brick then
+			--if brick.simulatedBallHit then return end
+			brick.simulatedBallHit = true -- brick was hit on the client
 			local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
 			local color = utils.TEAM_COLORS[brick.team]
 			local vfx = collisionVFX:FindChildByName("VFX")
