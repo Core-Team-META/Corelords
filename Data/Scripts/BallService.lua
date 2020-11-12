@@ -52,7 +52,7 @@ function BallService.CreateBall(round, position, velocity)
 					local coloredBall = {}
 					coloredBall.object = ball.object:GetCustomProperty("ClientBall")
 					coloredBall.color = utils.TEAM_COLORS[paddleColorIndex]
-					Events.BroadcastToAllPlayers("SetBallColor", coloredBall)
+					utils.SendBroadcast("SetBallColor", coloredBall)
 				end
 				ball.serverPosition:SetWorldRotation(Rotation.New(ball.velocity, Vector3.UP))
 				ball.reflectionsThisFrame = {}

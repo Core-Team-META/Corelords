@@ -42,6 +42,12 @@ Events.Connect("RoundEnded", function(winner)
 	utils.PlaySound("roundFinished", Vector3.ZERO)
 end)
 
+function OnSetBallColor(coloredBall)
+    coloredBall.object:WaitForObject():SetColor(coloredBall.color)
+end
+
+Events.Connect("SetBallColor", OnSetBallColor)
+
 utils.SendBroadcast("Ready")
 
 Task.Wait()
