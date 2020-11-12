@@ -69,6 +69,11 @@ function BrickController.UpdateBricks()
 					brick.object:Destroy()
 					utils.PlaySound("destroyBrick", brick.position)
 					BrickController.grid[y][x] = nil
+					local collisionWireframeVFX = utils.PlayVFX("destroyBrickWireframeVFX", brick.position)
+					local color = utils.TEAM_COLORS[brick.team]
+					local emissive = collisionWireframeVFX:FindChildByName("Emissive")
+					emissive:SetColor(color)
+	
 				end
 			elseif not brick then
 				BrickController.CreateBrick(x, y)

@@ -719,12 +719,12 @@ Objects {
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
-      X: -2200
+      X: -1900
     }
     RotationOffset {
       Pitch: -90
     }
-    FieldOfView: 90
+    FieldOfView: 100
     ViewWidth: 1200
     RotationMode {
       Value: "mc:erotationmode:fixed"

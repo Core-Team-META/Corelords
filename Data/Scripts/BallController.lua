@@ -103,8 +103,11 @@ function BallController.AddBall(ballObject)
 	clientTrigger.beginOverlapEvent:Connect(function(_, trigger)
 		local brick = BrickController.brickLookup[trigger.parent]
 		if brick then
-			local collisionVFX = utils.PlayVFX("destroyBrickVFX", brick.position)
-			collisionVFX:Play()
+			local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
+			local color = utils.TEAM_COLORS[brick.team]
+			local vfx = collisionVFX:FindChildByName("VFX")
+			vfx:SetSmartProperty("Color",color)
+			
 			BallPhysics.BounceOffNearestEdge(ball, brick.position)
 		end
 	end)

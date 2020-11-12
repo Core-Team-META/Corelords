@@ -53,9 +53,21 @@
         }
       }
       Overrides {
-        Name: "cs:destroyBrickVFX"
+        Name: "cs:destroyBrickSparkVFX"
         AssetReference {
-          Id: 13888811294408151324
+          Id: 9270975276199792104
+        }
+      }
+      Overrides {
+        Name: "cs:destroyBrickWireframeVFX"
+        AssetReference {
+          Id: 2939901022038735200
+        }
+      }
+      Overrides {
+        Name: "cs:destroyCasteVFX"
+        AssetReference {
+          Id: 9270975276199792104
         }
       }
     }

@@ -7,7 +7,7 @@
       RootId: 9232881891043239051
       Objects {
         Id: 9232881891043239051
-        Name: "destroyBrick"
+        Name: "destroyBrickSound"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 1605679740814123169
+            Id: 16016514850438533507
           }
           AutoPlay: true
           Transient: true
@@ -35,12 +35,12 @@
       }
     }
     Assets {
-      Id: 1605679740814123169
-      Name: "Impact Retro Hit 03 SFX"
+      Id: 16016514850438533507
+      Name: "Sci-fi Swipe Laser Shot Shield Impact 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_impact_retro_hit_03_Cue_ref"
+        AssetId: "sfx_scifi_swipe_laser_shot_shield_impact_01b_Cue_ref"
       }
     }
     PrimaryAssetId {
