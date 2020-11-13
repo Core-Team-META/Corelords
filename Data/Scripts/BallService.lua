@@ -76,9 +76,9 @@ function BallService.CreateBall(round, position, velocity)
 			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil then
 				local players = Game.GetPlayers()
 				local paddleColorIndex = (ball.lastPaddleTouched.position.x < 0 and 2 or 0) + (ball.lastPaddleTouched.position.y > 0 and 2 or 1)
-				if brickColorIndex == paddleColorIndex then
+				if brickColorIndex == paddleColorIndex and Object.IsValid(players) then
 					ball.lastPaddleTouched.owner:RemoveResource("Score", utils.BRICK_POINT_VALUE * #players)
-				else
+				elseif Object.IsValid(players) then
 					ball.lastPaddleTouched.owner:AddResource("Score", utils.BRICK_POINT_VALUE * #players)
 				end
 
@@ -89,9 +89,9 @@ function BallService.CreateBall(round, position, velocity)
 			CastleService.DestroyCastle(trigger.parent)
 			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil then
 				local players = Game.GetPlayers()
-				if castle.owner == ball.lastPaddleTouched.owner then
+				if castle.owner == ball.lastPaddleTouched.owner and Object.IsValid(players) then
 					ball.lastPaddleTouched.owner:RemoveResource("Score",utils.CASTLE_POINT_VALUE * #players)
-				else
+				elseif Object.IsValid(players) then
 					ball.lastPaddleTouched.owner:AddResource("Score",utils.CASTLE_POINT_VALUE * #players)
 				end
 			end
