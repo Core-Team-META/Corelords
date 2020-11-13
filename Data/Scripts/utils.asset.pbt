@@ -53,9 +53,9 @@
         }
       }
       Overrides {
-        Name: "cs:destroyCasteVFX"
+        Name: "cs:destroyCastleVFX"
         AssetReference {
-          Id: 9270975276199792104
+          Id: 5313996324954360499
         }
       }
     }

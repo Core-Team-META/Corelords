@@ -73,7 +73,7 @@ function BallService.CreateBall(round, position, velocity)
 			BallPhysics.BounceOffNearestEdge(ball, brick.position)
 			BrickService.DestroyBrick(brick.y, brick.x)
 			-- need to determine if destroying own bricks to penalize.
-			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil then
+			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil and Object.IsValid(ball.lastPaddleTouched.owner) then
 				local players = Game.GetPlayers()
 				local paddleColorIndex = (ball.lastPaddleTouched.position.x < 0 and 2 or 0) + (ball.lastPaddleTouched.position.y > 0 and 2 or 1)
 				if brickColorIndex == paddleColorIndex then
@@ -85,9 +85,9 @@ function BallService.CreateBall(round, position, velocity)
 			end
 		end
 		if castle then
-			utils.SendBroadcast("CastleDestroyed", castle.owner) -- send owner reference to all players
+			utils.SendBroadcast("CastleDestroyed", castle.owner,castle.position) -- send owner reference to all players
 			CastleService.DestroyCastle(trigger.parent)
-			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil then
+			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil and Object.IsValid(ball.lastPaddleTouched.owner)  then
 				local players = Game.GetPlayers()
 				if castle.owner == ball.lastPaddleTouched.owner then
 					ball.lastPaddleTouched.owner:RemoveResource("Score",utils.CASTLE_POINT_VALUE * #players)

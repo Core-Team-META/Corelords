@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 16932120691154345027
+        ChildIds: 10150055419635286625
         ChildIds: 7832331854387106338
         ChildIds: 10666278831539032232
         ChildIds: 2230859682754589401
@@ -52,8 +52,8 @@
         }
       }
       Objects {
-        Id: 16932120691154345027
-        Name: "ClientContext"
+        Id: 10150055419635286625
+        Name: "Seafoam"
         Transform {
           Location {
             X: -5.72557068
@@ -69,35 +69,9 @@
           }
         }
         ParentId: 3631262733810681537
-        ChildIds: 10150055419635286625
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 10150055419635286625
-        Name: "Seafoam"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16932120691154345027
-        ChildIds: 16630645774357962551
         ChildIds: 16828430497219745388
         ChildIds: 4059842046109845793
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -106,106 +80,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 16630645774357962551
-        Name: "Plasma Charge Up Start VFX"
-        Transform {
-          Location {
-            X: 5.35137558
-            Y: -16.2496796
-            Z: 0.00048828125
-          }
-          Rotation {
-          }
-          Scale {
-            X: 5.80972767
-            Y: 5.80972767
-            Z: 5.80972767
-          }
-        }
-        ParentId: 10150055419635286625
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.840000033
-              G: 0.667549729
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Inner Core Color"
-            Color {
-              R: 1
-              G: 0.236291409
-              B: 0.0699999928
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 1.12795591
-          }
-          Overrides {
-            Name: "bp:Large Charge Ring Size"
-            Float: 0.346505702
-          }
-          Overrides {
-            Name: "bp:Arc Size"
-            Float: 0.346505702
-          }
-          Overrides {
-            Name: "bp:Arc Density"
-            Float: 4.34064293
-          }
-          Overrides {
-            Name: "bp:Outer Core Color"
-            Color {
-              G: 0.98
-              B: 0.960530162
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Arc Color"
-            Color {
-              R: 0.312913835
-              G: 1
-              B: 0.170000017
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Hot Spot Color"
-            Color {
-              R: 1
-              G: 0.18
-              B: 0.831655681
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Inner Core Size"
-            Float: 0.44478333
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3164364020326874740
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
         }
       }
       Objects {
@@ -284,6 +158,7 @@
             Bool: false
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -439,6 +314,7 @@
             Float: 0.642513216
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -986,15 +862,6 @@
             }
           }
         }
-      }
-    }
-    Assets {
-      Id: 3164364020326874740
-      Name: "Plasma Charge Up Start VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_ChargeUp"
       }
     }
     Assets {

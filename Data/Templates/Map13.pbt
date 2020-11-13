@@ -39,7 +39,7 @@
           Rotation {
           }
           Scale {
-            X: 22.3061733
+            X: 23.0757961
             Y: 33.4592667
             Z: 1.11530912
           }
@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4430952660372116845
+              Id: 2734505582520739095
             }
           }
           Overrides {
@@ -58,11 +58,11 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8.72558117
+            Float: 9.54407692
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 15
+            Float: 0.125
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"

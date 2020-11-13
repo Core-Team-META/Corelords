@@ -24,6 +24,31 @@ function CastleService.CreateCastle(sideX, sideY)
 		owner = nil,
 		nametag = nil
 	}
+	
+	
+	for _, piece in pairs(castle.object:FindChildByName("Geo"):GetChildren()) do
+		if piece:IsA("CoreMesh") then
+	  		piece:SetColor(castle.color)
+	 	end
+	end
+	
+	for _, piece in pairs(castle.object:FindDescendantsByName("Plasma Charge Up Hold VFX")) do
+		piece:SetSmartProperty("color",castle.color)
+		piece:SetSmartProperty("Inner Core Color",castle.color)
+		piece:SetSmartProperty("Outer Core Color",castle.color)
+		piece:SetSmartProperty("Arc Color",castle.color)
+		piece:SetSmartProperty("Hot Spot Color",castle.color)
+	end
+	
+	for _, piece in pairs(castle.object:FindDescendantsByName("Plasma Laser")) do
+		piece:SetSmartProperty("Color A",castle.color)
+		piece:SetSmartProperty("Color B",castle.color)
+		piece:SetSmartProperty("Color C",castle.color)
+		piece:SetSmartProperty("Hot Core Color",castle.color)
+		piece:SetSmartProperty("Central Core Color",castle.color)
+	end
+	
+	
 	local leftText = castleObject:GetCustomProperty("LeftText"):WaitForObject()
 	local rightText = castleObject:GetCustomProperty("RightText"):WaitForObject()
 	castle.nametag = sideY == 1 and rightText or leftText

@@ -19,14 +19,6 @@
         Float: 8
       }
       Overrides {
-        Name: "color"
-        Color {
-          R: 0.51
-          G: 0.0506622568
-          A: 1
-        }
-      }
-      Overrides {
         Name: "roughness_multiplier"
         Float: 0.34161073
       }

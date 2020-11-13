@@ -7,7 +7,7 @@
       RootId: 3019087873448187718
       Objects {
         Id: 3019087873448187718
-        Name: "loseLife"
+        Name: "destroyCastleSound"
         Transform {
           Scale {
             X: 1
@@ -39,6 +39,7 @@
           AudioBP {
             AutoPlay: true
             Transient: true
+            Pitch: -1451.09546
             Volume: 1
             Falloff: 3600
             Radius: 400
