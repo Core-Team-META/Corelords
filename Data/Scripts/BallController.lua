@@ -43,41 +43,39 @@ function BallController.AddBall(ballObject)
 		reflectionsThisFrame = {}
 	}
 	local lastPosition = serverPosition:GetWorldPosition()
-	local timePassed = 0
 	local deltaTime = 0
 	local fixedDelta = utils.FIXED_DELTA_TIME
 	local loop = Task.Spawn(function(dt)
 		if serverPosition.parent == ballObject then
+			local position = serverPosition:GetWorldPosition()
+			if position ~= lastPosition then
+				local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
+				ball.velocity = direction * ball.velocity.size
+				ball.position = ball.position:Lerp(position, .7)
+				lastPosition = position
+			end
 			deltaTime = deltaTime + dt
-			timePassed = timePassed + dt
-			while deltaTime > fixedDelta do
+			while deltaTime > fixedDelta do -- forward simulation
 				deltaTime = deltaTime - fixedDelta
-				local position = serverPosition:GetWorldPosition()
-				if position ~= lastPosition then
-					local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
-					ball.velocity = direction * ball.velocity.size -- * (position - lastPosition).size/timePassed
-					ball.position = position
-					lastPosition = position
-					timePassed = 0
-				end
 				ball.position = ball.position + ball.velocity * fixedDelta
 				BallPhysics.CheckCollisions(ball)
 				ball.reflectionsThisFrame = {}
 				if serverPosition.parent ~= ballObject then break end
 			end
-			local visualBallPosition = clientBall:GetWorldPosition()
+			--[[local visualBallPosition = clientBall:GetWorldPosition()
 			local visualBallOffset = ball.position - visualBallPosition
-			if visualBallOffset.sizeSquared < 1 then
+			if visualBallOffset.size < ball.velocity.size*dt then
 				clientBall:SetWorldPosition(ball.position)
 				ball.catchupFactor = nil
 			else
 				ball.catchupFactor = (ball.catchupFactor or 1) + .01
 				local newVisualBallPosition = visualBallPosition + visualBallOffset:GetNormalized() * math.min(visualBallOffset.size, ball.velocity.size * dt * ball.catchupFactor)
 				clientBall:SetWorldPosition(newVisualBallPosition)
-			end
-		else
+			end]]
+			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .3))
+		else -- ball is attached to a paddle
 			lastPosition = serverPosition:GetWorldPosition()
-			clientBall:SetPosition(serverPosition:GetPosition())
+			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverPosition:GetPosition(), .7))
 		end
 	end)
 	loop.repeatCount = -1

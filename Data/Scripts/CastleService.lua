@@ -20,7 +20,7 @@ function CastleService.CreateCastle(sideX, sideY)
 		position = position,
 		trigger = castleObject:GetCustomProperty("Trigger"):WaitForObject(),
 		x = sideX, y = sideY,
-		color = utils.TEAM_COLORS[(sideX > 0 and 2 or 0) + (sideY > 0 and 2 or 1)],
+		color = utils.TEAM_COLORS[(sideX < 0 and 2 or 0) + (sideY > 0 and 2 or 1)],
 		owner = nil,
 		nametag = nil
 	}
