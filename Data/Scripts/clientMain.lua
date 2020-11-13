@@ -30,12 +30,30 @@ local utils = DEPENDENCIES.utils
 local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false
 
-Events.Connect("CastleDestroyed", function(owner)
+Events.Connect("CastleDestroyed", function(owner, position)
 	if owner == player then
-		utils.PlaySound("gameOver", Vector3.ZERO)
+		utils.PlaySound("gameOver", position)
 	else
-		utils.PlaySound("destroyCastle", Vector3.ZERO)
+		utils.PlaySound("destroyCastle", position)
 	end
+		destroyVFX = utils.PlayVFX("destroyCastleVFX", position)
+		local colorIndex = (position.x < 0 and 2 or 0) + (position.y > 0 and 2 or 1)
+		local color = utils.TEAM_COLORS[colorIndex]
+		local vfx = destroyVFX:FindChildByName("VFX")
+		vfx:SetSmartProperty("Color",color)
+		local pulse = destroyVFX:FindChildByName("Pulse Scan Post Process")
+		pulse:SetSmartProperty("Pulse Color",color)
+		
+		
+		local towerPieces = destroyVFX:FindDescendantsByName("Column Segment 1m")
+		Task.Wait()
+		for _, piece in pairs(towerPieces) do
+			piece:SetColor(color)
+			piece:SetVelocity(Vector3.ZERO)
+			piece.isSimulatingDebrisPhysics = true
+		end
+			
+		
 end)
 
 Events.Connect("RoundEnded", function(winner)
@@ -44,6 +62,7 @@ end)
 
 function OnSetBallColor(coloredBall)
     coloredBall.object:WaitForObject():SetColor(coloredBall.color)
+    coloredBall.object:WaitForObject():FindChildByName("Point Light"):SetColor(coloredBall.color)
 end
 
 Events.Connect("SetBallColor", OnSetBallColor)

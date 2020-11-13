@@ -85,7 +85,7 @@ function BallService.CreateBall(round, position, velocity)
 			end
 		end
 		if castle then
-			utils.SendBroadcast("CastleDestroyed", castle.owner) -- send owner reference to all players
+			utils.SendBroadcast("CastleDestroyed", castle.owner,castle.position) -- send owner reference to all players
 			CastleService.DestroyCastle(trigger.parent)
 			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil then
 				local players = Game.GetPlayers()
