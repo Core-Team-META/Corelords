@@ -39,9 +39,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -84,9 +81,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -121,9 +115,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -166,9 +157,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -203,9 +191,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -240,9 +225,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -277,9 +259,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -314,9 +293,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -351,9 +327,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -388,9 +361,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
@@ -425,9 +395,6 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
     }
   }
 }
