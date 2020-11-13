@@ -48,6 +48,7 @@
         ParentId: 1146215616273403828
         ChildIds: 3799129368587090186
         ChildIds: 8076214854806941824
+        ChildIds: 4646963819028574114
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -79,7 +80,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17448956403216665105
+              Id: 11406518517262321374
             }
           }
           Overrides {
@@ -224,6 +225,122 @@
           }
         }
       }
+      Objects {
+        Id: 4646963819028574114
+        Name: "Default Floor"
+        Transform {
+          Location {
+            X: -11.7949381
+            Y: -5.76311779
+            Z: -104.230888
+          }
+          Rotation {
+            Yaw: 6.83018516e-06
+          }
+          Scale {
+            X: 22.3256359
+            Y: 33.9295692
+            Z: 0.108125053
+          }
+        }
+        ParentId: 13683755259126581771
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17448956403216665105
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 9.0353117
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 28.5661793
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 16285348975840645795
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.4004364
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 5.17086172
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3903971587963446636
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 1.07614017
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              G: 0.599999905
+              B: 0.6
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 28.5661793
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5269507107127691285
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 3373492042435262939
@@ -232,6 +349,24 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_arcade_cube_004"
+      }
+    }
+    Assets {
+      Id: 11406518517262321374
+      Name: "Invisible"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_invisible_001"
+      }
+    }
+    Assets {
+      Id: 5269507107127691285
+      Name: "Plane 1m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_001"
       }
     }
     PrimaryAssetId {
