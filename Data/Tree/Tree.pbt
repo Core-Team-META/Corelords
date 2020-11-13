@@ -25,6 +25,7 @@ Objects {
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
   ChildIds: 728178185618443895
+  ChildIds: 6749747040084702835
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,38 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6749747040084702835
+  Name: "Skylight"
+  Transform {
+    Location {
+      X: -472.347
+      Y: -474.243835
+      Z: 443.010681
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11515840070784317904
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
@@ -49,6 +82,19 @@ Objects {
   ParentId: 4781671109827199097
   WantsNetworking: true
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 757746686968615488
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1249.55212
+            Y: -1747.31812
+            Z: 0.000244140625
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 1295501242763573055
       value {
@@ -67,6 +113,75 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1567715809389974473
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.086
+            G: 0.086
+            B: 0.086
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8980945193085483165
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1931.34595
+            Y: -0.00120162964
+            Z: -4.99999046
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14117157121129746037
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.086
+            G: 0.086
+            B: 0.086
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18264109465879568490
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.086
+            G: 0.086
+            B: 0.086
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18280144238052422289
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.086
+            G: 0.086
+            B: 0.086
+            A: 1
           }
         }
       }

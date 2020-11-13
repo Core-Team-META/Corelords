@@ -7,20 +7,8 @@
     BaseMaterialId: 13964637002797000566
     ParameterOverrides {
       Overrides {
-        Name: "gradient_falloff"
-        Float: 0.16863516
-      }
-      Overrides {
-        Name: "gradient_shift"
-        Float: 0
-      }
-      Overrides {
-        Name: "material_scale"
-        Float: 8
-      }
-      Overrides {
         Name: "roughness_multiplier"
-        Float: 0.34161073
+        Float: 0
       }
     }
     Assets {
