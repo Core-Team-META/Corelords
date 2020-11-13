@@ -392,11 +392,11 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 513.023193
+              AttenuationRadius: 1323.79224
               PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
+                SoftSourceRadius: 100
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
