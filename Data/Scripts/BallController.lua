@@ -56,7 +56,7 @@ function BallController.AddBall(ballObject)
 				if position ~= lastPosition then
 					local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
 					ball.velocity = direction * ball.velocity.size -- * (position - lastPosition).size/timePassed
-					ball.position = position
+					ball.position = Vector3.Lerp(position, ball.position,0.3)
 					lastPosition = position
 					timePassed = 0
 				end
@@ -65,19 +65,22 @@ function BallController.AddBall(ballObject)
 				ball.reflectionsThisFrame = {}
 				if serverPosition.parent ~= ballObject then break end
 			end
+			
 			local visualBallPosition = clientBall:GetWorldPosition()
 			local visualBallOffset = ball.position - visualBallPosition
 			if visualBallOffset.sizeSquared < 1 then
-				clientBall:SetWorldPosition(ball.position)
+			--	clientBall:SetWorldPosition(ball.position)
+				clientBall:SetWorldPosition(Vector3.Lerp(ball.position, visualBallPosition,0.3))
 				ball.catchupFactor = nil
 			else
 				ball.catchupFactor = (ball.catchupFactor or 1) + .01
 				local newVisualBallPosition = visualBallPosition + visualBallOffset:GetNormalized() * math.min(visualBallOffset.size, ball.velocity.size * dt * ball.catchupFactor)
-				clientBall:SetWorldPosition(newVisualBallPosition)
+			--	clientBall:SetWorldPosition(newVisualBallPosition)
+				clientBall:SetWorldPosition(Vector3.Lerp(ball.position, visualBallPosition,0.3))
 			end
 		else
 			lastPosition = serverPosition:GetWorldPosition()
-			clientBall:SetPosition(serverPosition:GetPosition())
+			clientBall:SetPosition(serverPosition:GetPosition(),lastPosition,0.3)
 		end
 	end)
 	loop.repeatCount = -1
