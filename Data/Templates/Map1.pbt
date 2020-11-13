@@ -403,7 +403,7 @@
         Name: "DO NOT TOUCH"
         Transform {
           Location {
-            Z: -163.867676
+            Z: -202.727661
           }
           Rotation {
             Yaw: -90

@@ -39,7 +39,7 @@
           Rotation {
           }
           Scale {
-            X: 22.3061733
+            X: 23.0757961
             Y: 33.4592667
             Z: 1.11530912
           }
@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4430952660372116845
+              Id: 7079102850840289270
             }
           }
           Overrides {
@@ -58,11 +58,11 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 8.72558117
+            Float: 2.42830515
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 15
+            Float: 1.87602556
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -65519,6 +65519,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 7079102850840289270
+      Name: "Metal Corrugated 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_mil_metal_corrugated_metal_003_uv_ref"
       }
     }
     Assets {

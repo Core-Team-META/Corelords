@@ -80,7 +80,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11406518517262321374
+              Id: 12169149742662986920
             }
           }
           Overrides {
@@ -230,16 +230,16 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -11.7949381
-            Y: -5.76311779
-            Z: -104.230888
+            X: -11.8336639
+            Y: -5.7631073
+            Z: -139.585022
           }
           Rotation {
             Yaw: 6.83018516e-06
           }
           Scale {
-            X: 22.3256359
-            Y: 33.9295692
+            X: -5.35325289
+            Y: 8.71252918
             Z: 0.108125053
           }
         }
@@ -259,11 +259,11 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 9.0353117
+            Float: 8.82319736
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 28.5661793
+            Float: 39.7498817
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -328,7 +328,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5269507107127691285
+            Id: 13963475240368046763
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -352,21 +352,12 @@
       }
     }
     Assets {
-      Id: 11406518517262321374
-      Name: "Invisible"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_invisible_001"
-      }
-    }
-    Assets {
-      Id: 5269507107127691285
-      Name: "Plane 1m - One Sided"
+      Id: 13963475240368046763
+      Name: "Plane 4m - Two Sided"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
+        AssetId: "sm_plane_4m_002"
       }
     }
     PrimaryAssetId {

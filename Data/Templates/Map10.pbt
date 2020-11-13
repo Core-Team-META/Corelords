@@ -1613,7 +1613,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            Z: -217.286026
+            Z: -201.113281
           }
           Rotation {
           }
