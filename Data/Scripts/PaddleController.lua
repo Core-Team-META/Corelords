@@ -29,7 +29,7 @@ function PaddleController.Setup(dependencies)
 					local alpha = utils.ClosestAlphaOnTrack(serverPosition:GetWorldPosition(), sideX, sideY)
 					local currentAlpha = clientGroup.clientUserData.alpha or 0
 					if alpha ~= currentAlpha then
-						clientGroup.clientUserData.alpha = currentAlpha + math.min(.05, math.abs(alpha - currentAlpha)) * (alpha > currentAlpha and 1 or -1)
+						clientGroup.clientUserData.alpha = currentAlpha + math.min(.06, math.abs(alpha - currentAlpha)) * (alpha > currentAlpha and 1 or -1)
 						alpha = clientGroup.clientUserData.alpha
 					end
 					local position, rotation = utils.PointOnTrack(alpha, sideX, sideY)
