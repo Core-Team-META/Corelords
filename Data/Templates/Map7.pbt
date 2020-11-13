@@ -533,8 +533,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.807416856
-              B: 0.960000038
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -634,8 +635,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.807416856
-              B: 0.960000038
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -735,8 +737,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.807416856
-              B: 0.960000038
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -836,8 +839,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              G: 0.807416856
-              B: 0.960000038
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
