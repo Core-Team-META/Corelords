@@ -71,6 +71,12 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
       }
     }
     TemplateAsset {
