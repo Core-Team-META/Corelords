@@ -62,10 +62,10 @@ function BallController.AddBall(ballObject)
 				ball.reflectionsThisFrame = {}
 				if serverPosition.parent ~= ballObject then break end
 			end
-			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .7))
+			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .5))
 		else -- ball is attached to a paddle
 			lastPosition = serverPosition:GetWorldPosition()
-			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverPosition:GetPosition(), .7))
+			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverPosition:GetPosition(), .5))
 		end
 	end)
 	loop.repeatCount = -1
