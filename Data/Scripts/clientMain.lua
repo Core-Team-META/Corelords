@@ -36,24 +36,21 @@ Events.Connect("CastleDestroyed", function(owner, position)
 	else
 		utils.PlaySound("destroyCastle", position)
 	end
-		destroyVFX = utils.PlayVFX("destroyCastleVFX", position)
-		local colorIndex = (position.x < 0 and 2 or 0) + (position.y > 0 and 2 or 1)
-		local color = utils.TEAM_COLORS[colorIndex]
-		local vfx = destroyVFX:FindChildByName("VFX")
-		vfx:SetSmartProperty("Color",color)
-		local pulse = destroyVFX:FindChildByName("Pulse Scan Post Process")
-		pulse:SetSmartProperty("Pulse Color",color)
-		
-		
-		local towerPieces = destroyVFX:FindDescendantsByName("Column Segment 1m")
-		Task.Wait()
-		for _, piece in pairs(towerPieces) do
-			piece:SetColor(color)
-			piece:SetVelocity(Vector3.ZERO)
-			piece.isSimulatingDebrisPhysics = true
-		end
-			
-		
+	destroyVFX = utils.PlayVFX("destroyCastleVFX", position)
+	local colorIndex = (position.x < 0 and 2 or 0) + (position.y > 0 and 2 or 1)
+	local color = utils.TEAM_COLORS[colorIndex]
+	local vfx = destroyVFX:FindChildByName("VFX")
+	vfx:SetSmartProperty("Color", color)
+	local pulse = destroyVFX:FindChildByName("Pulse Scan Post Process")
+	pulse:SetSmartProperty("Pulse Color", color)
+	
+	local towerPieces = destroyVFX:FindDescendantsByName("Column Segment 1m")
+	Task.Wait()
+	for _, piece in pairs(towerPieces) do
+		piece:SetColor(color)
+		piece:SetVelocity(Vector3.ZERO)
+		piece.isSimulatingDebrisPhysics = true
+	end
 end)
 
 Events.Connect("RoundEnded", function(winner)

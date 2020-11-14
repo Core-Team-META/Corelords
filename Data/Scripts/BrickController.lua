@@ -73,7 +73,12 @@ function BrickController.UpdateBricks()
 					local color = utils.TEAM_COLORS[brick.team]
 					local emissive = collisionWireframeVFX:FindChildByName("Emissive")
 					emissive:SetColor(color)
-	
+
+					if not brick.simulatedBallHit then -- brick was not already hit
+						local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
+						local vfx = collisionVFX:FindChildByName("VFX")
+						vfx:SetSmartProperty("Color", color)
+					end
 				end
 			elseif not brick then
 				BrickController.CreateBrick(x, y)

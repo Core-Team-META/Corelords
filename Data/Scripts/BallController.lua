@@ -51,7 +51,7 @@ function BallController.AddBall(ballObject)
 			if position ~= lastPosition then
 				local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
 				ball.velocity = direction * ball.velocity.size
-				ball.position = ball.position:Lerp(position, .7)
+				ball.position = ball.position:Lerp(position, 1)
 				lastPosition = position
 			end
 			deltaTime = deltaTime + dt
@@ -62,17 +62,7 @@ function BallController.AddBall(ballObject)
 				ball.reflectionsThisFrame = {}
 				if serverPosition.parent ~= ballObject then break end
 			end
-			--[[local visualBallPosition = clientBall:GetWorldPosition()
-			local visualBallOffset = ball.position - visualBallPosition
-			if visualBallOffset.size < ball.velocity.size*dt then
-				clientBall:SetWorldPosition(ball.position)
-				ball.catchupFactor = nil
-			else
-				ball.catchupFactor = (ball.catchupFactor or 1) + .01
-				local newVisualBallPosition = visualBallPosition + visualBallOffset:GetNormalized() * math.min(visualBallOffset.size, ball.velocity.size * dt * ball.catchupFactor)
-				clientBall:SetWorldPosition(newVisualBallPosition)
-			end]]
-			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .3))
+			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .7))
 		else -- ball is attached to a paddle
 			lastPosition = serverPosition:GetWorldPosition()
 			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverPosition:GetPosition(), .7))
@@ -106,7 +96,7 @@ function BallController.AddBall(ballObject)
 			local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
 			local color = utils.TEAM_COLORS[brick.team]
 			local vfx = collisionVFX:FindChildByName("VFX")
-			vfx:SetSmartProperty("Color",color)
+			vfx:SetSmartProperty("Color", color)
 			
 			BallPhysics.BounceOffNearestEdge(ball, brick.position)
 		end
