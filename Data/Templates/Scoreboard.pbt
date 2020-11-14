@@ -21,7 +21,7 @@
         ChildIds: 203986241726691906
         ChildIds: 6471413851619362375
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -35,16 +35,16 @@
         Name: "Scoreboard_Green"
         Transform {
           Location {
-            X: 761.907043
-            Y: 515.57074
-            Z: 532.198364
+            X: 1051.98755
+            Y: 738.692749
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -67,8 +67,8 @@
         Name: "World Text"
         Transform {
           Location {
-            X: -19.8781738
-            Y: -132.803238
+            X: -19.8779297
+            Y: 112.032104
             Z: 34.2643127
           }
           Rotation {
@@ -77,9 +77,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 429941188775977177
@@ -101,7 +101,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -277,16 +277,16 @@
         Name: "Scoreboard_Blue"
         Transform {
           Location {
-            X: 761.907043
-            Y: -610.47583
-            Z: 532.198364
+            X: 1051.98755
+            Y: -834.11377
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -309,8 +309,8 @@
         Name: "World Text"
         Transform {
           Location {
-            X: -19.8781738
-            Y: -132.803238
+            X: -19.8779297
+            Y: 112.031738
             Z: 34.2643127
           }
           Rotation {
@@ -319,9 +319,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 4344298800074501686
@@ -343,7 +343,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -520,16 +520,16 @@
         Name: "Scoreboard_Purple"
         Transform {
           Location {
-            X: -756.254211
-            Y: 515.57074
-            Z: 532.198364
+            X: -1033.8833
+            Y: 738.692749
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -553,7 +553,7 @@
         Transform {
           Location {
             X: -19.8781738
-            Y: -132.803238
+            Y: 112.032104
             Z: 34.2643127
           }
           Rotation {
@@ -562,9 +562,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 203986241726691906
@@ -586,7 +586,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -762,16 +762,16 @@
         Name: "Scoreboard_Orange"
         Transform {
           Location {
-            X: -756.254211
-            Y: -610.47583
-            Z: 532.198364
+            X: -1033.88342
+            Y: -834.11377
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -795,7 +795,7 @@
         Transform {
           Location {
             X: -19.8781738
-            Y: -132.803238
+            Y: 112.031738
             Z: 34.2643127
           }
           Rotation {
@@ -804,9 +804,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 6471413851619362375
@@ -828,7 +828,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"

@@ -55,6 +55,32 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 203986241726691906
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1033.8833
+            Y: 722.187927
+            Z: 55
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 429941188775977177
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1051.98755
+            Y: 722.187927
+            Z: 55
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 6529272196077429129
       value {
         Overrides {
@@ -64,39 +90,11 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Z: 55
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Collidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17767675849518584422
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -19.8781738
-            Y: -132.803238
-            Z: 34.2643127
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
           }
         }
       }

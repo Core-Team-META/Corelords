@@ -769,7 +769,7 @@
           Location {
             X: 40.7508545
             Y: 1600
-            Z: -820
+            Z: -810
           }
           Rotation {
             Pitch: -90
@@ -907,7 +907,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: -1030
+            X: -1126.1001
             Z: -810
           }
           Rotation {
@@ -974,14 +974,14 @@
         Name: "Default Floor"
         Transform {
           Location {
-            X: 1110
+            X: 1132.04114
             Y: -10.0004883
             Z: -810
           }
           Rotation {
             Pitch: -90
-            Yaw: 4.55345908e-05
-            Roll: 180
+            Yaw: -179.999893
+            Roll: -6.10351563e-05
           }
           Scale {
             X: 20
