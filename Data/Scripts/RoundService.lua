@@ -122,6 +122,7 @@ function RoundService.EndRound()
 		end
 	end
 	utils.SendBroadcast("RoundEnded", winner)
+	Events.Broadcast("RoundEnded")
 	Task.Wait(3)
 	for object, castle in pairs(round.castles) do
 		if Object.IsValid(object) then
@@ -165,6 +166,7 @@ function RoundService.AssignPlayer(player)
 			round.paddles[player] = data.paddle
 			data.round = round
 			local nametagIndex = (castle.x + 2) + (castle.y + 1)/2
+			player:SetResource("Quadrant", nametagIndex)
 			local nametag = RoundService.nametags[nametagIndex]
 			nametag.main.text = string.upper(player.name)
 			nametag.shadow.text = string.upper(player.name)

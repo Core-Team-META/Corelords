@@ -83,6 +83,7 @@
           }
         }
         ParentId: 429941188775977177
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -90,7 +91,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Score:00000"
+          Text: "Score:04800"
           Color {
             R: 1
             G: 1
@@ -324,6 +325,7 @@
           }
         }
         ParentId: 4344298800074501686
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -331,7 +333,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Score:00000"
+          Text: "Score:04800"
           Color {
             R: 1
             G: 1
@@ -566,6 +568,7 @@
           }
         }
         ParentId: 203986241726691906
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -573,7 +576,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Score:00000"
+          Text: "Score:04800"
           Color {
             R: 1
             G: 1
@@ -807,6 +810,7 @@
           }
         }
         ParentId: 6471413851619362375
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -814,7 +818,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Score:00000"
+          Text: "Score:04800"
           Color {
             R: 1
             G: 1

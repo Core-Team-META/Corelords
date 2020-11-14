@@ -24,6 +24,7 @@ Objects {
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
+  ChildIds: 12102183263142264206
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,6 +34,48 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 12102183263142264206
+  Name: "Scoreboard"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6529272196077429129
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Scoreboard"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16006376798949923037
+    }
   }
 }
 Objects {
@@ -204,7 +247,7 @@ Objects {
   ChildIds: 12535147227088452243
   ChildIds: 7232274016867734611
   ChildIds: 13313389828636008364
-  ChildIds: 11077277249048276310
+  ChildIds: 9237174078399991206
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -226,7 +269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11077277249048276310
+  Id: 9237174078399991206
   Name: "ArtReview"
   Transform {
     Location {
@@ -248,7 +291,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 9133805877198360861
+      Id: 17293857199175675885
     }
   }
 }

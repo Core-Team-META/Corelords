@@ -64,7 +64,6 @@ function OnSetBallColor(coloredBall)
     coloredBall.object:WaitForObject():SetColor(coloredBall.color)
     coloredBall.object:WaitForObject():FindChildByName("Point Light"):SetColor(coloredBall.color)
 end
-
 Events.Connect("SetBallColor", OnSetBallColor)
 
 utils.SendBroadcast("Ready")
