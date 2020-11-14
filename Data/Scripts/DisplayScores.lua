@@ -7,6 +7,7 @@ scoreboard[4] = script:GetCustomProperty("Scoreboard_Green"):WaitForObject()
 local playerList = {}
 
 Events.Connect("RoundEnded", function()
+    print("resetting all scores")
     for i = 1, 4 do
         playerList[i] = nil
         scoreboard[i].text  = "Score:04800"
@@ -24,22 +25,24 @@ function OnResourceChanged(player, resourceId, newValue)
     if resourceId == "Score" then
         for i = 1, 4 do
             if playerList[i] ~= nil then
-                if playerList[i] == player then
+                if playerList[i] == player then -- score updated for this player
                     local currentScore = tonumber(string.sub(scoreboard[i].text, 7, #scoreboard[i].text))
                     local newScore = newValue
                     if currentScore ~= newScore then
                         local increment = (newScore - currentScore)/10
                         for j = 1, 9 do
-                            scoreboard[i].text = "Score:"..string.format("%05.f", currentScore + increment * j)
+                            scoreboard[i].text = "Score:" .. string.format("%05.f", currentScore + increment * j)
                             Task.Wait(.1)
                         end
-                        scoreboard[i].text = "Score:"..string.format("%05.f", newScore)
+                        scoreboard[i].text = "Score:" .. string.format("%05.f", newScore)
                     end
-                else 
-                    if Object.IsValid(playerList[i]) then
+                else
+                    if Object.IsValid(playerList[i]) then -- score updated for some other player
                         scoreboard[i].text = "Score:"..string.format("%05.f", playerList[i]:GetResource("Score"))
                     end
                 end
+            else
+                scoreboard[i].text  = "Score:04800" -- player list is nil so reset this.
             end
         end
     end
@@ -53,7 +56,6 @@ end
 function OnPlayerLeft(player)
     print(player.name .. "left")
     for i = 1, 4 do
-        print(i)
         if Object.IsValid(playerList[i]) and playerList[i] == player then
             playerList[i] = nil
             scoreboard[i].text  = "Score:04800"
