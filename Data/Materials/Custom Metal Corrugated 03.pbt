@@ -10,6 +10,12 @@
         Name: "roughness_multiplier"
         Float: 0
       }
+      Overrides {
+        Name: "color_rust"
+        Color {
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 7079102850840289270

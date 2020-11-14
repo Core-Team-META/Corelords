@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2734505582520739095
+              Id: 1491534801423099355
             }
           }
           Overrides {
@@ -58,11 +58,11 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 9.54407692
+            Float: 3.04582143
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 3.00179434
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
