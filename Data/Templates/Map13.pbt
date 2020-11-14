@@ -34,7 +34,7 @@
         Name: "Default Floor"
         Transform {
           Location {
-            Z: -80
+            Z: -77.5113525
           }
           Rotation {
           }
@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8745342410979708800
+              Id: 16457119179643126391
             }
           }
           Overrides {
@@ -58,18 +58,15 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 29.809906
+            Float: 12.0419188
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 64
+            Float: 18.9464531
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
               A: 1
             }
           }
@@ -100,9 +97,9 @@
         Name: "Group"
         Transform {
           Location {
-            X: -225.393143
-            Y: -1440.02747
-            Z: -50
+            X: -225.393188
+            Y: -1440.02759
+            Z: -47.5113525
           }
           Rotation {
           }
@@ -32808,9 +32805,9 @@
         Name: "Group"
         Transform {
           Location {
-            X: -225.393143
+            X: -225.393188
             Y: 1381.05542
-            Z: -50
+            Z: -47.5113525
           }
           Rotation {
           }
@@ -65519,15 +65516,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 8745342410979708800
-      Name: "Fabric Space Insulation 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_insulation_panels_001_uv"
       }
     }
     Assets {
