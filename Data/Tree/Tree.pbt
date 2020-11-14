@@ -64,6 +64,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            Z: 55
           }
         }
         Overrides {
@@ -75,6 +76,27 @@ Objects {
           Name: "Collidable"
           Enum {
             Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17767675849518584422
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19.8781738
+            Y: -132.803238
+            Z: 34.2643127
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.78304029
+            Y: 3.78304029
+            Z: 3.78304029
           }
         }
       }

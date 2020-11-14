@@ -35,8 +35,8 @@
         Name: "Scoreboard_Green"
         Transform {
           Location {
-            X: 798.03418
-            Y: 537.127625
+            X: 761.907043
+            Y: 515.57074
             Z: 532.198364
           }
           Rotation {
@@ -277,8 +277,8 @@
         Name: "Scoreboard_Blue"
         Transform {
           Location {
-            X: 798.03418
-            Y: -628.833313
+            X: 761.907043
+            Y: -610.47583
             Z: 532.198364
           }
           Rotation {
@@ -520,8 +520,8 @@
         Name: "Scoreboard_Purple"
         Transform {
           Location {
-            X: -789.263672
-            Y: 537.127625
+            X: -756.254211
+            Y: 515.57074
             Z: 532.198364
           }
           Rotation {
@@ -762,8 +762,8 @@
         Name: "Scoreboard_Orange"
         Transform {
           Location {
-            X: -789.263672
-            Y: -628.833313
+            X: -756.254211
+            Y: -610.47583
             Z: 532.198364
           }
           Rotation {
