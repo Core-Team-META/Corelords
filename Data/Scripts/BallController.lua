@@ -51,7 +51,7 @@ function BallController.AddBall(ballObject)
 			if position ~= lastPosition then
 				local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
 				ball.velocity = direction * ball.velocity.size
-				ball.position = ball.position:Lerp(position, .7)
+				ball.position = position
 				lastPosition = position
 			end
 			deltaTime = deltaTime + dt
