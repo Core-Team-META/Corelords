@@ -122,13 +122,13 @@ function RoundService.EndRound()
 		end
 	end
 
-	---
-	Events.Broadcast("DisplayVictory")
+	-- round end scoring wait for it to be done then continue on
+	while Events.Broadcast("DisplayVictory") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
 	Task.Wait(7)
-
 	utils.SendBroadcast("RoundEnded", winner)
-	Events.Broadcast("RoundEnded")
+	while Events.Broadcast("RoundEnded") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
 	Task.Wait(3)
+
 	for object, castle in pairs(round.castles) do
 		if Object.IsValid(object) then
 			CastleService.DestroyCastle(object)

@@ -1,11 +1,11 @@
 local SCORE_NAME= script:GetCustomProperty("ScoreName")
 local STARTING_SCORE = 4800
 
-local scoreboard = {}
-scoreboard[1] = script:GetCustomProperty("Scoreboard_Orange"):WaitForObject()
-scoreboard[2] = script:GetCustomProperty("Scoreboard_Purple"):WaitForObject()
-scoreboard[3] = script:GetCustomProperty("Scoreboard_Blue"):WaitForObject()
-scoreboard[4] = script:GetCustomProperty("Scoreboard_Green"):WaitForObject()
+local scoreboardGroup = {}
+scoreboardGroup[1] = script:GetCustomProperty("Scoreboard_Orange"):WaitForObject()
+scoreboardGroup[2] = script:GetCustomProperty("Scoreboard_Purple"):WaitForObject()
+scoreboardGroup[3] = script:GetCustomProperty("Scoreboard_Blue"):WaitForObject()
+scoreboardGroup[4] = script:GetCustomProperty("Scoreboard_Green"):WaitForObject()
 
 -- quadrants for castles are different than team_colors
 local SCORE_COLORS = {}
@@ -32,7 +32,8 @@ local playerList = {}
 Events.Connect("RoundEnded", function()
     for i = 1, 4 do
         playerList[i] = nil
-        scoreboard[i].text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
+        scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
+        
     end
     local players = Game.GetPlayers()
     for i = 1, #players do
@@ -47,7 +48,7 @@ Events.Connect("DisplayVictory", function()
     local scoreName = {}
     for i = 1, 4 do
         -- adding i to keep unique entries which works since score is multiples of 10 and only 4 players.
-    	scoreInc = tonumber(string.sub(scoreboard[i].text, 7, 11)) + i 
+    	scoreInc = tonumber(string.sub(scoreboardGroup[i]:FindChildByName("World Text").text, 7, 11)) + i 
         scores[scoreInc] = i
     end
 
@@ -58,7 +59,7 @@ Events.Connect("DisplayVictory", function()
     for i = 4, 1, -1 do
         local board = scores[sortedScores[i]]
         local boardPosition = SCORE_FINISH_LOCATION[5-i]
-        scoreboard[board].parent:MoveTo(boardPosition, 1, true)
+        scoreboardGroup[board]:MoveTo(boardPosition, 1, true)
 
         -- spawn the task with 1 second delay so that names don't appear until the scores have moved into place
         Task.Spawn(function() 
@@ -78,7 +79,7 @@ Events.Connect("DisplayVictory", function()
     -- reset positions for next round
 	for i = 1, 4 do
         local board = scores[sortedScores[i]]
-        scoreboard[board].parent:MoveTo(SCORE_START_LOCATION[board], 1, true)
+        scoreboardGroup[board]:MoveTo(SCORE_START_LOCATION[board], 1, true)
         scoreName[board]:Destroy()
 	end
 
@@ -93,23 +94,25 @@ function OnResourceChanged(player, resourceId, newValue)
         for i = 1, 4 do
             if playerList[i] ~= nil then
                 if playerList[i] == player then -- score updated for this player
-                    local currentScore = tonumber(string.sub(scoreboard[i].text, 7, #scoreboard[i].text))
+                    local currentScore = tonumber(string.sub(scoreboardGroup[i]:FindChildByName("World Text").text, 7, #scoreboardGroup[i]:FindChildByName("World Text").text))
                     local newScore = newValue
                     if currentScore ~= newScore then
                         local increment = (newScore - currentScore)/10
+                        scoreboardGroup[i]:FindChildByName("Electricity").visibility = Visibility.FORCE_ON
                         for j = 1, 9 do
-                            scoreboard[i].text = "Score:" .. string.format("%05.f", currentScore + increment * j)
+                            scoreboardGroup[i]:FindChildByName("World Text").text = "Score:" .. string.format("%05.f", currentScore + increment * j)
                             Task.Wait(.1)
                         end
-                        scoreboard[i].text = "Score:" .. string.format("%05.f", newScore)
+                        scoreboardGroup[i]:FindChildByName("World Text").text = "Score:" .. string.format("%05.f", newScore)
+                        scoreboardGroup[i]:FindChildByName("Electricity").visibility = Visibility.FORCE_OFF
                     end
                 else
                     if Object.IsValid(playerList[i]) then -- score updated for some other player
-                        scoreboard[i].text = "Score:"..string.format("%05.f", playerList[i]:GetResource("Score"))
+                        scoreboardGroup[i]:FindChildByName("World Text").text = "Score:"..string.format("%05.f", playerList[i]:GetResource("Score"))
                     end
                 end
             else
-                scoreboard[i].text  = "Score:" .. string.format("%05.f", STARTING_SCORE) -- player list is nil so reset this.
+                scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE) -- player list is nil so reset this.
             end
         end
     end
@@ -124,12 +127,12 @@ function OnPlayerLeft(player)
     for i = 1, 4 do
         if Object.IsValid(playerList[i]) and playerList[i] == player then
             playerList[i] = nil
-            scoreboard[i].text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
+            scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
             -- because the player still exists, set his resource, but update order is unreliable though.  Shouldn't need this.
             player:SetResource("Score", 4800) 
         elseif not Object.IsValid(playerList[i]) then
             playerList[i] = nil
-            scoreboard[i].text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
+            scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
         end
     end
 end

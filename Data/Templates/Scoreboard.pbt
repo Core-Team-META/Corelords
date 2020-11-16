@@ -221,7 +221,7 @@
       }
       Objects {
         Id: 7354021627243037782
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -467,7 +467,7 @@
       }
       Objects {
         Id: 3977035439113854958
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -714,7 +714,7 @@
       }
       Objects {
         Id: 14590780543722712033
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -960,7 +960,7 @@
       }
       Objects {
         Id: 7507385296905640631
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
