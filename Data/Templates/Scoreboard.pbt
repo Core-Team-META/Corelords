@@ -36,7 +36,7 @@
         Transform {
           Location {
             X: 1051.98755
-            Y: 738.692749
+            Y: 722.187927
             Z: 55
           }
           Rotation {
@@ -52,6 +52,7 @@
         ChildIds: 16395511388242459553
         ChildIds: 4736324758303249272
         ChildIds: 7354021627243037782
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -141,6 +142,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -195,6 +197,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -251,6 +254,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -294,6 +298,7 @@
         ChildIds: 9903272428673274318
         ChildIds: 4807361174630517660
         ChildIds: 3977035439113854958
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -383,6 +388,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -437,6 +443,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -494,6 +501,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -521,7 +529,7 @@
         Transform {
           Location {
             X: -1033.8833
-            Y: 738.692749
+            Y: 722.187927
             Z: 55
           }
           Rotation {
@@ -537,6 +545,7 @@
         ChildIds: 2093219530755050074
         ChildIds: 5110086231496493828
         ChildIds: 14590780543722712033
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -626,6 +635,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -680,6 +690,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -736,6 +747,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -779,6 +791,7 @@
         ChildIds: 17262923745915286867
         ChildIds: 15828631599765813753
         ChildIds: 7507385296905640631
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -868,6 +881,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -922,6 +936,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -978,6 +993,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

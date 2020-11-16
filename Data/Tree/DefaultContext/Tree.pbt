@@ -52,6 +52,12 @@ Objects {
         TemplateId: 16006376798949923037
       }
     }
+    Overrides {
+      Name: "cs:ScoreName"
+      AssetReference {
+        Id: 17408143454483093440
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

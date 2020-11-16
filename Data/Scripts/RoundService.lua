@@ -121,6 +121,11 @@ function RoundService.EndRound()
 			break
 		end
 	end
+
+	---
+	Events.Broadcast("DisplayVictory")
+	Task.Wait(7)
+
 	utils.SendBroadcast("RoundEnded", winner)
 	Events.Broadcast("RoundEnded")
 	Task.Wait(3)
