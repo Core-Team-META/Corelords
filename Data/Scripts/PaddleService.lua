@@ -55,9 +55,11 @@ function PaddleService.ReleaseBall(paddle)
 	if ball then
 		paddle.attachedBall = nil
 		ball.attachedPaddle = nil
-		ball.position = ball.serverPosition:GetWorldPosition()
+		ball.position = ball.serverTrigger:GetWorldPosition()
 		ball.velocity = BallPhysics.GetThrowVelocity(ball, paddle)
-		ball.serverPosition.parent = ball.object
+		ball.serverPosition:SetWorldPosition(ball.position)
+		ball.serverTrigger.parent = ball.serverPosition
+		ball.serverTrigger:SetPosition(Vector3.ZERO)
 	end
 end
 

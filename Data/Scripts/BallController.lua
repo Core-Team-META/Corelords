@@ -32,53 +32,54 @@ end
 function BallController.AddBall(ballObject)
 	while not ballObject:GetCustomProperty("ServerPosition") do Task.Wait() end -- custom properties can be missing at first
 	local serverPosition = ballObject:GetCustomProperty("ServerPosition"):WaitForObject()
+	local serverTrigger = ballObject:GetCustomProperty("ServerTrigger"):WaitForObject()
 	local clientBall = ballObject:GetCustomProperty("ClientBall"):WaitForObject()
 	local clientContext = clientBall.parent
 	local clientTrigger = ballObject:GetCustomProperty("ClientTrigger"):WaitForObject()
 	local ball = {
 		object = ballObject,
-		position = serverPosition:GetWorldPosition(),
-		velocity = serverPosition:GetWorldRotation() * Vector3.FORWARD * utils.BALL_SPEED,
+		position = serverTrigger:GetWorldPosition(),
+		velocity = serverTrigger:GetWorldRotation() * Vector3.FORWARD * utils.BALL_SPEED,
 		radius = utils.BALL_RADIUS,
 		reflectionsThisFrame = {}
 	}
-	local lastPosition = serverPosition:GetWorldPosition()
+	local lastPosition = serverTrigger:GetWorldPosition()
 	local deltaTime = 0
 	local fixedDelta = utils.FIXED_DELTA_TIME
 	local loop = Task.Spawn(function(dt)
-		if serverPosition.parent == ballObject then
-			local position = serverPosition:GetWorldPosition()
-			if position ~= lastPosition then
-				local direction = serverPosition:GetWorldRotation() * Vector3.FORWARD
-				ball.velocity = direction * ball.velocity.size
-				ball.position = ball.position:Lerp(position, .7)
-				lastPosition = position
-			end
+		local position = serverTrigger:GetWorldPosition()
+		if serverTrigger.parent == serverPosition then
 			deltaTime = deltaTime + dt
 			while deltaTime > fixedDelta do -- forward simulation
 				deltaTime = deltaTime - fixedDelta
 				ball.position = ball.position + ball.velocity * fixedDelta
 				BallPhysics.CheckCollisions(ball)
 				ball.reflectionsThisFrame = {}
-				if serverPosition.parent ~= ballObject then break end
+				if serverTrigger.parent ~= serverPosition then break end
+			end
+			if position ~= lastPosition then
+				local direction = serverTrigger:GetWorldRotation() * Vector3.FORWARD
+				ball.velocity = direction * ball.velocity.size
+				ball.position = ball.position:Lerp(position, .7)
+				lastPosition = position
 			end
 			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .7))
 		else -- ball is attached to a paddle
-			lastPosition = serverPosition:GetWorldPosition()
-			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverPosition:GetPosition(), .7))
+			lastPosition = position
+			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverTrigger:GetPosition(), .7))
 		end
 	end)
 	loop.repeatCount = -1
-	ballObject.childRemovedEvent:Connect(function(_, child)
-		if child == serverPosition then
+	serverPosition.childRemovedEvent:Connect(function(_, child)
+		if child == serverTrigger then
 			Task.Wait() -- parent is nil immediately following childRemovedEvent even if it was just the parent being changed
-			if Object.IsValid(ballObject) and child.parent ~= ballObject then
+			if Object.IsValid(serverPosition) and child.parent ~= serverPosition then
 				clientBall.parent = child.parent.parent:GetCustomProperty("ClientGroup"):WaitForObject()
 			end
 		end
 	end)
-	ballObject.childAddedEvent:Connect(function(_, child)
-		if child == serverPosition then
+	serverPosition.childAddedEvent:Connect(function(_, child)
+		if child == serverTrigger then
 			local paddleGroup = clientBall.parent
 			clientBall.parent = clientContext
 			ball.position = clientBall:GetWorldPosition()

@@ -4,9 +4,9 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 7595721239712758178
+      RootId: 10529335568289528851
       Objects {
-        Id: 7595721239712758178
+        Id: 10529335568289528851
         Name: "Ball"
         Transform {
           Scale {
@@ -15,32 +15,32 @@
             Z: 1
           }
         }
-        ParentId: 15307418420075356122
-        ChildIds: 9290986186089694533
-        ChildIds: 4268072048000326780
+        ParentId: 4781671109827199097
+        ChildIds: 8901061633150779636
+        ChildIds: 7516769785716156943
         UnregisteredParameters {
           Overrides {
             Name: "cs:ServerPosition"
             ObjectReference {
-              SubObjectId: 4268072048000326780
+              SubObjectId: 7516769785716156943
             }
           }
           Overrides {
             Name: "cs:ServerTrigger"
             ObjectReference {
-              SubObjectId: 17058707448331151103
+              SubObjectId: 1714304498335818574
             }
           }
           Overrides {
             Name: "cs:ClientBall"
             ObjectReference {
-              SubObjectId: 14599857967596237095
+              SubObjectId: 3597188247534793878
             }
           }
           Overrides {
             Name: "cs:ClientTrigger"
             ObjectReference {
-              SubObjectId: 1628703934406845945
+              SubObjectId: 17144231029350228040
             }
           }
         }
@@ -56,7 +56,7 @@
         }
       }
       Objects {
-        Id: 9290986186089694533
+        Id: 8901061633150779636
         Name: "Ball"
         Transform {
           Location {
@@ -69,19 +69,19 @@
             Z: 1
           }
         }
-        ParentId: 7595721239712758178
-        ChildIds: 14599857967596237095
+        ParentId: 10529335568289528851
+        ChildIds: 3597188247534793878
         UnregisteredParameters {
           Overrides {
             Name: "cs:Ball"
             ObjectReference {
-              SubObjectId: 14599857967596237095
+              SubObjectId: 3597188247534793878
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 1628703934406845945
+              SubObjectId: 17144231029350228040
             }
           }
         }
@@ -96,7 +96,7 @@
         }
       }
       Objects {
-        Id: 14599857967596237095
+        Id: 3597188247534793878
         Name: "Ball"
         Transform {
           Location {
@@ -109,12 +109,12 @@
             Z: 1
           }
         }
-        ParentId: 9290986186089694533
-        ChildIds: 3107509176391126455
-        ChildIds: 1890372241760479817
-        ChildIds: 1628703934406845945
-        ChildIds: 5943557867222784420
-        ChildIds: 162449852487368702
+        ParentId: 8901061633150779636
+        ChildIds: 15012412844705630214
+        ChildIds: 16234677694344458232
+        ChildIds: 17144231029350228040
+        ChildIds: 12181419724402678805
+        ChildIds: 17958096467884079695
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -153,7 +153,7 @@
         }
       }
       Objects {
-        Id: 3107509176391126455
+        Id: 15012412844705630214
         Name: "Magic Projectile VFX"
         Transform {
           Location {
@@ -166,7 +166,7 @@
             Z: 1
           }
         }
-        ParentId: 14599857967596237095
+        ParentId: 3597188247534793878
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
@@ -227,7 +227,7 @@
         }
       }
       Objects {
-        Id: 1890372241760479817
+        Id: 16234677694344458232
         Name: "Ball"
         Transform {
           Location {
@@ -240,7 +240,7 @@
             Z: 1.03318954
           }
         }
-        ParentId: 14599857967596237095
+        ParentId: 3597188247534793878
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -275,7 +275,7 @@
         }
       }
       Objects {
-        Id: 1628703934406845945
+        Id: 17144231029350228040
         Name: "ClientTrigger"
         Transform {
           Location {
@@ -288,7 +288,7 @@
             Z: 1
           }
         }
-        ParentId: 14599857967596237095
+        ParentId: 3597188247534793878
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -306,7 +306,7 @@
         }
       }
       Objects {
-        Id: 5943557867222784420
+        Id: 12181419724402678805
         Name: "Ball"
         Transform {
           Location {
@@ -319,7 +319,7 @@
             Z: 0.88590765
           }
         }
-        ParentId: 14599857967596237095
+        ParentId: 3597188247534793878
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -358,7 +358,7 @@
         }
       }
       Objects {
-        Id: 162449852487368702
+        Id: 17958096467884079695
         Name: "Point Light"
         Transform {
           Location {
@@ -371,7 +371,7 @@
             Z: 1
           }
         }
-        ParentId: 14599857967596237095
+        ParentId: 3597188247534793878
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -405,7 +405,7 @@
         }
       }
       Objects {
-        Id: 4268072048000326780
+        Id: 7516769785716156943
         Name: "ServerPosition"
         Transform {
           Location {
@@ -418,8 +418,8 @@
             Z: 1
           }
         }
-        ParentId: 7595721239712758178
-        ChildIds: 17058707448331151103
+        ParentId: 10529335568289528851
+        ChildIds: 1714304498335818574
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -427,12 +427,22 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsFilePartition: true
+        PhysicsObject {
+          PhysicsShape {
+            Value: "mc:ephysicsshape:sphere"
+          }
+          Settings {
+            IsEnabled: true
+            Mass: 100
+            LinearDamping: 1e+06
+            AngularDamping: 1e+06
+          }
+          Radius: 24.875
+          Length: 200
         }
       }
       Objects {
-        Id: 17058707448331151103
+        Id: 1714304498335818574
         Name: "ServerTrigger"
         Transform {
           Location {
@@ -445,7 +455,7 @@
             Z: 1
           }
         }
-        ParentId: 4268072048000326780
+        ParentId: 7516769785716156943
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

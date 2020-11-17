@@ -54,7 +54,7 @@ function BallService.CreateBall(round, position, velocity)
 					coloredBall.color = utils.TEAM_COLORS[paddleColorIndex]
 					utils.SendBroadcast("SetBallColor", coloredBall)
 				end
-				ball.serverPosition:SetWorldRotation(Rotation.New(ball.velocity, Vector3.UP))
+				ball.serverTrigger:SetWorldRotation(Rotation.New(ball.velocity, Vector3.UP))
 				ball.reflectionsThisFrame = {}
 				if utils.DEBUG then
 					for _, edge in pairs(BrickService.edgeList) do
@@ -81,18 +81,17 @@ function BallService.CreateBall(round, position, velocity)
 				else
 					ball.lastPaddleTouched.owner:AddResource("Score", utils.BRICK_POINT_VALUE * #players)
 				end
-
 			end
 		end
 		if castle then
-			utils.SendBroadcast("CastleDestroyed", castle.owner,castle.position) -- send owner reference to all players
+			utils.SendBroadcast("CastleDestroyed", castle.owner, castle.position) -- send owner reference to all players
 			CastleService.DestroyCastle(trigger.parent)
-			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil and Object.IsValid(ball.lastPaddleTouched.owner)  then
+			if ball.lastPaddleTouched ~= nil and ball.lastPaddleTouched.owner ~= nil and Object.IsValid(ball.lastPaddleTouched.owner) then
 				local players = Game.GetPlayers()
 				if castle.owner == ball.lastPaddleTouched.owner then
-					ball.lastPaddleTouched.owner:RemoveResource("Score",utils.CASTLE_POINT_VALUE * #players)
+					ball.lastPaddleTouched.owner:RemoveResource("Score", utils.CASTLE_POINT_VALUE * #players)
 				else
-					ball.lastPaddleTouched.owner:AddResource("Score",utils.CASTLE_POINT_VALUE * #players)
+					ball.lastPaddleTouched.owner:AddResource("Score", utils.CASTLE_POINT_VALUE * #players)
 				end
 			end
 			-- new ball spawns where the castle was

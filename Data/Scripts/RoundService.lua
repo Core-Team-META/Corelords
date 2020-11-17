@@ -50,7 +50,6 @@ function RoundService.Setup(dependencies)
 	end
 
 	Game.playerJoinedEvent:Connect(function(player)
-		player.canMount = false
 		player:SetVisibility(false)
 		RoundService.AddPlayer(player)
 	end)
@@ -106,7 +105,8 @@ function RoundService.StartRound()
 	
 	Task.Wait(1)
 	local paddlePosition = round.paddles[round.players[math.random(#round.players)]].position
-	round.balls[1] = BallService.CreateBall(round, Vector3.ZERO, paddlePosition:GetNormalized() * utils.BALL_SPEED)
+	local directionToPaddle = (paddlePosition * (Vector3.ONE - Vector3.UP)):GetNormalized()
+	round.balls[1] = BallService.CreateBall(round, Vector3.ZERO, directionToPaddle * utils.BALL_SPEED)
 	
 	return round
 end

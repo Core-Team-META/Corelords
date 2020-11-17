@@ -129,7 +129,7 @@ function BallPhysics.CheckCollisions(ball)
 				if paddle.mouseHeld and not paddle.attachedBall then
 					ball.attachedPaddle = paddle
 					paddle.attachedBall = ball
-					ball.serverPosition.parent = paddle.serverPosition
+					ball.serverTrigger.parent = paddle.serverPosition
 					paddle.releaseTimerTask = Task.Spawn(function()
 						PaddleService.ReleaseBall(paddle)
 					end, 2)
