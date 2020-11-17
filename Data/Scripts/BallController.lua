@@ -46,7 +46,6 @@ function BallController.AddBall(ballObject)
 	local lastPosition = serverTrigger:GetWorldPosition()
 	local deltaTime = 0
 	local fixedDelta = utils.FIXED_DELTA_TIME
-	local lastUpdate = time()
 	local loop = Task.Spawn(function(dt)
 		local position = serverTrigger:GetWorldPosition()*(Vector3.ONE - Vector3.UP)
 		if serverTrigger.parent == serverPosition then
@@ -62,12 +61,10 @@ function BallController.AddBall(ballObject)
 				local direction = serverTrigger:GetWorldRotation() * Vector3.FORWARD
 				ball.velocity = direction * ball.velocity.size
 				ball.position = ball.position:Lerp(position, .7)
-				lastUpdate = time()
 				lastPosition = position
 			end
 			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .7))
 		else -- ball is attached to a paddle
-			clientBall:StopMove()
 			lastPosition = position
 			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverTrigger:GetPosition(), .5))
 		end
