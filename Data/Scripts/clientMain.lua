@@ -60,6 +60,7 @@ end)
 function OnSetBallColor(coloredBall)
     coloredBall.object:WaitForObject():SetColor(coloredBall.color)
     coloredBall.object:WaitForObject():FindChildByName("Point Light"):SetColor(coloredBall.color)
+    coloredBall.object:WaitForObject():FindChildByName("Spark Trail Wavy VFX"):SetSmartProperty("Color",coloredBall.color)
 end
 Events.Connect("SetBallColor", OnSetBallColor)
 
