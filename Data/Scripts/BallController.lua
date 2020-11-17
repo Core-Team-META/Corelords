@@ -66,7 +66,7 @@ function BallController.AddBall(ballObject)
 			clientBall:SetWorldPosition(clientBall:GetWorldPosition():Lerp(ball.position, .7))
 		else -- ball is attached to a paddle
 			lastPosition = position
-			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverTrigger:GetPosition(), .7))
+			clientBall:SetPosition(clientBall:GetPosition():Lerp(serverTrigger:GetPosition(), .5))
 		end
 	end)
 	loop.repeatCount = -1

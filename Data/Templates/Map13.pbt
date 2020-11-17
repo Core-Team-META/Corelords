@@ -34,12 +34,12 @@
         Name: "Default Floor"
         Transform {
           Location {
-            Z: -80
+            Z: -77.5113525
           }
           Rotation {
           }
           Scale {
-            X: 23.0757961
+            X: 22.0211945
             Y: 33.4592667
             Z: 1.11530912
           }
@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1491534801423099355
+              Id: 16457119179643126391
             }
           }
           Overrides {
@@ -58,18 +58,15 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3.04582143
+            Float: 12.0419188
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3.00179434
+            Float: 18.9464531
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
               A: 1
             }
           }
@@ -100,16 +97,16 @@
         Name: "Group"
         Transform {
           Location {
-            X: -260.163208
-            Y: -1459.95496
-            Z: -50
+            X: -225.393188
+            Y: -1440.02759
+            Z: -47.5113525
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.997206032
+            Y: 0.997206032
+            Z: 0.997206032
           }
         }
         ParentId: 12442643891509574724
@@ -136,7 +133,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: 924.739136
+            X: 855.54187
             Y: -672.346924
             Z: -2.19146729
           }
@@ -1916,8 +1913,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: 924.739136
-            Y: 744.341187
+            X: 855.54187
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {
@@ -8304,7 +8301,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: 306.092163
+            X: 256.864
             Y: -672.346924
             Z: -2.19146729
           }
@@ -10084,8 +10081,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: 306.092163
-            Y: 744.341187
+            X: 256.864
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {
@@ -16472,7 +16469,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: -317.323853
+            X: -335.229919
             Y: -672.346924
             Z: -2.19146729
           }
@@ -18252,8 +18249,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: -317.323853
-            Y: 744.341187
+            X: -335.229919
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {
@@ -32808,16 +32805,16 @@
         Name: "Group"
         Transform {
           Location {
-            X: -260.163208
-            Y: 1391.05774
-            Z: -50
+            X: -225.393188
+            Y: 1381.05542
+            Z: -47.5113525
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.997206032
+            Y: 0.997206032
+            Z: 0.997206032
           }
         }
         ParentId: 12442643891509574724
@@ -32844,7 +32841,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: 924.739136
+            X: 855.54187
             Y: -672.346924
             Z: -2.19146729
           }
@@ -39232,8 +39229,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: 924.739136
-            Y: 744.341187
+            X: 855.54187
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {
@@ -41012,7 +41009,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: 306.092163
+            X: 256.864
             Y: -672.346924
             Z: -2.19146729
           }
@@ -47400,8 +47397,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: 306.092163
-            Y: 744.341187
+            X: 256.864
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {
@@ -49180,7 +49177,7 @@
         Name: "Group"
         Transform {
           Location {
-            X: -317.323853
+            X: -335.229919
             Y: -672.346924
             Z: -2.19146729
           }
@@ -55568,8 +55565,8 @@
         Name: "Group"
         Transform {
           Location {
-            X: -317.323853
-            Y: 744.341187
+            X: -335.229919
+            Y: 744.341064
             Z: -2.19146729
           }
           Rotation {

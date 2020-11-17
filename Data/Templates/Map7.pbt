@@ -915,8 +915,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: -43.76474
-            Y: 1437.89
+            X: -43.7648506
+            Y: 1610.70203
             Z: -4.99999046
           }
           Rotation {
@@ -1101,8 +1101,8 @@
         Name: "wall"
         Transform {
           Location {
-            X: -78.773407
-            Y: -1479.21228
+            X: -78.7733612
+            Y: -1627.76233
             Z: -4.99999046
           }
           Rotation {

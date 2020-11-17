@@ -36,7 +36,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -78,7 +78,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -112,7 +112,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -154,7 +154,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -188,7 +188,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -222,7 +222,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -256,7 +256,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -290,7 +290,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -324,7 +324,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -358,7 +358,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }
@@ -392,7 +392,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
+      Volume: 0.5
       Falloff: 3600
       Radius: 400
     }

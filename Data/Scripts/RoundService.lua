@@ -121,9 +121,14 @@ function RoundService.EndRound()
 			break
 		end
 	end
+
+	-- round end scoring wait for it to be done then continue on
+	while Events.Broadcast("DisplayVictory") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
+	Task.Wait(7)
 	utils.SendBroadcast("RoundEnded", winner)
-	Events.Broadcast("RoundEnded")
+	while Events.Broadcast("RoundEnded") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
 	Task.Wait(3)
+
 	for object, castle in pairs(round.castles) do
 		if Object.IsValid(object) then
 			CastleService.DestroyCastle(object)
@@ -153,8 +158,8 @@ function RoundService.AssignPlayer(player)
 	for object, castle in pairs(round.castles) do
 		castleList[#castleList + 1] = castle
 	end
-	for _i = 1, 4 do
-		local i = (_i + randomOffset)%4 + 1
+	for _i = 1, #castleList do
+		local i = (_i + randomOffset)%#castleList + 1
 		local castle = castleList[i]
 		if not castle.owner then
 			castle.owner = player
@@ -236,11 +241,13 @@ function RoundService.RemovePlayer(player)
 	PaddleService.DestroyPaddle(player)
 	if data.castle then
 		data.castle.owner = nil
-		data.castle.nametag.text = ""
+		if Object.IsValid(data.castle) then
+			data.castle.nametag.text = ""
+		end
 	end
-	
+
 	RoundService.players[player] = nil
-	
+
 	local nametagIndex = (data.x + 2) + (data.y + 1)/2
 	local nametag = RoundService.nametags[nametagIndex]
 	nametag.main.text = ""

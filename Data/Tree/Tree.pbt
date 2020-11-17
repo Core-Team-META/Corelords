@@ -48,12 +48,23 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 3977035439113854958
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 6529272196077429129
       value {
@@ -71,10 +82,37 @@ Objects {
           Rotator {
           }
         }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7354021627243037782
+      value {
         Overrides {
-          Name: "Collidable"
+          Name: "Visible"
           Enum {
-            Value: "mc:ecollisionsetting:forceoff"
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7507385296905640631
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14590780543722712033
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }

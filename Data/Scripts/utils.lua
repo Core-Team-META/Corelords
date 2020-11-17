@@ -2,7 +2,7 @@
 isClientContext = Environment.IsClient()
 isServerContext = Environment.IsServer()
 DEBUG = false
-ART_REVIEW = true
+ART_REVIEW = false
 
 if isClientContext then
 	local clientQueue = 0

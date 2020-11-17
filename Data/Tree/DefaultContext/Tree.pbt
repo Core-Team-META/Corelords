@@ -19,8 +19,8 @@ Objects {
     Overrides {
       Name: "cs:Scoreboard_Green"
       ObjectReference {
-        SelfId: 3519222822308414952
-        SubObjectId: 17767675849518584422
+        SelfId: 14101554063246014295
+        SubObjectId: 429941188775977177
         InstanceId: 12102183263142264206
         TemplateId: 16006376798949923037
       }
@@ -28,8 +28,8 @@ Objects {
     Overrides {
       Name: "cs:Scoreboard_Purple"
       ObjectReference {
-        SelfId: 8778899621941109866
-        SubObjectId: 13803910261690594276
+        SelfId: 14164113200779111884
+        SubObjectId: 203986241726691906
         InstanceId: 12102183263142264206
         TemplateId: 16006376798949923037
       }
@@ -37,8 +37,8 @@ Objects {
     Overrides {
       Name: "cs:Scoreboard_Orange"
       ObjectReference {
-        SelfId: 15286385422295600156
-        SubObjectId: 1324510205367557010
+        SelfId: 11496186897007579593
+        SubObjectId: 6471413851619362375
         InstanceId: 12102183263142264206
         TemplateId: 16006376798949923037
       }
@@ -46,10 +46,16 @@ Objects {
     Overrides {
       Name: "cs:Scoreboard_Blue"
       ObjectReference {
-        SelfId: 413608889790390562
-        SubObjectId: 14121268175992911532
+        SelfId: 18018815468871825848
+        SubObjectId: 4344298800074501686
         InstanceId: 12102183263142264206
         TemplateId: 16006376798949923037
+      }
+    }
+    Overrides {
+      Name: "cs:ScoreName"
+      AssetReference {
+        Id: 17408143454483093440
       }
     }
   }

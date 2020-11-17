@@ -21,7 +21,7 @@
         ChildIds: 203986241726691906
         ChildIds: 6471413851619362375
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -35,16 +35,16 @@
         Name: "Scoreboard_Green"
         Transform {
           Location {
-            X: 798.03418
-            Y: 537.127625
-            Z: 532.198364
+            X: 1051.98755
+            Y: 722.187927
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -52,6 +52,7 @@
         ChildIds: 16395511388242459553
         ChildIds: 4736324758303249272
         ChildIds: 7354021627243037782
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -67,8 +68,8 @@
         Name: "World Text"
         Transform {
           Location {
-            X: -19.8781738
-            Y: -132.803238
+            X: -19.8779297
+            Y: 112.032104
             Z: 34.2643127
           }
           Rotation {
@@ -77,9 +78,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 429941188775977177
@@ -101,7 +102,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -141,6 +142,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -195,6 +197,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -218,7 +221,7 @@
       }
       Objects {
         Id: 7354021627243037782
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -251,6 +254,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -277,16 +281,16 @@
         Name: "Scoreboard_Blue"
         Transform {
           Location {
-            X: 798.03418
-            Y: -628.833313
-            Z: 532.198364
+            X: 1051.98755
+            Y: -834.11377
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -294,6 +298,7 @@
         ChildIds: 9903272428673274318
         ChildIds: 4807361174630517660
         ChildIds: 3977035439113854958
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -309,8 +314,8 @@
         Name: "World Text"
         Transform {
           Location {
-            X: -19.8781738
-            Y: -132.803238
+            X: -19.8779297
+            Y: 112.031738
             Z: 34.2643127
           }
           Rotation {
@@ -319,9 +324,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 4344298800074501686
@@ -343,7 +348,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -383,6 +388,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -437,6 +443,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -460,7 +467,7 @@
       }
       Objects {
         Id: 3977035439113854958
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -494,6 +501,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -520,16 +528,16 @@
         Name: "Scoreboard_Purple"
         Transform {
           Location {
-            X: -789.263672
-            Y: 537.127625
-            Z: 532.198364
+            X: -1033.8833
+            Y: 722.187927
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -537,6 +545,7 @@
         ChildIds: 2093219530755050074
         ChildIds: 5110086231496493828
         ChildIds: 14590780543722712033
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -553,7 +562,7 @@
         Transform {
           Location {
             X: -19.8781738
-            Y: -132.803238
+            Y: 112.032104
             Z: 34.2643127
           }
           Rotation {
@@ -562,9 +571,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 203986241726691906
@@ -586,7 +595,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -626,6 +635,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -680,6 +690,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -703,7 +714,7 @@
       }
       Objects {
         Id: 14590780543722712033
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -736,6 +747,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -762,16 +774,16 @@
         Name: "Scoreboard_Orange"
         Transform {
           Location {
-            X: -789.263672
-            Y: -628.833313
-            Z: 532.198364
+            X: -1033.88342
+            Y: -834.11377
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 0.377349585
-            Y: 0.377349585
-            Z: 0.377349585
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 6529272196077429129
@@ -779,6 +791,7 @@
         ChildIds: 17262923745915286867
         ChildIds: 15828631599765813753
         ChildIds: 7507385296905640631
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -795,7 +808,7 @@
         Transform {
           Location {
             X: -19.8781738
-            Y: -132.803238
+            Y: 112.031738
             Z: 34.2643127
           }
           Rotation {
@@ -804,9 +817,9 @@
             Roll: 9.11699e-13
           }
           Scale {
-            X: 3.78304029
-            Y: 3.78304029
-            Z: 3.78304029
+            X: 4.27777672
+            Y: 4.27777672
+            Z: 4.27777672
           }
         }
         ParentId: 6471413851619362375
@@ -828,7 +841,7 @@
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
+            Value: "mc:ecoretexthorizontalalign:center"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -868,6 +881,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -922,6 +936,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -945,7 +960,7 @@
       }
       Objects {
         Id: 7507385296905640631
-        Name: "Cube - Chamfered Large Polished"
+        Name: "Electricity"
         Transform {
           Location {
             X: -13.7103214
@@ -978,6 +993,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

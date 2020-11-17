@@ -71,9 +71,17 @@ function BrickController.UpdateBricks()
 					BrickController.grid[y][x] = nil
 					local collisionWireframeVFX = utils.PlayVFX("destroyBrickWireframeVFX", brick.position)
 					local color = utils.TEAM_COLORS[brick.team]
-					local emissive = collisionWireframeVFX:FindChildByName("Emissive")
-					emissive:SetColor(color)
-
+					
+					
+					local brickPieces = collisionWireframeVFX:FindDescendantsByName("Emissive")
+					Task.Wait()
+					for _, piece in pairs(brickPieces) do
+					piece:SetColor(color)
+					piece:SetVelocity(Vector3.UP * -1000 + Vector3.FORWARD * math.random(-1000,1000)+ Vector3.RIGHT * math.random(-1000,1000))
+					piece.isSimulatingDebrisPhysics = true
+					end
+					
+					
 					if not brick.simulatedBallHit then -- brick was not already hit
 						local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
 						local vfx = collisionVFX:FindChildByName("VFX")
