@@ -110,7 +110,7 @@
           }
         }
         ParentId: 8901061633150779636
-        ChildIds: 15012412844705630214
+        ChildIds: 8204309796804743867
         ChildIds: 16234677694344458232
         ChildIds: 17144231029350228040
         ChildIds: 12181419724402678805
@@ -153,60 +153,53 @@
         }
       }
       Objects {
-        Id: 15012412844705630214
-        Name: "Magic Projectile VFX"
+        Id: 8204309796804743867
+        Name: "Spark Trail Wavy VFX"
         Transform {
           Location {
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.00488615
+            Y: 2.00488615
+            Z: 2.00488615
           }
         }
         ParentId: 3597188247534793878
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Life"
-            Float: 1.4906354
-          }
-          Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 2.48485
+            Float: 10
           }
           Overrides {
             Name: "bp:Density"
-            Float: 5
+            Float: 5.11321735
           }
           Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              R: 0.89
-              B: 0.831059277
-              A: 1
-            }
+            Name: "bp:Chaos"
+            Float: 2.85815501
           }
           Overrides {
-            Name: "bp:Secondary Emissive Boost"
-            Float: 17.2793655
-          }
-          Overrides {
-            Name: "bp:Enable Sparks"
-            Bool: false
+            Name: "bp:Life"
+            Float: 0.75
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 7.76178741
+            Float: 0
           }
           Overrides {
             Name: "bp:color"
             Color {
-              G: 0.774834156
-              B: 0.9
-              A: 1
+              R: 1
+              G: 1
+              B: 1
+              A: 0.311000019
             }
+          }
+          Overrides {
+            Name: "bp:Spawn Radius"
+            Float: 0.25
           }
         }
         Collidable_v2 {
@@ -217,7 +210,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10814669109611203497
+            Id: 5911459706193945759
           }
           TeamSettings {
           }
@@ -493,12 +486,12 @@
       }
     }
     Assets {
-      Id: 10814669109611203497
-      Name: "Magic Projectile VFX"
+      Id: 5911459706193945759
+      Name: "Spark Trail Wavy VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_magic_projectile"
+        AssetId: "fxbp_spark_trail_wavy"
       }
     }
     Assets {

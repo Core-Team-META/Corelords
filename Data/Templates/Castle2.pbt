@@ -70,7 +70,6 @@
         }
         ParentId: 3631262733810681537
         ChildIds: 16828430497219745388
-        ChildIds: 4059842046109845793
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -173,159 +172,6 @@
           }
           Vfx {
             AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 4059842046109845793
-        Name: "Plasma Laser"
-        Transform {
-          Location {
-            X: 5.35137558
-            Y: -16.2496796
-            Z: 0.00048828125
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.06932724
-            Y: 1.06932724
-            Z: 1.06932724
-          }
-        }
-        ParentId: 10150055419635286625
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color A"
-            Color {
-              R: 0.100000024
-              G: 0.821191907
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Central Core Color"
-            Color {
-              R: 0.0100662801
-              B: 0.76
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Color B"
-            Color {
-              R: 0.100000024
-              G: 1
-              B: 0.141721904
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Length"
-            Float: 13.7635345
-          }
-          Overrides {
-            Name: "bp:Speed"
-            Float: 3.34229469
-          }
-          Overrides {
-            Name: "bp:Plasma Intensity Adjustment"
-            Float: 1.05403399
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 10.2449036
-          }
-          Overrides {
-            Name: "bp:Opacity"
-            Float: 0.134946078
-          }
-          Overrides {
-            Name: "bp:Plasma Scale"
-            Float: 3.15374875
-          }
-          Overrides {
-            Name: "bp:Color By Length"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Core Tightness"
-            Float: 1.25394642
-          }
-          Overrides {
-            Name: "bp:Plasma Tightness"
-            Float: 2.70156193
-          }
-          Overrides {
-            Name: "bp:Hot Core Color"
-            Color {
-              G: 0.780132473
-              B: 0.950000048
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:color c"
-            Color {
-              G: 0.539999962
-              B: 0.164503306
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Color C"
-            Color {
-              R: 0.65
-              B: 0.555297792
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Falloff"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Color Offset C"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Color Offset B"
-            Float: 0.459859073
-          }
-          Overrides {
-            Name: "bp:Color Offset A"
-            Float: 0.0590347089
-          }
-          Overrides {
-            Name: "bp:Plasma Pinch"
-            Float: 0.83531481
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 1.13233829
-          }
-          Overrides {
-            Name: "bp:Width"
-            Float: 1.24993145
-          }
-          Overrides {
-            Name: "bp:opacity"
-            Float: 0.642513216
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 12022824903258480392
-          }
-          TeamSettings {
           }
         }
       }
@@ -445,7 +291,7 @@
         Name: "RightText"
         Transform {
           Location {
-            X: 10
+            X: 34.0152512
             Z: 291.841553
           }
           Rotation {
@@ -485,7 +331,7 @@
         Name: "LeftText"
         Transform {
           Location {
-            X: 10
+            X: 34.0152512
             Y: 6.10351563e-05
             Z: 291.841553
           }
@@ -815,14 +661,14 @@
           Location {
             X: -1.31164551
             Y: 0.721191406
-            Z: 229.106934
+            Z: 941.57312
           }
           Rotation {
           }
           Scale {
-            X: 1.71832752
-            Y: 1.71832752
-            Z: 4.42287302
+            X: 0.658984
+            Y: 0.658984
+            Z: 14.4976501
           }
         }
         ParentId: 2230859682754589401
@@ -830,7 +676,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16975451719339382532
+              Id: 13424249725620894483
             }
           }
           Overrides {
@@ -871,15 +717,6 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_ChargeUp_Hold"
-      }
-    }
-    Assets {
-      Id: 12022824903258480392
-      Name: "Plasma Laser"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "fxbp_plasma_laser"
       }
     }
     Assets {
@@ -943,15 +780,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cylinder_002"
-      }
-    }
-    Assets {
-      Id: 16975451719339382532
-      Name: "Edge Line Wavy"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_add_edgeline"
       }
     }
     PrimaryAssetId {

@@ -30,6 +30,12 @@ function BallService.CreateBall(round, position, velocity)
 		reflectionsThisFrame = {}
 	}
 	ball.serverPosition:SetWorldPosition(position)
+	
+	-- zero out the physics on the physics ball, just in case
+	ball.serverPosition:SetVelocity(Vector3.ZERO)
+	ball.serverPosition:SetAngularVelocity(Vector3.ZERO)
+	ball.serverPosition:SetLocalAngularVelocity(Vector3.ZERO)
+	
 	local deltaTime = 0
 	local fixedDelta = utils.FIXED_DELTA_TIME
 	Task.Spawn(function(dt)

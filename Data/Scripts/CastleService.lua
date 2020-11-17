@@ -39,13 +39,8 @@ function CastleService.CreateCastle(sideX, sideY)
 		piece:SetSmartProperty("Arc Color",castle.color)
 		piece:SetSmartProperty("Hot Spot Color",castle.color)
 	end
-	
-	for _, piece in pairs(castle.object:FindDescendantsByName("Plasma Laser")) do
-		piece:SetSmartProperty("Color A",castle.color)
-		piece:SetSmartProperty("Color B",castle.color)
-		piece:SetSmartProperty("Color C",castle.color)
-		piece:SetSmartProperty("Hot Core Color",castle.color)
-		piece:SetSmartProperty("Central Core Color",castle.color)
+	for _, piece in pairs(castle.object:FindDescendantsByName("Cylinder")) do
+		piece:SetColor(castle.color)
 	end
 	
 	
