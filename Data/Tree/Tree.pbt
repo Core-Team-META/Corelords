@@ -292,6 +292,7 @@ Objects {
   ChildIds: 7232274016867734611
   ChildIds: 13313389828636008364
   ChildIds: 9237174078399991206
+  ChildIds: 12110109398836270370
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -310,6 +311,213 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 12110109398836270370
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17917873266452412741
+  ChildIds: 11332390669167416879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11332390669167416879
+  Name: "Leaderboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12110109398836270370
+  ChildIds: 12632149350244672004
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GlobalLeaderboard"
+      ObjectReference {
+        SelfId: 12632149350244672004
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    UIX: -10
+    UIY: 30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12632149350244672004
+  Name: "GlobalLeaderboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11332390669167416879
+  ChildIds: 5350694710397087910
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 320
+    Height: 736
+    UIX: -5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5350694710397087910
+  Name: "LeaderboardRow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12632149350244672004
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15727628853237688651
+      value {
+        Overrides {
+          Name: "Name"
+          String: "LeaderboardRow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Width"
+          Int: 320
+        }
+        Overrides {
+          Name: "Height"
+          Int: 60
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2587742162255074138
+    }
   }
 }
 Objects {
@@ -482,6 +690,27 @@ Objects {
       Name: "cs:Camera"
       ObjectReference {
         SelfId: 5949665113807774522
+      }
+    }
+    Overrides {
+      Name: "cs:Leaderboard"
+      ObjectReference {
+        SelfId: 11332390669167416879
+      }
+    }
+    Overrides {
+      Name: "cs:LeaderboardRow"
+      AssetReference {
+        Id: 2587742162255074138
+      }
+    }
+    Overrides {
+      Name: "cs:HighScore"
+      NetReference {
+        Key: "AD9467D6C74F272D"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
       }
     }
   }
@@ -943,6 +1172,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }

@@ -6,6 +6,11 @@
 	BallPhysics = require(script:GetCustomProperty("BallPhysics")),
 }
 
+local LEADERBOARD = script:GetCustomProperty("Leaderboard"):WaitForObject()
+local LEADERBOARD_GLOBAL = LEADERBOARD:GetCustomProperty("GlobalLeaderboard"):WaitForObject()
+local LEADERBOARD_ROW = script:GetCustomProperty("LeaderboardRow")
+local HIGH_SCORE = script:GetCustomProperty("HighScore")
+
 local ABILITY_FOLDER = script:GetCustomProperty("ABILITY_FOLDER"):WaitForObject()
 local player = Game.GetLocalPlayer()
 DEPENDENCIES.MOUSE_ABILITY = ABILITY_FOLDER:FindChildByName(player.name)
@@ -75,3 +80,25 @@ local cameraUpdateTask = Task.Spawn(function()
 end)
 cameraUpdateTask.repeatInterval = .5
 cameraUpdateTask.repeatCount = -1
+
+Task.Spawn(function() -- global leaderboard update loop
+	local rows = {}
+	while true do
+		local leaderboard = Leaderboards.GetLeaderboard(HIGH_SCORE, LeaderboardType.GLOBAL)
+		if leaderboard then
+			for i = 1, math.min(10, #leaderboard) do
+				if not rows[i] then
+					rows[i] = World.SpawnAsset(LEADERBOARD_ROW, {parent = LEADERBOARD_GLOBAL})
+					rows[i].y = 60*i
+				end
+				local text = leaderboard[i].name.." "..math.floor(leaderboard[i].score)
+				for _, uitext in pairs(rows[i]:GetChildren()) do
+					if (uitext:IsA("UIText")) then
+						uitext.text = text
+					end
+				end
+			end
+		end
+		Task.Wait(5)
+	end
+end)

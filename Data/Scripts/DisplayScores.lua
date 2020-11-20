@@ -1,6 +1,6 @@
 local SCORE_NAME= script:GetCustomProperty("ScoreName")
 local STARTING_SCORE = 4800
-
+local HIGH_SCORE = script:GetCustomProperty("HighScore")
 
 local scoreboardGroup = {}
 scoreboardGroup[1] = script:GetCustomProperty("Scoreboard_Orange"):WaitForObject()
@@ -34,7 +34,6 @@ Events.Connect("RoundEnded", function()
     for i = 1, 4 do
         playerList[i] = nil
         scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
-        
     end
     local players = Game.GetPlayers()
     for i = 1, #players do
@@ -71,8 +70,21 @@ Events.Connect("DisplayVictory", function()
 
     end
 
-	Task.Wait(6) -- let people view the scores
+    Task.Wait(1)
+    local players = Game.GetPlayers()
+    for _, player in pairs(players) do
+        local score = player:GetResource("Score")
+        if score > player:GetResource("HighScore") then
+            player:SetResource("HighScore", score)
+            local data = Storage.GetPlayerData(player)
+            data.HighScore = score
+            Storage.SetPlayerData(player, data)
+            Leaderboards.SubmitPlayerScore(HIGH_SCORE, player, score)
+        end
+    end
     
+	Task.Wait(5) -- let people view the scores
+
     -- reset positions for next round
 	for i = 1, 4 do
         local board = scores[sortedScores[i]]
@@ -116,7 +128,8 @@ function OnResourceChanged(player, resourceId, newValue)
 end
 
 function OnPlayerJoined(player)
-	player.resourceChangedEvent:Connect(OnResourceChanged)
+    player.resourceChangedEvent:Connect(OnResourceChanged)
+    player:SetResource("HighScore", Storage.GetPlayerData(player).HighScore or STARTING_SCORE)
 end
 
 -- setting playerList[i] to nil for a player that left should stop any update.

@@ -58,6 +58,15 @@ Objects {
         Id: 17408143454483093440
       }
     }
+    Overrides {
+      Name: "cs:HighScore"
+      NetReference {
+        Key: "AD9467D6C74F272D"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
