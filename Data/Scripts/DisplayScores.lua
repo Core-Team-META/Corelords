@@ -1,6 +1,7 @@
 local SCORE_NAME= script:GetCustomProperty("ScoreName")
 local STARTING_SCORE = 4800
 
+
 local scoreboardGroup = {}
 scoreboardGroup[1] = script:GetCustomProperty("Scoreboard_Orange"):WaitForObject()
 scoreboardGroup[2] = script:GetCustomProperty("Scoreboard_Purple"):WaitForObject()
@@ -63,13 +64,9 @@ Events.Connect("DisplayVictory", function()
 
         -- spawn the task with 1 second delay so that names don't appear until the scores have moved into place
         Task.Spawn(function() 
-            local scoreNamePosition = Vector3.New(boardPosition.x - 10, boardPosition.y - 835, boardPosition.z - 5)
-            scoreName[board] = World.SpawnAsset(SCORE_NAME, {position = scoreNamePosition})
-            local scoreNameChildren = scoreName[board]:GetChildren()
-            scoreNameChildren[2].text = ""
-            if Object.IsValid(playerList[board]) and playerList[board] ~= nil then
-                scoreNameChildren[2].text = playerList[board].name
-            end
+            scoreName[board] = World.SpawnAsset(SCORE_NAME, {position = boardPosition})
+            scoreName[board]:FindChildByName("NameText").text = (Object.IsValid(playerList[board]) and playerList[board] ~= nil) and playerList[board].name or ""
+            scoreName[board]:FindChildByName("Background"):SetColor(SCORE_COLORS[board])
         end, 1)
 
     end
