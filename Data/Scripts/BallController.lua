@@ -12,7 +12,9 @@ local utils, BallPhysics, BrickController
 
 local BALL_CONTAINER = script:GetCustomProperty("BALL_CONTAINER"):WaitForObject()
 
-local BallController = {}
+local BallController = {
+	BALL_CONTAINER = BALL_CONTAINER
+}
 
 function BallController.Setup(dependencies)
 	utils = dependencies.utils
@@ -43,6 +45,7 @@ function BallController.AddBall(ballObject)
 		radius = utils.BALL_RADIUS,
 		reflectionsThisFrame = {}
 	}
+	ballObject.clientUserData.internalData = ball
 	local lastPosition = serverTrigger:GetWorldPosition()
 	local deltaTime = 0
 	local fixedDelta = utils.FIXED_DELTA_TIME

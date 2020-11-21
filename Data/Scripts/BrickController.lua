@@ -1,4 +1,4 @@
-﻿local utils, BallPhysics
+﻿local utils, BallPhysics, BallController, PaddleController
 
 local BRICK_TEMPLATE = script:GetCustomProperty("Brick")
 local CLIENT_CONTEXT = script:GetCustomProperty("ClientContext"):WaitForObject()
@@ -12,6 +12,8 @@ local BrickController = {
 function BrickController.Setup(dependencies)
 	utils = dependencies.utils
 	BallPhysics = dependencies.BallPhysics
+	BallController = dependencies.BallController
+	PaddleController = dependencies.PaddleController
 	
 	for y = 1, utils.GRID_WIDTH do
 		BrickController.grid[y] = {}
@@ -66,21 +68,36 @@ function BrickController.UpdateBricks()
 			local brick = BrickController.grid[y][x]
 			if not brickSequence[index] then
 				if brick then
+					local nearestBallDistance, nearestBallIsMine = math.huge, false
+					for _, ballObject in pairs(BallController.BALL_CONTAINER:GetChildren()) do
+						local data = ballObject.clientUserData.internalData
+						if data and data.lastPaddleTouched and PaddleController.currentPaddle then
+							local distance = (ballObject:GetWorldPosition() - brick.position).size
+							if distance < nearestBallDistance then
+								nearestBallDistance, nearestBall = distance, ballObject
+								nearestBallIsMine = data.lastPaddleTouched.object == PaddleController.currentPaddle.object
+							end
+						end	
+					end
+					if nearestBallIsMine then
+						--CoreDebug.DrawSphere(brick.position, 50, {duration = 1, thickness = 5})
+						-- todo: flyup text
+					end
+					
 					brick.object:Destroy()
 					utils.PlaySound("destroyBrick", brick.position)
 					BrickController.grid[y][x] = nil
+					
 					local collisionWireframeVFX = utils.PlayVFX("destroyBrickWireframeVFX", brick.position)
 					local color = utils.TEAM_COLORS[brick.team]
-					
-					
-					local brickPieces = collisionWireframeVFX:FindDescendantsByName("Emissive")
-					Task.Wait()
-					for _, piece in pairs(brickPieces) do
-					piece:SetColor(color)
-					piece:SetVelocity(Vector3.UP * -1000 + Vector3.FORWARD * math.random(-1000,1000)+ Vector3.RIGHT * math.random(-1000,1000))
-					piece.isSimulatingDebrisPhysics = true
-					end
-					
+					Task.Spawn(function() -- requires short delay to function properly, vfx appears at center of map otherwise
+						local brickPieces = collisionWireframeVFX:FindDescendantsByName("Emissive")
+						for _, piece in pairs(brickPieces) do
+							piece:SetColor(color)
+							piece:SetVelocity(Vector3.UP * -1000 + Vector3.FORWARD * math.random(-1000,1000)+ Vector3.RIGHT * math.random(-1000,1000))
+							piece.isSimulatingDebrisPhysics = true
+						end
+					end)
 					
 					if not brick.simulatedBallHit then -- brick was not already hit
 						local collisionVFX = utils.PlayVFX("destroyBrickSparkVFX", brick.position)
