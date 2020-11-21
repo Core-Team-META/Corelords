@@ -35,6 +35,22 @@ local utils = DEPENDENCIES.utils
 local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false
 
+Events.Connect("Fly", function(prefix, type, x, y)
+	local isBig = false
+	local players = Game.GetPlayers()
+	local score = utils.BRICK_POINT_VALUE
+	if type == "castle" then
+		score = utils.CASTLE_POINT_VALUE
+		isBig = true
+	end
+	local color = Color.New(1, 0, 0)
+	if prefix == "+" then
+		color = Color.New(0, .7, .8)
+	end
+	score = score * #players
+	UI.ShowFlyUpText(prefix .. tostring(score), Vector3.New(x,y,55), {color = color, isBig = isBig})
+end)
+
 Events.Connect("CastleDestroyed", function(owner, position)
 	if owner == player then
 		utils.PlaySound("gameOver", position)

@@ -84,8 +84,10 @@ function BallService.CreateBall(round, position, velocity)
 				local paddleColorIndex = (ball.lastPaddleTouched.position.x < 0 and 2 or 0) + (ball.lastPaddleTouched.position.y > 0 and 2 or 1)
 				if brickColorIndex == paddleColorIndex then
 					ball.lastPaddleTouched.owner:RemoveResource("Score", utils.BRICK_POINT_VALUE * #players)
+					Events.BroadcastToPlayer(ball.lastPaddleTouched.owner, "Fly", "-", "brick", tostring(brick.position.x), tostring(brick.position.y))
 				else
 					ball.lastPaddleTouched.owner:AddResource("Score", utils.BRICK_POINT_VALUE * #players)
+					Events.BroadcastToPlayer(ball.lastPaddleTouched.owner, "Fly", "+", "brick", tostring(brick.position.x), tostring(brick.position.y))
 				end
 			end
 		end
@@ -96,8 +98,10 @@ function BallService.CreateBall(round, position, velocity)
 				local players = Game.GetPlayers()
 				if castle.owner == ball.lastPaddleTouched.owner then
 					ball.lastPaddleTouched.owner:RemoveResource("Score", utils.CASTLE_POINT_VALUE * #players)
+					Events.BroadcastToPlayer(ball.lastPaddleTouched.owner, "Fly", "-", "castle", tostring(castle.position.x), tostring(castle.position.y))
 				else
 					ball.lastPaddleTouched.owner:AddResource("Score", utils.CASTLE_POINT_VALUE * #players)
+					Events.BroadcastToPlayer(ball.lastPaddleTouched.owner, "Fly", "+", "castle", tostring(castle.position.x), tostring(castle.position.y))
 				end
 			end
 			-- new ball spawns where the castle was

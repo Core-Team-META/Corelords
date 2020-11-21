@@ -52,7 +52,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1150806006778966560
+              Id: 7733773594094397463
             }
           }
           Overrides {
@@ -203,12 +203,12 @@
       }
     }
     Assets {
-      Id: 1150806006778966560
-      Name: "Screen Overlay 01"
+      Id: 7733773594094397463
+      Name: "Emissive Glow Opaque"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_screen_overlay_01"
+        AssetId: "fxma_opaque_emissive"
       }
     }
     PrimaryAssetId {
