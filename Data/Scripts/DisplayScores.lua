@@ -1,4 +1,4 @@
-local SCORE_NAME= script:GetCustomProperty("ScoreName")
+﻿local SCORE_NAME= script:GetCustomProperty("ScoreName")
 local STARTING_SCORE = 4800
 local HIGH_SCORE = script:GetCustomProperty("HighScore")
 
@@ -66,6 +66,7 @@ Events.Connect("DisplayVictory", function()
             scoreName[board] = World.SpawnAsset(SCORE_NAME, {position = boardPosition})
             scoreName[board]:FindChildByName("NameText").text = (Object.IsValid(playerList[board]) and playerList[board] ~= nil) and playerList[board].name or ""
             scoreName[board]:FindChildByName("Background"):SetColor(SCORE_COLORS[board])
+            scoreName[board]:FindChildByName("BackgroundRight"):SetColor(SCORE_COLORS[board])
         end, 1)
 
     end

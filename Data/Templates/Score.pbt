@@ -86,6 +86,14 @@
               Id: 5947808966936707735
             }
           }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 20
+              B: 0.0999927521
+              A: 1
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -138,8 +146,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 1
-              B: 0.005
+              R: 20
+              B: 0.0999927521
               A: 1
             }
           }
@@ -220,6 +228,14 @@
               Id: 5947808966936707735
             }
           }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 20
+              B: 0.0999927521
+              A: 1
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -273,8 +289,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 1
-              B: 0.005
+              R: 20
+              B: 0.0999927521
               A: 1
             }
           }
@@ -382,6 +398,14 @@
               Id: 5947808966936707735
             }
           }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 20
+              B: 0.0999927521
+              A: 1
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -434,8 +458,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 1
-              B: 0.005
+              R: 20
+              B: 0.0999927521
               A: 1
             }
           }
@@ -516,6 +540,14 @@
               Id: 5947808966936707735
             }
           }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 20
+              B: 0.0999927521
+              A: 1
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -568,8 +600,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 1
-              B: 0.005
+              R: 20
+              B: 0.0999927521
               A: 1
             }
           }

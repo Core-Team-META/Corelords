@@ -18,7 +18,9 @@
         ParentId: 4781671109827199097
         ChildIds: 13012749669095656448
         ChildIds: 9755575733023888473
-        ChildIds: 16852631190267450532
+        ChildIds: 17217653006087326066
+        ChildIds: 500144054513873865
+        ChildIds: 4657109622100850180
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36,13 +38,14 @@
         Transform {
           Location {
             X: -9.52131653
-            Y: -450.576019
+            Y: -435.272
+            Z: 12
           }
           Rotation {
             Roll: 89.9999924
           }
           Scale {
-            X: 1
+            X: 0.984
             Y: 0.01
             Z: 6.2
           }
@@ -52,20 +55,20 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7733773594094397463
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.1
-              B: 1
-              A: 1
+              Id: 15771918211220720811
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              G: 0.499999523
+              B: 1
+              A: 1
+            }
           }
         }
         WantsNetworking: true
@@ -96,16 +99,16 @@
           Location {
             X: -9.52131653
             Y: -145.514572
-            Z: 1
+            Z: 12.764801
           }
           Rotation {
             Pitch: 90
             Roll: 179.999969
           }
           Scale {
-            X: 1.8
-            Y: 1.8
-            Z: 1.8
+            X: 1.5
+            Y: 1.5
+            Z: 2.5
           }
         }
         ParentId: 15635152762724768392
@@ -117,11 +120,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "AGGRIPINAWWWWWWWWWWW"
+          Text: "123456789123456789123456"
           Color {
-            R: 1
-            G: 1
-            B: 1
             A: 1
           }
           HorizontalSize: 1
@@ -135,19 +135,19 @@
         }
       }
       Objects {
-        Id: 16852631190267450532
+        Id: 17217653006087326066
         Name: "Matte"
         Transform {
           Location {
             X: -9.52131653
-            Y: -450.576019
-            Z: -5
+            Y: -435.272
+            Z: 10.512886
           }
           Rotation {
             Roll: 89.9999771
           }
           Scale {
-            X: 1
+            X: 0.91232878
             Y: 0.01
             Z: 6.2
           }
@@ -157,8 +157,12 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15724294045117503383
+              Id: 7733773594094397463
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -166,9 +170,125 @@
               A: 1
             }
           }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 500144054513873865
+        Name: "BackgroundRight"
+        Transform {
+          Location {
+            X: -9.52131653
+            Y: 525
+            Z: 12
+          }
+          Rotation {
+            Yaw: 180
+            Roll: 90
+          }
+          Scale {
+            X: 0.984
+            Y: 0.01
+            Z: 6.2
+          }
+        }
+        ParentId: 15635152762724768392
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 15771918211220720811
+            }
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              G: 0.499999523
+              B: 1
+              A: 1
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3987864784396419859
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4657109622100850180
+        Name: "Matte"
+        Transform {
+          Location {
+            X: -9.52131653
+            Y: 525
+            Z: 10.512886
+          }
+          Rotation {
+            Yaw: 180
+            Roll: 90
+          }
+          Scale {
+            X: 0.91232878
+            Y: 0.01
+            Z: 6.2
+          }
+        }
+        ParentId: 15635152762724768392
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7733773594094397463
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
           }
         }
         WantsNetworking: true
