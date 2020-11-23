@@ -25,6 +25,8 @@ Objects {
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
   ChildIds: 12102183263142264206
+  ChildIds: 6971732771827790810
+  ChildIds: 5254373654428826776
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +36,86 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5254373654428826776
+  Name: "Minus10"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2381663563242666705
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Minus10"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5684352845093599421
+    }
+  }
+}
+Objects {
+  Id: 6971732771827790810
+  Name: "Plus10"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7181674904968283578
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Plus10"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3072823352588671044
+    }
   }
 }
 Objects {
@@ -711,6 +793,54 @@ Objects {
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
+      }
+    }
+    Overrides {
+      Name: "cs:Minus10"
+      AssetReference {
+        Id: 5684352845093599421
+      }
+    }
+    Overrides {
+      Name: "cs:Minus20"
+      AssetReference {
+        Id: 2031211813728554931
+      }
+    }
+    Overrides {
+      Name: "cs:Minus30"
+      AssetReference {
+        Id: 8578324083587342621
+      }
+    }
+    Overrides {
+      Name: "cs:Minus40"
+      AssetReference {
+        Id: 9102172939388482578
+      }
+    }
+    Overrides {
+      Name: "cs:Plus10"
+      AssetReference {
+        Id: 3072823352588671044
+      }
+    }
+    Overrides {
+      Name: "cs:Plus20"
+      AssetReference {
+        Id: 5372252454893881871
+      }
+    }
+    Overrides {
+      Name: "cs:Plus30"
+      AssetReference {
+        Id: 5867313709139283568
+      }
+    }
+    Overrides {
+      Name: "cs:Plus40"
+      AssetReference {
+        Id: 1591964451013625142
       }
     }
   }

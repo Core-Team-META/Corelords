@@ -16,12 +16,6 @@
           SelfId: 287419262786186720
         }
       }
-      Overrides {
-        Name: "cs:Score"
-        AssetReference {
-          Id: 14628859860226375827
-        }
-      }
     }
   }
   SerializationVersion: 68

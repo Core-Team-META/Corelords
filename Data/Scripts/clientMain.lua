@@ -11,6 +11,17 @@ local LEADERBOARD_GLOBAL = LEADERBOARD:GetCustomProperty("GlobalLeaderboard"):Wa
 local LEADERBOARD_ROW = script:GetCustomProperty("LeaderboardRow")
 local HIGH_SCORE = script:GetCustomProperty("HighScore")
 
+local SCOREDIGITS = {
+	MINUS10 = script:GetCustomProperty("Minus10"),
+	MINUS20 = script:GetCustomProperty("Minus20"),
+	MINUS30 = script:GetCustomProperty("Minus30"),
+	MINUS40 = script:GetCustomProperty("Minus40"),
+	PLUS10 = script:GetCustomProperty("Plus10"),
+	PLUS20 = script:GetCustomProperty("Plus20"),
+	PLUS30 = script:GetCustomProperty("Plus30"),
+	PLUS40 = script:GetCustomProperty("Plus40")
+}
+
 local ABILITY_FOLDER = script:GetCustomProperty("ABILITY_FOLDER"):WaitForObject()
 local player = Game.GetLocalPlayer()
 DEPENDENCIES.MOUSE_ABILITY = ABILITY_FOLDER:FindChildByName(player.name)
@@ -40,15 +51,23 @@ Events.Connect("Fly", function(prefix, type, x, y)
 	local players = Game.GetPlayers()
 	local score = utils.BRICK_POINT_VALUE
 	if type == "castle" then
+		local color = Color.New(1, 0, 0)
+		if prefix == "+" then
+			color = Color.New(0, .7, .8)
+		end
 		score = utils.CASTLE_POINT_VALUE
 		isBig = true
+		score = score * #players
+		UI.ShowFlyUpText(prefix .. tostring(score), Vector3.New(x,y,55), {color = color, isBig = isBig})
+	else
+		local sign = prefix == "+" and "PLUS" or "MINUS"
+		score = score * #players
+		local digits = sign .. tostring(score)
+		local worldScore = World.SpawnAsset(SCOREDIGITS[digits], {position = Vector3.New(x,y,55) })
+		worldScore:MoveTo(Vector3.New(x,y,255), .5)
 	end
-	local color = Color.New(1, 0, 0)
-	if prefix == "+" then
-		color = Color.New(0, .7, .8)
-	end
-	score = score * #players
-	UI.ShowFlyUpText(prefix .. tostring(score), Vector3.New(x,y,55), {color = color, isBig = isBig})
+
+	
 end)
 
 Events.Connect("CastleDestroyed", function(owner, position)
