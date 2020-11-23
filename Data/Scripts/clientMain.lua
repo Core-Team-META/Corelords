@@ -64,7 +64,7 @@ Events.Connect("CastleDestroyed", function(owner, position)
 	vfx:SetSmartProperty("Color", color)
 	local pulse = destroyVFX:FindChildByName("Pulse Scan Post Process")
 	pulse:SetSmartProperty("Pulse Color", color)
-	
+
 	local towerPieces = destroyVFX:FindDescendantsByName("Column Segment 1m")
 	Task.Wait()
 	for _, piece in pairs(towerPieces) do

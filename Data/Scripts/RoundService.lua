@@ -158,6 +158,7 @@ function RoundService.AssignPlayer(player)
 	for object, castle in pairs(round.castles) do
 		castleList[#castleList + 1] = castle
 	end
+	local castleAssigned = false
 	for _i = 1, #castleList do
 		local i = (_i + randomOffset)%#castleList + 1
 		local castle = castleList[i]
@@ -175,7 +176,19 @@ function RoundService.AssignPlayer(player)
 			local nametag = RoundService.nametags[nametagIndex]
 			nametag.main.text = string.upper(player.name)
 			nametag.shadow.text = string.upper(player.name)
+			castleAssigned = true
 			break
+		end
+	end
+	if not castleAssigned then
+		for i = 1, 4 do
+			local nametag = RoundService.nametags[i]
+			if nametag.main.text == "" then
+				nametag.main.text = string.upper(player.name)
+				nametag.shadow.text = string.upper(player.name)
+				nametag.main.visibility = Visibility.FORCE_ON
+				nametag.shadow.visibility = Visibility.FORCE_ON
+			end
 		end
 	end
 end
@@ -247,11 +260,12 @@ function RoundService.RemovePlayer(player)
 	end
 
 	RoundService.players[player] = nil
-
-	local nametagIndex = (data.x + 2) + (data.y + 1)/2
-	local nametag = RoundService.nametags[nametagIndex]
-	nametag.main.text = ""
-	nametag.shadow.text = ""
+	for i = 1, 4 do
+		if string.upper(player.name) == RoundService.nametags[i].main.text then
+			RoundService.nametags[i].main.text = ""
+			RoundService.nametags[i].shadow.text = ""
+		end
+	end
 end
 
 return RoundService
