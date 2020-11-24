@@ -117,6 +117,7 @@ cameraUpdateTask.repeatInterval = .5
 cameraUpdateTask.repeatCount = -1
 
 Task.Spawn(function() -- global leaderboard update loop
+	local numberOfEntriesToDisplay = 20
 	local rows = {}
 	while true do
 		local leaderboard = Leaderboards.GetLeaderboard(HIGH_SCORE, LeaderboardType.GLOBAL)
@@ -131,14 +132,14 @@ Task.Spawn(function() -- global leaderboard update loop
 			end
 
 
-			for i = 1, math.min(10, #leaderboard) do
+			for i = 1, math.min(numberOfEntriesToDisplay, #leaderboard) do
 				if not rows[i] then
 					rows[i] = World.SpawnAsset(LEADERBOARD_ROW, {parent = LEADERBOARD_GLOBAL})
 					rows[i].y = 32*i
 				end
 				local text = ""
 				local textScore = "99+"
-				if playerPosition > 9 and i == 10 then
+				if playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and i == math.min(numberOfEntriesToDisplay, #leaderboard) then
 					text = Game.GetLocalPlayer().name
 					textScore = playerHighScore
 				else
@@ -150,20 +151,22 @@ Task.Spawn(function() -- global leaderboard update loop
 					
 					if (uitext:IsA("UIText") and uitext.name == "Shadow" or uitext.name == "Text") then
 						uitext.text = text
+						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "Text" then
 							uitext:SetColor(Color.GREEN)
 						end
-						if i == 10 and playerPosition > 9 and uitext.name == "Text" then
+						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "Text" then
 							uitext:SetColor(Color.GREEN)
 						end
 					end
 
 					if (uitext:IsA("UIText") and uitext.name == "ScoreShadow" or uitext.name == "ScoreText") then
 						uitext.text = tostring(textScore)
+						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "ScoreText" then
 							uitext:SetColor(Color.GREEN)
 						end
-						if i == 10 and playerPosition > 9 and uitext.name == "ScoreText" then
+						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "ScoreText" then
 							uitext:SetColor(Color.GREEN)
 						end
 					end
@@ -171,10 +174,11 @@ Task.Spawn(function() -- global leaderboard update loop
 
 					if (uitext:IsA("UIText") and uitext.name == "PositionShadow" or uitext.name == "PositionText") then
 						uitext.text = tostring(i)
+						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "PositionText" then
 							uitext:SetColor(Color.GREEN)
 						end
-						if i == 10 and playerPosition > 9 and uitext.name == "PositionText" then
+						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "PositionText" then
 							if playerPosition > 99 then
 								uitext.text = "99+"
 							else

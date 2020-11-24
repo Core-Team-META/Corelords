@@ -136,7 +136,7 @@
             }
           }
           Text {
-            Label: "TOP SCORES"
+            Label: "Name"
             Color {
               R: 1
               G: 1
@@ -193,6 +193,7 @@
             }
           }
           Text {
+            Label: "Pos"
             Color {
               R: 1
               G: 1
@@ -249,6 +250,7 @@
             }
           }
           Text {
+            Label: "Score"
             Color {
               R: 1
               G: 1
