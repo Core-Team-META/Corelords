@@ -60,8 +60,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 0.00924996566
-              G: 0.111000009
+              R: 0.00533331325
+              G: 0.064
               A: 1
             }
           }
@@ -116,8 +116,8 @@
           Overrides {
             Name: "ma:Font.Faces:color"
             Color {
-              R: 0.00924996473
-              G: 0.111
+              R: 0.00533331325
+              G: 0.064
               A: 1
             }
           }
@@ -172,6 +172,14 @@
           }
           Overrides {
             Name: "ma:Font.Faces:color"
+            Color {
+              R: 0.00533331325
+              G: 0.064
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:color"
             Color {
               R: 0.00924996473
               G: 0.111
