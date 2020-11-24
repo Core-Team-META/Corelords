@@ -75,6 +75,9 @@ Events.Connect("DisplayVictory", function()
     local players = Game.GetPlayers()
     for _, player in pairs(players) do
         local score = player:GetResource("Score")
+        --print("player name: " .. player.name)
+        --print("Score: " .. tostring(score))
+        --print("HighScore" .. tostring( player:GetResource("HighScore")))
         if score > player:GetResource("HighScore") then
             player:SetResource("HighScore", score)
             local data = Storage.GetPlayerData(player)

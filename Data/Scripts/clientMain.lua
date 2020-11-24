@@ -121,16 +121,69 @@ Task.Spawn(function() -- global leaderboard update loop
 	while true do
 		local leaderboard = Leaderboards.GetLeaderboard(HIGH_SCORE, LeaderboardType.GLOBAL)
 		if leaderboard then
+			local playerPosition = 100
+			local playerHighScore = Game.GetLocalPlayer():GetResource("HighScore")
+			for i = 1, #leaderboard do
+				if leaderboard[i].name == Game.GetLocalPlayer().name then
+					playerPosition = i
+					break
+				end
+			end
+
+
 			for i = 1, math.min(10, #leaderboard) do
 				if not rows[i] then
 					rows[i] = World.SpawnAsset(LEADERBOARD_ROW, {parent = LEADERBOARD_GLOBAL})
-					rows[i].y = 60*i
+					rows[i].y = 40*i
 				end
-				local text = leaderboard[i].name.." "..math.floor(leaderboard[i].score)
+				local text = ""
+				local textScore = "99+"
+				if playerPosition > 9 and i == 10 then
+					text = Game.GetLocalPlayer().name
+					textScore = playerHighScore
+				else
+					text = leaderboard[i].name
+					textScore = math.floor(leaderboard[i].score)
+				end
+
 				for _, uitext in pairs(rows[i]:GetChildren()) do
-					if (uitext:IsA("UIText")) then
+					
+					if (uitext:IsA("UIText") and uitext.name == "Shadow" or uitext.name == "Text") then
 						uitext.text = text
+						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "Text" then
+							uitext:SetColor(Color.GREEN)
+						end
+						if i == 10 and playerPosition > 9 and uitext.name == "Text" then
+							uitext:SetColor(Color.GREEN)
+						end
 					end
+
+					if (uitext:IsA("UIText") and uitext.name == "ScoreShadow" or uitext.name == "ScoreText") then
+						uitext.text = tostring(textScore)
+						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "ScoreText" then
+							uitext:SetColor(Color.GREEN)
+						end
+						if i == 10 and playerPosition > 9 and uitext.name == "ScoreText" then
+							uitext:SetColor(Color.GREEN)
+						end
+					end
+
+
+					if (uitext:IsA("UIText") and uitext.name == "PositionShadow" or uitext.name == "PositionText") then
+						uitext.text = tostring(i)
+						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "PositionText" then
+							uitext:SetColor(Color.GREEN)
+						end
+						if i == 10 and playerPosition > 9 and uitext.name == "PositionText" then
+							if playerPosition > 99 then
+								uitext.text = "99+"
+							else
+								uitext.text = tostring(playerPosition)
+							end
+							uitext:SetColor(Color.GREEN)
+						end
+					end
+
 				end
 			end
 		end

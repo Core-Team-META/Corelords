@@ -25,6 +25,7 @@ Objects {
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
   ChildIds: 12102183263142264206
+  ChildIds: 10067718520591833633
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,114 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10067718520591833633
+  Name: "Scoreboard (PlayerTitles)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2580715058389807713
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceon"
+          }
+        }
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:topleft"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:topleft"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Width"
+          Int: 295
+        }
+        Overrides {
+          Name: "Height"
+          Int: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4929138087329972775
+      value {
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6515389984053748710
+      value {
+        Overrides {
+          Name: "cs:Resource"
+          String: "Score"
+        }
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: true
+        }
+        Overrides {
+          Name: "Name"
+          String: "Score"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9238619091742033055
+      value {
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10032235820682127814
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Scoreboard (PlayerTitles)"
+        }
+        Overrides {
+          Name: "cs:ToggleBinding"
+          String: "ability_extra_17"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15003427990779620069
+    }
   }
 }
 Objects {
@@ -292,7 +401,7 @@ Objects {
   ChildIds: 7232274016867734611
   ChildIds: 13313389828636008364
   ChildIds: 9237174078399991206
-  ChildIds: 12110109398836270370
+  ChildIds: 15228910751247538552
   UnregisteredParameters {
     Overrides {
       Name: "cs:BrickString"
@@ -314,7 +423,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12110109398836270370
+  Id: 15228910751247538552
   Name: "UI Container"
   Transform {
     Location {
@@ -328,7 +437,7 @@ Objects {
     }
   }
   ParentId: 17917873266452412741
-  ChildIds: 11332390669167416879
+  ChildIds: 14570347598689939037
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -358,7 +467,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11332390669167416879
+  Id: 14570347598689939037
   Name: "Leaderboard"
   Transform {
     Location {
@@ -371,13 +480,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12110109398836270370
-  ChildIds: 12632149350244672004
+  ParentId: 15228910751247538552
+  ChildIds: 14373049721970724065
   UnregisteredParameters {
     Overrides {
       Name: "cs:GlobalLeaderboard"
       ObjectReference {
-        SelfId: 12632149350244672004
+        SelfId: 14373049721970724065
       }
     }
   }
@@ -414,7 +523,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12632149350244672004
+  Id: 14373049721970724065
   Name: "GlobalLeaderboard"
   Transform {
     Location {
@@ -427,8 +536,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11332390669167416879
-  ChildIds: 5350694710397087910
+  ParentId: 14570347598689939037
+  ChildIds: 3916899431951034381
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -440,7 +549,7 @@ Objects {
   Control {
     Width: 320
     Height: 736
-    UIX: -5
+    UIX: 5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -463,7 +572,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5350694710397087910
+  Id: 3916899431951034381
   Name: "LeaderboardRow"
   Transform {
     Scale {
@@ -472,7 +581,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12632149350244672004
+  ParentId: 14373049721970724065
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -497,26 +606,10 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "UIX"
-          Float: 0
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 0
-        }
-        Overrides {
-          Name: "Width"
-          Int: 320
-        }
-        Overrides {
-          Name: "Height"
-          Int: 60
-        }
       }
     }
     TemplateAsset {
-      Id: 2587742162255074138
+      Id: 1187109829877265113
     }
   }
 }
@@ -695,13 +788,7 @@ Objects {
     Overrides {
       Name: "cs:Leaderboard"
       ObjectReference {
-        SelfId: 11332390669167416879
-      }
-    }
-    Overrides {
-      Name: "cs:LeaderboardRow"
-      AssetReference {
-        Id: 2587742162255074138
+        SelfId: 14570347598689939037
       }
     }
     Overrides {
@@ -759,6 +846,12 @@ Objects {
       Name: "cs:Plus40"
       AssetReference {
         Id: 1591964451013625142
+      }
+    }
+    Overrides {
+      Name: "cs:LeaderboardRow"
+      AssetReference {
+        Id: 1187109829877265113
       }
     }
   }
