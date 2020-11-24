@@ -134,7 +134,7 @@ Task.Spawn(function() -- global leaderboard update loop
 			for i = 1, math.min(10, #leaderboard) do
 				if not rows[i] then
 					rows[i] = World.SpawnAsset(LEADERBOARD_ROW, {parent = LEADERBOARD_GLOBAL})
-					rows[i].y = 40*i
+					rows[i].y = 32*i
 				end
 				local text = ""
 				local textScore = "99+"
