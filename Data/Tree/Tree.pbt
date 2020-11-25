@@ -26,6 +26,11 @@ Objects {
   ChildIds: 15307418420075356122
   ChildIds: 12102183263142264206
   ChildIds: 10067718520591833633
+  ChildIds: 2284489668522130211
+  ChildIds: 9011229290048859060
+  ChildIds: 15895059247399632063
+  ChildIds: 8566528635295666201
+  ChildIds: 4407582356785969620
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +40,197 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4407582356785969620
+  Name: "Minus10"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2381663563242666705
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Minus10"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5684352845093599421
+    }
+  }
+}
+Objects {
+  Id: 8566528635295666201
+  Name: "Plus40"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Lifespan: 0.5
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Plus40"
+  }
+  InstanceHistory {
+    SelfId: 8566528635295666201
+    SubobjectId: 8600165239720821765
+    InstanceId: 4772219234417344720
+    TemplateId: 1591964451013625142
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15895059247399632063
+  Name: "Plus30"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Lifespan: 0.5
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Plus30"
+  }
+  InstanceHistory {
+    SelfId: 15895059247399632063
+    SubobjectId: 11460609615171980845
+    InstanceId: 2362826927034260370
+    TemplateId: 5867313709139283568
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 9011229290048859060
+  Name: "Plus20"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Lifespan: 0.5
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Plus20"
+  }
+  InstanceHistory {
+    SelfId: 9011229290048859060
+    SubobjectId: 3945570216107294747
+    InstanceId: 5303810649305852543
+    TemplateId: 5372252454893881871
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 2284489668522130211
+  Name: "Plus10"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7181674904968283578
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Plus10"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3072823352588671044
+    }
   }
 }
 Objects {
@@ -54,80 +250,6 @@ Objects {
   ParentId: 4781671109827199097
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2580715058389807713
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceon"
-          }
-        }
-        Overrides {
-          Name: "Anchor"
-          Enum {
-            Value: "mc:euianchor:topleft"
-          }
-        }
-        Overrides {
-          Name: "Dock"
-          Enum {
-            Value: "mc:euianchor:topleft"
-          }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 0
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 0
-        }
-        Overrides {
-          Name: "Width"
-          Int: 295
-        }
-        Overrides {
-          Name: "Height"
-          Int: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 4929138087329972775
-      value {
-        Overrides {
-          Name: "cs:Enabled"
-          Bool: false
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6515389984053748710
-      value {
-        Overrides {
-          Name: "cs:Resource"
-          String: "Score"
-        }
-        Overrides {
-          Name: "cs:Enabled"
-          Bool: true
-        }
-        Overrides {
-          Name: "Name"
-          String: "Score"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9238619091742033055
-      value {
-        Overrides {
-          Name: "cs:Enabled"
-          Bool: false
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 10032235820682127814
       value {
         Overrides {
@@ -135,8 +257,14 @@ Objects {
           String: "Scoreboard (PlayerTitles)"
         }
         Overrides {
-          Name: "cs:ToggleBinding"
-          String: "ability_extra_17"
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }
@@ -481,6 +609,8 @@ Objects {
     }
   }
   ParentId: 15228910751247538552
+  ChildIds: 11764764223860853103
+  ChildIds: 11156866508609954325
   ChildIds: 14373049721970724065
   UnregisteredParameters {
     Overrides {
@@ -500,7 +630,7 @@ Objects {
     Width: 100
     Height: 100
     UIX: -10
-    UIY: 30
+    UIY: 160
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -610,6 +740,119 @@ Objects {
     }
     TemplateAsset {
       Id: 1187109829877265113
+    }
+  }
+}
+Objects {
+  Id: 11156866508609954325
+  Name: "Text"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14570347598689939037
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 180
+    Height: 32
+    UIX: -50
+    UIY: -40
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "ALL TIME LEADERS"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11764764223860853103
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14570347598689939037
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 320
+    Height: 32
+    UIX: -220
+    UIY: -35
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        A: 0.33
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
     }
   }
 }
