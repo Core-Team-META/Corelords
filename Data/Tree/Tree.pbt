@@ -901,6 +901,54 @@ Objects {
         Id: 1187109829877265113
       }
     }
+    Overrides {
+      Name: "cs:Minus600"
+      AssetReference {
+        Id: 11729137962200591591
+      }
+    }
+    Overrides {
+      Name: "cs:Minus1200"
+      AssetReference {
+        Id: 899526451839941401
+      }
+    }
+    Overrides {
+      Name: "cs:Minus1800"
+      AssetReference {
+        Id: 4263489481096753240
+      }
+    }
+    Overrides {
+      Name: "cs:Minus2400"
+      AssetReference {
+        Id: 17035509670280279101
+      }
+    }
+    Overrides {
+      Name: "cs:Plus600"
+      AssetReference {
+        Id: 2803103840655075452
+      }
+    }
+    Overrides {
+      Name: "cs:Plus1200"
+      AssetReference {
+        Id: 16062250732386274296
+      }
+    }
+    Overrides {
+      Name: "cs:Plus1800"
+      AssetReference {
+        Id: 16237070405637567471
+      }
+    }
+    Overrides {
+      Name: "cs:Plus2400"
+      AssetReference {
+        Id: 7399220399467369422
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

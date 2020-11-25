@@ -19,7 +19,15 @@ local SCOREDIGITS = {
 	PLUS10 = script:GetCustomProperty("Plus10"),
 	PLUS20 = script:GetCustomProperty("Plus20"),
 	PLUS30 = script:GetCustomProperty("Plus30"),
-	PLUS40 = script:GetCustomProperty("Plus40")
+	PLUS40 = script:GetCustomProperty("Plus40"),
+	MINUS600 = script:GetCustomProperty("Minus600"),
+	MINUS1200 = script:GetCustomProperty("Minus1200"),
+	MINUS1800 = script:GetCustomProperty("Minus1800"),
+	MINUS2400 = script:GetCustomProperty("Minus2400"),
+	PLUS600 = script:GetCustomProperty("Plus600"),
+	PLUS1200 = script:GetCustomProperty("Plus1200"),
+	PLUS1800 = script:GetCustomProperty("Plus1800"),
+	PLUS2400 = script:GetCustomProperty("Plus2400")
 }
 
 local ABILITY_FOLDER = script:GetCustomProperty("ABILITY_FOLDER"):WaitForObject()
@@ -47,26 +55,19 @@ local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false
 
 Events.Connect("Fly", function(prefix, type, x, y)
-	local isBig = false
 	local players = Game.GetPlayers()
-	local score = utils.BRICK_POINT_VALUE
-	if type == "castle" then
-		local color = Color.New(1, 0, 0)
-		if prefix == "+" then
-			color = Color.New(0, .7, .8)
-		end
-		score = utils.CASTLE_POINT_VALUE
-		isBig = true
-		score = score * #players
-		UI.ShowFlyUpText(prefix .. tostring(score), Vector3.New(x,y,55), {color = color, isBig = isBig})
-	else
-		local sign = prefix == "+" and "PLUS" or "MINUS"
-		score = score * #players
-		local digits = sign .. tostring(score)
+	local score = type == "brick" and utils.BRICK_POINT_VALUE or utils.CASTLE_POINT_VALUE
+	local sign = prefix == "+" and "PLUS" or "MINUS"
+	score = score * #players
+	local digits = sign .. tostring(score)
+	
+	if type == "brick" then
 		local worldScore = World.SpawnAsset(SCOREDIGITS[digits], {position = Vector3.New(x,y,55) })
 		worldScore:MoveTo(Vector3.New(x,y,255), .5)
+	else
+		local worldScore = World.SpawnAsset(SCOREDIGITS[digits], {position = Vector3.New(x,y,55), scale = Vector3.New(2,2,2) })
+		worldScore:MoveTo(Vector3.New(x,y,455), .8)
 	end
-
 	
 end)
 

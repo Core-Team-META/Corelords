@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 1591964451013625142
-  Name: "Plus40"
+  Id: 2803103840655075452
+  Name: "Plus600"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 8600165239720821765
+      RootId: 1687737842687518050
       Objects {
-        Id: 8600165239720821765
-        Name: "Plus40"
+        Id: 1687737842687518050
+        Name: "Plus600"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 11593829478651051112
+        ChildIds: 524670714720568996
         Lifespan: 0.5
         WantsNetworking: true
         Collidable_v2 {
@@ -30,12 +30,12 @@
         }
       }
       Objects {
-        Id: 11593829478651051112
+        Id: 524670714720568996
         Name: "ClientContext"
         Transform {
           Location {
             X: 0.57838577
-            Y: 2.2474227
+            Y: -70
             Z: -1.60052395
           }
           Rotation {
@@ -46,10 +46,11 @@
             Z: 0.790002525
           }
         }
-        ParentId: 8600165239720821765
-        ChildIds: 3648842840435663692
-        ChildIds: 15474820773463560314
-        ChildIds: 3207419277421013283
+        ParentId: 1687737842687518050
+        ChildIds: 11493310194687432066
+        ChildIds: 16566060260199933571
+        ChildIds: 17737338351732953243
+        ChildIds: 229046687411554615
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -61,7 +62,7 @@
         }
       }
       Objects {
-        Id: 3648842840435663692
+        Id: 11493310194687432066
         Name: "Plus"
         Transform {
           Location {
@@ -77,12 +78,12 @@
             Z: 1
           }
         }
-        ParentId: 11593829478651051112
-        ChildIds: 13655926749002511059
-        ChildIds: 2026803806442767044
-        ChildIds: 14907113928015644662
-        ChildIds: 11235673810542076229
-        ChildIds: 858258567699197350
+        ParentId: 524670714720568996
+        ChildIds: 2747956653626036654
+        ChildIds: 11840847980083171680
+        ChildIds: 16960038427979961171
+        ChildIds: 1119595034073252963
+        ChildIds: 76547428534942922
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -94,7 +95,7 @@
         }
       }
       Objects {
-        Id: 13655926749002511059
+        Id: 2747956653626036654
         Name: "Text 02: +"
         Transform {
           Location {
@@ -113,7 +114,7 @@
             Z: 0.812612
           }
         }
-        ParentId: 3648842840435663692
+        ParentId: 11493310194687432066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -156,7 +157,7 @@
         }
       }
       Objects {
-        Id: 2026803806442767044
+        Id: 11840847980083171680
         Name: "Text 02: +"
         Transform {
           Location {
@@ -173,7 +174,7 @@
             Z: 0.926681161
           }
         }
-        ParentId: 3648842840435663692
+        ParentId: 11493310194687432066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -216,7 +217,7 @@
         }
       }
       Objects {
-        Id: 14907113928015644662
+        Id: 16960038427979961171
         Name: "Text 02: +"
         Transform {
           Location {
@@ -233,7 +234,7 @@
             Z: 0.926681161
           }
         }
-        ParentId: 3648842840435663692
+        ParentId: 11493310194687432066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -276,7 +277,7 @@
         }
       }
       Objects {
-        Id: 11235673810542076229
+        Id: 1119595034073252963
         Name: "Text 02: +"
         Transform {
           Location {
@@ -293,7 +294,7 @@
             Z: 0.926681161
           }
         }
-        ParentId: 3648842840435663692
+        ParentId: 11493310194687432066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -336,7 +337,7 @@
         }
       }
       Objects {
-        Id: 858258567699197350
+        Id: 76547428534942922
         Name: "Text 02: +"
         Transform {
           Location {
@@ -353,7 +354,7 @@
             Z: 0.926681161
           }
         }
-        ParentId: 3648842840435663692
+        ParentId: 11493310194687432066
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -396,12 +397,11 @@
         }
       }
       Objects {
-        Id: 15474820773463560314
-        Name: "Four"
+        Id: 16566060260199933571
+        Name: "Six"
         Transform {
           Location {
-            X: 0.289192855
-            Y: 4.40624285
+            X: 0.289192885
           }
           Rotation {
           }
@@ -411,10 +411,10 @@
             Z: 1
           }
         }
-        ParentId: 11593829478651051112
-        ChildIds: 15129991108948895803
-        ChildIds: 2695616185320620446
-        ChildIds: 17991094206946074095
+        ParentId: 524670714720568996
+        ChildIds: 1362123192062757432
+        ChildIds: 9520876891839064110
+        ChildIds: 15101443155529640610
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -426,8 +426,8 @@
         }
       }
       Objects {
-        Id: 15129991108948895803
-        Name: "Text 01: 4"
+        Id: 1362123192062757432
+        Name: "Text 01: 6"
         Transform {
           Location {
             X: 1.69694793
@@ -444,7 +444,7 @@
             Z: 1.76399732
           }
         }
-        ParentId: 15474820773463560314
+        ParentId: 16566060260199933571
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -473,7 +473,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12558737798579268320
+            Id: 3031652455206643069
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -487,8 +487,8 @@
         }
       }
       Objects {
-        Id: 2695616185320620446
-        Name: "Text 01: 4 outer"
+        Id: 9520876891839064110
+        Name: "Text 01: 6 outer"
         Transform {
           Location {
             X: -6.09335375
@@ -505,7 +505,7 @@
             Z: 2.07738209
           }
         }
-        ParentId: 15474820773463560314
+        ParentId: 16566060260199933571
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -534,7 +534,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12558737798579268320
+            Id: 3031652455206643069
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -548,8 +548,8 @@
         }
       }
       Objects {
-        Id: 17991094206946074095
-        Name: "Text 01: 4 inner"
+        Id: 15101443155529640610
+        Name: "Text 01: 6 inner"
         Transform {
           Location {
             X: -5.92343807
@@ -566,7 +566,7 @@
             Z: 1.64829051
           }
         }
-        ParentId: 15474820773463560314
+        ParentId: 16566060260199933571
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -595,7 +595,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12558737798579268320
+            Id: 3031652455206643069
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -609,12 +609,12 @@
         }
       }
       Objects {
-        Id: 3207419277421013283
+        Id: 17737338351732953243
         Name: "Zero"
         Transform {
           Location {
             X: 0.289192885
-            Y: 66.7752
+            Y: 140
           }
           Rotation {
           }
@@ -624,10 +624,10 @@
             Z: 1
           }
         }
-        ParentId: 11593829478651051112
-        ChildIds: 7478429867028167643
-        ChildIds: 13676604888944401366
-        ChildIds: 8201856995797805925
+        ParentId: 524670714720568996
+        ChildIds: 2429123241673023278
+        ChildIds: 5077060826565498589
+        ChildIds: 5095996073515001454
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -639,7 +639,7 @@
         }
       }
       Objects {
-        Id: 7478429867028167643
+        Id: 2429123241673023278
         Name: "Text 01: 0"
         Transform {
           Location {
@@ -657,7 +657,7 @@
             Z: 1.80311239
           }
         }
-        ParentId: 3207419277421013283
+        ParentId: 17737338351732953243
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -700,7 +700,7 @@
         }
       }
       Objects {
-        Id: 13676604888944401366
+        Id: 5077060826565498589
         Name: "Text 01: 0 outter"
         Transform {
           Location {
@@ -717,7 +717,7 @@
             Z: 2.05842304
           }
         }
-        ParentId: 3207419277421013283
+        ParentId: 17737338351732953243
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -760,7 +760,7 @@
         }
       }
       Objects {
-        Id: 8201856995797805925
+        Id: 5095996073515001454
         Name: "Text 01: 0 inner"
         Transform {
           Location {
@@ -778,7 +778,219 @@
             Z: 1.12364221
           }
         }
-        ParentId: 3207419277421013283
+        ParentId: 17737338351732953243
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8030207836437554034
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 229046687411554615
+        Name: "Zero"
+        Transform {
+          Location {
+            X: 0.289192885
+            Y: 70
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 524670714720568996
+        ChildIds: 5558162467685430494
+        ChildIds: 8449514066302245137
+        ChildIds: 13030546083370178088
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5558162467685430494
+        Name: "Text 01: 0"
+        Transform {
+          Location {
+            X: 1.59762728
+            Y: 0.397197515
+            Z: 1.60052371
+          }
+          Rotation {
+            Yaw: 89.9999619
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 1.71884823
+            Y: 0.23687306
+            Z: 1.80311239
+          }
+        }
+        ParentId: 229046687411554615
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 8788329265679993174
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 8788329265679993174
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 8788329265679993174
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8030207836437554034
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8449514066302245137
+        Name: "Text 01: 0 outter"
+        Transform {
+          Location {
+            X: -4.31982088
+            Y: -5.20209742
+          }
+          Rotation {
+            Yaw: 89.9999466
+            Roll: -89.999939
+          }
+          Scale {
+            X: 2.0850594
+            Y: 0.245410159
+            Z: 2.05842304
+          }
+        }
+        ParentId: 229046687411554615
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 1349664009537848939
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8030207836437554034
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13030546083370178088
+        Name: "Text 01: 0 inner"
+        Transform {
+          Location {
+            X: 16.4363232
+            Y: 11.35217
+            Z: -1.38232803
+          }
+          Rotation {
+            Yaw: 89.9999466
+            Roll: -89.999939
+          }
+          Scale {
+            X: 1.0721662
+            Y: 0.245407715
+            Z: 1.12364221
+          }
+        }
+        ParentId: 229046687411554615
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Faces:id"
@@ -831,12 +1043,12 @@
       }
     }
     Assets {
-      Id: 12558737798579268320
-      Name: "Text 01: 4"
+      Id: 3031652455206643069
+      Name: "Text 01: 6"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_030"
+        AssetId: "F1_Text_032"
       }
     }
     Assets {
