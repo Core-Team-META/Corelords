@@ -73,7 +73,7 @@
           }
           Overrides {
             Name: "cs:ToggleBinding"
-            String: "ability_extra_17"
+            String: "ability_extra_19"
           }
           Overrides {
             Name: "cs:ToggleEvent"
@@ -364,12 +364,11 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: 295
+          Width: 900
           Height: 500
-          UIY: 130
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -380,12 +379,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -910,7 +909,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Enabled"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:Type"
@@ -949,7 +948,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Enabled"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:Type"
@@ -972,7 +971,7 @@
       }
       Objects {
         Id: 6515389984053748710
-        Name: "Score"
+        Name: "Currency"
         Transform {
           Location {
           }
@@ -988,7 +987,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Enabled"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:Type"
@@ -996,7 +995,7 @@
           }
           Overrides {
             Name: "cs:Resource"
-            String: "Score"
+            String: "Currency"
           }
         }
         Collidable_v2 {

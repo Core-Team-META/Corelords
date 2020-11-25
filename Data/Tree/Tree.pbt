@@ -250,6 +250,80 @@ Objects {
   ParentId: 4781671109827199097
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2580715058389807713
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceon"
+          }
+        }
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:topleft"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:topleft"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Width"
+          Int: 295
+        }
+        Overrides {
+          Name: "Height"
+          Int: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4929138087329972775
+      value {
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6515389984053748710
+      value {
+        Overrides {
+          Name: "cs:Resource"
+          String: "Score"
+        }
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: true
+        }
+        Overrides {
+          Name: "Name"
+          String: "Score"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9238619091742033055
+      value {
+        Overrides {
+          Name: "cs:Enabled"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 10032235820682127814
       value {
         Overrides {
@@ -257,14 +331,8 @@ Objects {
           String: "Scoreboard (PlayerTitles)"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          Name: "cs:ToggleBinding"
+          String: "ability_extra_17"
         }
       }
     }
@@ -609,8 +677,6 @@ Objects {
     }
   }
   ParentId: 15228910751247538552
-  ChildIds: 11764764223860853103
-  ChildIds: 11156866508609954325
   ChildIds: 14373049721970724065
   UnregisteredParameters {
     Overrides {
@@ -630,7 +696,7 @@ Objects {
     Width: 100
     Height: 100
     UIX: -10
-    UIY: 160
+    UIY: 30
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -740,119 +806,6 @@ Objects {
     }
     TemplateAsset {
       Id: 1187109829877265113
-    }
-  }
-}
-Objects {
-  Id: 11156866508609954325
-  Name: "Text"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14570347598689939037
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 180
-    Height: 32
-    UIX: -50
-    UIY: -40
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "ALL TIME LEADERS"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      ClipTextToSize: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 11764764223860853103
-  Name: "UI Image"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14570347598689939037
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 320
-    Height: 32
-    UIX: -220
-    UIY: -35
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        A: 0.33
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
     }
   }
 }
