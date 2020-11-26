@@ -177,6 +177,24 @@ function RoundService.AssignPlayer(player)
 			nametag.main.text = string.upper(player.name)
 			nametag.shadow.text = string.upper(player.name)
 			castleAssigned = true
+
+			local playerCastleColor = utils.TEAM_COLORS[(castle.x < 0 and 2 or 0) + (castle.y > 0 and 2 or 1)]
+			local playerCastleLabel = castle.object:FindDescendantByName("RightText")
+			if playerCastleLabel.visibility == Visibility.FORCE_OFF then
+				playerCastleLabel = castle.object:FindDescendantByName("LeftText")
+			end
+			local finalLocation = playerCastleLabel:GetWorldPosition()
+			local finalRotation = playerCastleLabel:GetWorldRotation()
+			local finalScale = playerCastleLabel:GetWorldScale()
+			playerCastleLabel:SetWorldPosition(Vector3.New(0,0,55))
+			playerCastleLabel:SetWorldRotation(Rotation.New(180,90,0))
+			playerCastleLabel:SetWorldScale(Vector3.New(10,10,10))
+			playerCastleLabel:SetColor(playerCastleColor)
+
+			playerCastleLabel:MoveTo(finalLocation, 2)
+			playerCastleLabel:RotateTo(finalRotation, 2, false)
+			playerCastleLabel:ScaleTo(finalScale, 2, false)
+
 			break
 		end
 	end
