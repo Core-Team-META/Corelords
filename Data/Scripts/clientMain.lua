@@ -113,6 +113,12 @@ function OnSetBallColor(coloredBall)
 end
 Events.Connect("SetBallColor", OnSetBallColor)
 
+Events.Connect("HideUI", function() LEADERBOARD.visibility = Visibility.FORCE_OFF end)
+
+Events.Connect("ShowUI", function() LEADERBOARD.visibility = Visibility.FORCE_ON end)
+
+
+
 utils.SendBroadcast("Ready")
 
 Task.Wait()
@@ -139,7 +145,6 @@ Task.Spawn(function() -- global leaderboard update loop
 					break
 				end
 			end
-
 
 			for i = 1, math.min(numberOfEntriesToDisplay, #leaderboard) do
 				if not rows[i] then

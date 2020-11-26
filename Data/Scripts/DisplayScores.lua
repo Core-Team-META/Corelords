@@ -31,6 +31,7 @@ SCORE_START_LOCATION[4] = Vector3.New(1051, 722, 55)
 local playerList = {}
 
 Events.Connect("RoundEnded", function()
+    while Events.BroadcastToAllPlayers("ShowUI") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
     for i = 1, 4 do
         playerList[i] = nil
         scoreboardGroup[i]:FindChildByName("World Text").text  = "Score:" .. string.format("%05.f", STARTING_SCORE)
@@ -43,6 +44,7 @@ end)
 
 Events.Connect("DisplayVictory", function()
     Task.Wait(1) -- wait for resources to finish replicating.
+    while Events.BroadcastToAllPlayers("HideUI") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
     local scores = {}
     local scoreInc = 0
     local scoreName = {}

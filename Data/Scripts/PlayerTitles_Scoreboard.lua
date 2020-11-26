@@ -384,6 +384,7 @@ end
 --	nil ForceToggle()
 --	Forces the visibility of the PlayerList to toggle (ON/OFF)
 function ForceToggle()
+	print("toggled")
 	if(isVisible) then
 		ForceOff()
 	else
@@ -424,7 +425,7 @@ if(#FORCE_ON_EVENT > 0) then
 end
 
 if(#FORCE_OFF_EVENT > 0) then
-	Events.Connect(TOGGLE_EVENT, ForceOff)
+	Events.Connect(FORCE_OFF_EVENT, ForceOff)
 end
 
 if(TOGGLE_BINDING) then

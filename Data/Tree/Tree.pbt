@@ -70,6 +70,18 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:ForceOffEvent"
+          String: "HideUI"
+        }
+        Overrides {
+          Name: "cs:ForceOnEvent"
+          String: "ShowUI"
+        }
+        Overrides {
+          Name: "cs:ToggleBinding"
+          String: ""
+        }
       }
     }
     TemplateAsset {
@@ -428,7 +440,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Control {
     Width: 100
