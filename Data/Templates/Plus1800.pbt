@@ -97,7 +97,7 @@
       }
       Objects {
         Id: 2033604673725046870
-        Name: "Text 02: +"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 4.27777624
@@ -429,7 +429,7 @@
       }
       Objects {
         Id: 10189832100773346763
-        Name: "Text 01: 1"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.69694793
@@ -642,7 +642,7 @@
       }
       Objects {
         Id: 9005161723548136605
-        Name: "Text 01: 8"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.69694793
@@ -855,7 +855,7 @@
       }
       Objects {
         Id: 5487169965606850267
-        Name: "Text 01: 0"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.59762728
@@ -1067,7 +1067,7 @@
       }
       Objects {
         Id: 10397103599251329417
-        Name: "Text 01: 0"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.59762728

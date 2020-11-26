@@ -54,19 +54,27 @@ local utils = DEPENDENCIES.utils
 local player = Game.GetLocalPlayer()
 player.isVisibleToSelf = false
 
-Events.Connect("Fly", function(prefix, type, x, y)
+Events.Connect("Fly", function(prefix, type, x, y, colorIndex)
 	local players = Game.GetPlayers()
 	local score = type == "brick" and utils.BRICK_POINT_VALUE or utils.CASTLE_POINT_VALUE
 	local sign = prefix == "+" and "PLUS" or "MINUS"
 	score = score * #players
 	local digits = sign .. tostring(score)
-	
+
 	if type == "brick" then
 		local worldScore = World.SpawnAsset(SCOREDIGITS[digits], {position = Vector3.New(x,y,55) })
 		worldScore:MoveTo(Vector3.New(x,y,255), .5)
+		local colorPlates = worldScore:FindDescendantsByName("ColorPlate")
+		for _, plate in pairs(colorPlates) do
+			plate:SetColor(utils.TEAM_COLORS[tonumber(colorIndex)]) -- minus numbers don't have the colorPlate so will be left as they are (red)
+		end
 	else
 		local worldScore = World.SpawnAsset(SCOREDIGITS[digits], {position = Vector3.New(x,y,55), scale = Vector3.New(2,2,2) })
 		worldScore:MoveTo(Vector3.New(x,y,455), .8)
+		local colorPlates = worldScore:FindDescendantsByName("ColorPlate")
+		for _, plate in pairs(colorPlates) do
+			plate:SetColor(utils.TEAM_COLORS[tonumber(colorIndex)]) -- minus numbers don't have the colorPlate so will be left as they are (red)
+		end
 	end
 	
 end)

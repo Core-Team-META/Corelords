@@ -95,7 +95,7 @@
       }
       Objects {
         Id: 15867395897925558165
-        Name: "Text 02: +"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 4.27777624
@@ -427,7 +427,7 @@
       }
       Objects {
         Id: 11448677225190422159
-        Name: "Text 01: 3"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.69694793
@@ -640,7 +640,7 @@
       }
       Objects {
         Id: 6980529814464663904
-        Name: "Text 01: 0"
+        Name: "ColorPlate"
         Transform {
           Location {
             X: 1.59762728
