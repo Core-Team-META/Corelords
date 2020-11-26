@@ -5,6 +5,8 @@
 	Contributors
 		Nicholas Foreman (https://www.coregames.com/user/f9df3457225741c89209f6d484d0eba8)
 
+	2020/11/25 Note that this has been updated to sort scores for the resource specifically for CoreLords.
+
 --]]
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -135,7 +137,15 @@ end
 --	nil UpdatePlayerEntries()
 --	Re-orders all of the players in the list
 local function UpdatePlayerEntries()
-	for index, entry in pairs(Entries:GetChildren()) do
+	local unsortedEntries = {}
+	for index, entry in ipairs(Entries:GetChildren()) do
+		unsortedEntries[index] = entry
+	end
+
+	table.sort(unsortedEntries, function(a, b) return tonumber(a:FindDescendantByName("Text").text) > tonumber(b:FindDescendantByName("Text").text) end)	
+
+	for index, entry in ipairs(unsortedEntries) do
+		-- tonumber(entry:FindDescendantByName("Text").text)
 		entry.y = (entry.height * (index - 1)) + (GAP_BETWEEN_ENTRIES * (index - 1))
 	end
 end
@@ -395,6 +405,7 @@ function Tick()
 			end
 		end
 	end
+	UpdatePlayerEntries()
 end
 
 ------------------------------------------------------------------------------------------------------------------------

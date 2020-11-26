@@ -103,7 +103,7 @@ function RoundService.StartRound()
 		RoundService.AssignPlayer(players[i])
 	end
 	
-	Task.Wait(1)
+--	Task.Wait(1)
 	local paddlePosition = round.paddles[round.players[math.random(#round.players)]].position
 	local directionToPaddle = (paddlePosition * (Vector3.ONE - Vector3.UP)):GetNormalized()
 	round.balls[1] = BallService.CreateBall(round, Vector3.ZERO, directionToPaddle * utils.BALL_SPEED)

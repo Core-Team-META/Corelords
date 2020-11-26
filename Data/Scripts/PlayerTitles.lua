@@ -209,8 +209,10 @@ Module.titles = {
 
 			"eea739085f20445392c0ab999ab87bb6", -- Aj
 			"557d4f1ae17646579646dfd20dcb7b66", -- AwkwardGameDev
+			"0ea6612ceab7456a8a3a963a94808295", -- blaking707
 			"d5daea732ee3422fbe85aecb900e73ec", -- Coderz
 			"1f0588bf88d14c258d7384902f71f132", -- Daddio
+			"385b45d7abdb499f8664c6cb01df521b", -- estlogic
 			"1f3edd620c904e30a4e0223dd64bcc2a", -- Keppu
 			"5c3b7b02607c4e368fc063c410123697", -- Knar
 			"9cc8d222e6d14da68dc2ba0a9a4f0439", -- Melamoryxq
@@ -218,6 +220,7 @@ Module.titles = {
 			"94d3fd50c4824f019421895ec8dbf099", -- Mucusinator
 			"91166471c6ea4d17be6772da4973e6b7", -- mjcortes782
 			"f9df3457225741c89209f6d484d0eba8", -- NicholasForeman
+			"1f67a03d5a8f478b993aad1c79b45640", -- Rolok
 			"581ff579fd864966aec56450754db1fb", -- Waffle
 			"e730c40ae54d4c588658667927acc6d8", -- WitcherSilver
 		},
