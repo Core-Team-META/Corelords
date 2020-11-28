@@ -10,6 +10,12 @@
           Id: 15124538403774859143
         }
       }
+      Overrides {
+        Name: "cs:CASTLE_FOLDER"
+        ObjectReference {
+          SelfId: 10228693726930116328
+        }
+      }
     }
   }
   SerializationVersion: 68

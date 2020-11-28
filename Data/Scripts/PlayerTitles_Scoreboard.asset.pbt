@@ -79,6 +79,12 @@
         ObjectReference {
         }
       }
+      Overrides {
+        Name: "cs:CASTLE_FOLDER"
+        ObjectReference {
+          SelfId: 10228693726930116328
+        }
+      }
     }
   }
   SerializationVersion: 68

@@ -35,6 +35,8 @@ local LeaderstatsGroup = script:GetCustomProperty("Leaderstats"):WaitForObject()
 
 local LocalPlayer = Game.GetLocalPlayer()
 
+local CastleFolder = script:GetCustomProperty("CASTLE_FOLDER"):WaitForObject()
+
 ------------------------------------------------------------------------------------------------------------------------
 --	CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
@@ -141,13 +143,49 @@ local function UpdatePlayerEntries()
 	for index, entry in ipairs(Entries:GetChildren()) do
 		unsortedEntries[index] = entry
 	end
+	table.sort(unsortedEntries, function(a, b) return tonumber(a:FindDescendantByName("Text").text) > tonumber(b:FindDescendantByName("Text").text) end)
 
-	table.sort(unsortedEntries, function(a, b) return tonumber(a:FindDescendantByName("Text").text) > tonumber(b:FindDescendantByName("Text").text) end)	
+	local castleEntries = {}
+	local castleChildren = CastleFolder:GetChildren()
+	for index, castle in ipairs(castleChildren) do
+		local nameSet = false
+
+		local castleName = castle:FindDescendantByName("LeftText")
+		if castleName == nil or castleName.text == "" then
+			castleName = castle:FindDescendantByName("RightText")
+		end
+		if castleName ~= nil then
+			local castleEntry = {
+				name = string.upper(castleName.text),
+				color = castleName:GetColor()
+			}
+			if castleEntry.name ~= "" then
+				nameSet = true
+			end
+			table.insert(castleEntries, castleEntry)
+		end
+
+		
+	end
+
 
 	for index, entry in ipairs(unsortedEntries) do
 		-- tonumber(entry:FindDescendantByName("Text").text)
 		entry.y = (entry.height * (index - 1)) + (GAP_BETWEEN_ENTRIES * (index - 1))
+
+		for i, castleEntry in ipairs(castleEntries) do
+			if castleEntry.name == string.upper(entry.name) then
+				local nameText = entry:FindDescendantByName("PlayerName")
+				-- nameText:SetColor(castleEntry.color)
+				local scoreText = entry:FindDescendantByName("Score")
+				scoreText:SetColor(castleEntry.color)
+			end
+		end
+
 	end
+
+
+
 end
 
 --	nil CreatePlayerEntry(Player)
@@ -260,6 +298,7 @@ local function UpdatePlayerEntry(player)
 		playerNameText:SetColor(PLAYER_NAME_COLOR)
 	end
 end
+
 
 --	nil UpdateHeader()
 --	Updates the name color and team color for the LocalPlayer on the Header

@@ -21,6 +21,7 @@ Objects {
   ChildIds: 5486255354436784870
   ChildIds: 4781419766995802276
   ChildIds: 287419262786186720
+  ChildIds: 10228693726930116328
   ChildIds: 17917873266452412741
   ChildIds: 16747225438119934541
   ChildIds: 15307418420075356122
@@ -41,10 +42,6 @@ Objects {
   Id: 10067718520591833633
   Name: "Scoreboard (PlayerTitles)"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -52,6 +49,12 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 10032235820682127814
@@ -69,18 +72,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:ForceOffEvent"
-          String: "HideUI"
-        }
-        Overrides {
-          Name: "cs:ForceOnEvent"
-          String: "ShowUI"
-        }
-        Overrides {
-          Name: "cs:ToggleBinding"
-          String: ""
         }
       }
     }
@@ -972,6 +963,33 @@ Objects {
     ScriptAsset {
       Id: 12045856215708368520
     }
+  }
+}
+Objects {
+  Id: 10228693726930116328
+  Name: "CASTLE_FOLDER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "CASTLE_FOLDER"
   }
 }
 Objects {

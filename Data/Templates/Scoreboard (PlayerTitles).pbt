@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7949726774975659069
+        ParentId: 4781671109827199097
         ChildIds: 1242232350871663812
         ChildIds: 11946210082953481421
         UnregisteredParameters {
@@ -73,7 +73,7 @@
           }
           Overrides {
             Name: "cs:ToggleBinding"
-            String: "ability_extra_17"
+            String: ""
           }
           Overrides {
             Name: "cs:ToggleEvent"
@@ -81,11 +81,11 @@
           }
           Overrides {
             Name: "cs:ForceOnEvent"
-            String: ""
+            String: "ShowUI"
           }
           Overrides {
             Name: "cs:ForceOffEvent"
-            String: ""
+            String: "HideUI"
           }
           Overrides {
             Name: "cs:EaseToggle"
@@ -284,6 +284,12 @@
             Name: "cs:Leaderstats"
             ObjectReference {
               SubObjectId: 11946210082953481421
+            }
+          }
+          Overrides {
+            Name: "cs:CASTLE_FOLDER"
+            ObjectReference {
+              SelfId: 10228693726930116328
             }
           }
         }

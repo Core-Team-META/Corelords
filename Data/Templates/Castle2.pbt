@@ -312,7 +312,6 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "AGGRIPINA"
           Color {
             A: 1
           }
@@ -353,7 +352,6 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "AGGRIPINA"
           Color {
             A: 1
           }
