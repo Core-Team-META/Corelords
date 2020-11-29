@@ -167,10 +167,10 @@ Task.Spawn(function() -- global leaderboard update loop
 						uitext.text = text
 						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "Text" then
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "Text" then
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 					end
 
@@ -178,10 +178,10 @@ Task.Spawn(function() -- global leaderboard update loop
 						uitext.text = tostring(textScore)
 						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "ScoreText" then
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "ScoreText" then
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 					end
 
@@ -190,7 +190,7 @@ Task.Spawn(function() -- global leaderboard update loop
 						uitext.text = tostring(i)
 						uitext:SetColor(Color.WHITE)
 						if leaderboard[i].name == Game.GetLocalPlayer().name and uitext.name == "PositionText" then
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 						if i == math.min(numberOfEntriesToDisplay, #leaderboard) and playerPosition > math.min(numberOfEntriesToDisplay, #leaderboard) - 1 and uitext.name == "PositionText" then
 							if playerPosition > 99 then
@@ -198,7 +198,7 @@ Task.Spawn(function() -- global leaderboard update loop
 							else
 								uitext.text = tostring(playerPosition)
 							end
-							uitext:SetColor(Color.GREEN)
+							uitext:SetColor(Color.YELLOW)
 						end
 					end
 
