@@ -1047,6 +1047,7 @@
         ChildIds: 11491691187851818917
         ChildIds: 7509293541925187500
         ChildIds: 11974509781156299335
+        ChildIds: 8276237096211680160
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2269,6 +2270,59 @@
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 4430952660372116845
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16048367406070731799
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8276237096211680160
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: 205.22879
+            Y: -6.02563477
+            Z: 47.4942818
+          }
+          Rotation {
+          }
+          Scale {
+            X: 29.8549576
+            Y: 83.3406143
+            Z: 1
+          }
+        }
+        ParentId: 11142890438418856359
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12363760016010820557
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
             }
           }
         }
@@ -7322,6 +7376,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
+      Id: 12363760016010820557
+      Name: "Advanced Material"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "universal_material_001"
       }
     }
     Assets {
