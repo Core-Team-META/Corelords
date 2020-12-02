@@ -16,7 +16,6 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15119516993684682719
         ChildIds: 4631555019377530144
         ChildIds: 8809100292642805882
         ChildIds: 15696609518116206584
@@ -31,54 +30,6 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
-        }
-      }
-      Objects {
-        Id: 15119516993684682719
-        Name: "Sun Light"
-        Transform {
-          Location {
-            X: -419.155823
-            Y: 585.660767
-          }
-          Rotation {
-            Pitch: -89.2807
-            Yaw: 3.10288334
-            Roll: -1.54650879
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1295501242763573055
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Intensity"
-            Float: 0.243089795
-          }
-          Overrides {
-            Name: "bp:Light Color"
-            Color {
-              G: 0.348079324
-              B: 0.72
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 16910278292812118833
-          }
-          TeamSettings {
-          }
         }
       }
       Objects {
@@ -1568,15 +1519,6 @@
             }
           }
         }
-      }
-    }
-    Assets {
-      Id: 16910278292812118833
-      Name: "Sun Light"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "CORESKY_SunLight"
       }
     }
     Assets {

@@ -105,7 +105,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         NetworkContext {
         }
@@ -131,6 +131,7 @@
         ChildIds: 2941748604897590395
         ChildIds: 10592470573071587801
         ChildIds: 16128421356101434318
+        ChildIds: 4122637472569609507
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -2513,7 +2514,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12363760016010820557
+              Id: 16437002618243041268
             }
           }
           Overrides {
@@ -7466,6 +7467,148 @@
           }
         }
       }
+      Objects {
+        Id: 4122637472569609507
+        Name: "X"
+        Transform {
+          Location {
+            X: 931.756226
+            Y: 1221.09009
+            Z: 251.925293
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.794688
+            Y: 0.794688
+            Z: 0.794688
+          }
+        }
+        ParentId: 17989558743352511842
+        ChildIds: 12778898690437173416
+        ChildIds: 5293340200971559301
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12778898690437173416
+        Name: "Text 01: X"
+        Transform {
+          Location {
+            X: 24.8482666
+            Y: -124.182861
+          }
+          Rotation {
+            Pitch: -6.83018879e-06
+            Yaw: 89.9999695
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 2.74192309
+            Y: 2.74192309
+            Z: 2.74192309
+          }
+        }
+        ParentId: 4122637472569609507
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 1058742528304854825
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 1
+              G: 0.160000026
+              B: 0.99443686
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18155898615493135854
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5293340200971559301
+        Name: "Container - Square 01"
+        Transform {
+          Location {
+            X: -24.8482666
+            Y: 124.182861
+            Z: 13.9206543
+          }
+          Rotation {
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 1.26047301
+            Y: 0.585437953
+            Z: 0.854251385
+          }
+        }
+        ParentId: 4122637472569609507
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3702191406046426907
+            }
+          }
+          Overrides {
+            Name: "ma:Building_WallInner:id"
+            AssetReference {
+              Id: 3702191406046426907
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17775292479697426286
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 12276958753511548492
@@ -7576,12 +7719,12 @@
       }
     }
     Assets {
-      Id: 12363760016010820557
-      Name: "Advanced Material"
+      Id: 16437002618243041268
+      Name: "Glitchy Hologram"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "universal_material_001"
+        AssetId: "fxmi_hologram"
       }
     }
     Assets {
@@ -7726,6 +7869,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mat_advanced_9slice_wooden_crates_001_ref"
+      }
+    }
+    Assets {
+      Id: 18155898615493135854
+      Name: "Text 01: X"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_023"
+      }
+    }
+    Assets {
+      Id: 17775292479697426286
+      Name: "Whitebox Wall 01 Doorway 01 Frame"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_gen_whitebox_wall_001_doorframe"
       }
     }
     PrimaryAssetId {

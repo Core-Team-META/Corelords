@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 8003994187071986388
-        ChildIds: 12346801667857022392
         ChildIds: 13915481885450376460
         ChildIds: 5816660272660829963
         ChildIds: 6294236189150351524
@@ -111,117 +110,6 @@
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 12346801667857022392
-        Name: "Sun Light"
-        Transform {
-          Location {
-            X: -353.344971
-            Y: 491.891968
-            Z: 1925.30786
-          }
-          Rotation {
-            Pitch: -90.7444153
-            Yaw: 111.708069
-            Roll: 28.7972565
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7929033306477666292
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Intensity"
-            Float: 0.019857619
-          }
-          Overrides {
-            Name: "bp:Indirect Lighting Intensity"
-            Float: 1.50288725
-          }
-          Overrides {
-            Name: "bp:Cast Shadows"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Light Color"
-            Color {
-              G: 0.423774421
-              B: 0.809999943
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Volumetric Intensity"
-            Float: 2.24158454
-          }
-          Overrides {
-            Name: "bp:Cast Volumetric Shadows"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Use Temperature"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Shadow Cascade Count"
-            Int: 4
-          }
-          Overrides {
-            Name: "bp:Dynamic Shadow Distance"
-            Float: 8.2562809
-          }
-          Overrides {
-            Name: "bp:Cascade Distribution Adjustment"
-            Float: 3.19760871
-          }
-          Overrides {
-            Name: "bp:Shadow Bias"
-            Float: 0.758294821
-          }
-          Overrides {
-            Name: "bp:Distance Fadeout Percentage"
-            Float: 0.744592369
-          }
-          Overrides {
-            Name: "bp:Shape"
-            Enum {
-              Value: "mc:esundiscshapes:1"
-            }
-          }
-          Overrides {
-            Name: "bp:Size"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Draw Sun"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Soft Distance Shadows"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Light Shaft Mask Darkness"
-            Float: 0.922724247
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 16910278292812118833
-          }
-          TeamSettings {
           }
         }
       }
@@ -2371,15 +2259,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 16910278292812118833
-      Name: "Sun Light"
-      PlatformAssetType: 6
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "CORESKY_SunLight"
       }
     }
     PrimaryAssetId {
