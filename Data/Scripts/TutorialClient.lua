@@ -5,9 +5,9 @@ local DEFAULT_CAM = player:GetDefaultCamera()
 local TUTORIAL = script.parent
 local LEADERBOARD = script:GetCustomProperty("Leaderboard"):WaitForObject()
 
-local TutorialPage2
-local TutorialPage3
-local TutorialPause
+local TutorialPage2 = Task.Spawn(function() end)
+local TutorialPage3 = Task.Spawn(function() end)
+local TutorialPause = Task.Spawn(function() end)
 
 function HideTutorial()
     local instructions = TUTORIAL:FindChildByName("Instructions")
@@ -47,14 +47,10 @@ function ShowTutorial()
 
 end
 
-if player:GetResource("Tutorial") == 0 then
-    print("should show tutorial")
-    --ShowTutorial()
-end
+while player:GetResource("CoreLordsResourceReady") == 0 do Task.Wait(.1) end
 
-function NoTutorial()
-    player:SetResource("Tutorial", 1)
-    HideTutorial()
+if player:GetResource("NoTutorial") == 0 then
+    ShowTutorial()
 end
 
 function OnBindingReleased(whichPlayer, binding)
@@ -70,9 +66,15 @@ function OnBindingReleased(whichPlayer, binding)
             TutorialPause:Cancel()
             HideTutorial()
         end
-	end
-end
+    end
+    if (binding == "ability_extra_40") then
+        while Events.BroadcastToServer("NeverShowTutorial") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
+        TutorialPage2:Cancel()
+        TutorialPage3:Cancel()
+        TutorialPause:Cancel()
+        HideTutorial()
+    end
 
+end
+while player == nil do Task.Wait(.1) end
 player.bindingReleasedEvent:Connect(OnBindingReleased)
-Events.Connect("HideTutorial", HideTutorial)
-Events.Connect("ShowTutorial", ShowTutorial)

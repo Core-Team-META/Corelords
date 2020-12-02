@@ -74,23 +74,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:inheritfromparent"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10524344682857388455
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
       }
     }
     TemplateAsset {
