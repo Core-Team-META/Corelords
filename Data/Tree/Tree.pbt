@@ -27,7 +27,7 @@ Objects {
   ChildIds: 15307418420075356122
   ChildIds: 12102183263142264206
   ChildIds: 10067718520591833633
-  ChildIds: 14918076968461692763
+  ChildIds: 7140089433206238601
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14918076968461692763
+  Id: 7140089433206238601
   Name: "TUTORIAL"
   Transform {
     Scale {
@@ -51,14 +51,14 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6536251639917672178
+      key: 213972638996481755
       value {
         Overrides {
           Name: "Name"
@@ -67,8 +67,6 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -120
-            Y: 437.5
           }
         }
         Overrides {
@@ -79,7 +77,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 9463385747088939319
+      Id: 12432121088544072821
     }
   }
 }
