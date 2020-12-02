@@ -14,7 +14,6 @@ function NeverShowTutorial(player)
 end
 
 function OnPlayerJoined(player)
-    print("player joined")
     local playerData = Storage.GetPlayerData(player)
     if type(playerData.resources) ~= "table" then
         playerData.resources = {}

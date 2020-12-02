@@ -70,6 +70,18 @@ function OnBindingReleased(whichPlayer, binding)
         PickTutorialPage()
     end
 
+    if (binding == "ability_extra_20") and TUTORIAL.visibility == Visibility.FORCE_ON then -- previous
+        pageNumber = pageNumber == 1 and 4 or pageNumber - 1
+        PickTutorialPage()
+    end
+
+    if (binding == "ability_extra_22") and TUTORIAL.visibility == Visibility.FORCE_ON then -- next
+        pageNumber = pageNumber == 3 and 1 or pageNumber + 1
+        PickTutorialPage()
+    end
+
+
+
 end
 while player == nil do Task.Wait(.1) end
 player.bindingReleasedEvent:Connect(OnBindingReleased)

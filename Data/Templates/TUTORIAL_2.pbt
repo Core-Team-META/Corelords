@@ -22,7 +22,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Folder {
           IsFilePartition: true
@@ -105,7 +105,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -3784,7 +3784,7 @@
         Transform {
           Location {
             X: -545
-            Y: -70
+            Y: -620
             Z: 14.6070557
           }
           Rotation {
@@ -3805,7 +3805,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Press T for TUTORIAL or  X to hide window  < 1/3 >"
+          Text: "Press T for TUTORIAL, X to hide window, Arrows for next/previous  < 1/3 >"
           Color {
             R: 0.0621191412
             G: 0.669999957
@@ -6262,7 +6262,7 @@
         Transform {
           Location {
             X: -545
-            Y: -70
+            Y: -620
             Z: 14.6070557
           }
           Rotation {
@@ -6283,7 +6283,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Press T for TUTORIAL or  X to hide window   < 2/3 >"
+          Text: "Press T for TUTORIAL, X to hide window, Arrows for next/previous  < 2/3 >"
           Color {
             R: 0.0621191412
             G: 0.669999957
@@ -7563,7 +7563,7 @@
         Transform {
           Location {
             X: -545
-            Y: -70
+            Y: -620
             Z: 14.6070557
           }
           Rotation {
@@ -7584,7 +7584,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "Press T for TUTORIAL or  X to hide window  < 3/3 >"
+          Text: "Press T for TUTORIAL, X to hide window, Arrows for next/previous  < 3/3 >"
           Color {
             R: 0.0621191412
             G: 0.669999957

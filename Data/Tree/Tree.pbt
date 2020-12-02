@@ -378,7 +378,6 @@ Objects {
   ChildIds: 12535147227088452243
   ChildIds: 7232274016867734611
   ChildIds: 13313389828636008364
-  ChildIds: 9237174078399991206
   ChildIds: 15228910751247538552
   UnregisteredParameters {
     Overrides {
@@ -703,33 +702,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 9237174078399991206
-  Name: "ArtReview"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17917873266452412741
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 17293857199175675885
     }
   }
 }
