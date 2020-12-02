@@ -130,7 +130,6 @@
         ChildIds: 2926969563787750244
         ChildIds: 2941748604897590395
         ChildIds: 10592470573071587801
-        ChildIds: 8152849819531558598
         ChildIds: 16128421356101434318
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -2548,50 +2547,6 @@
         }
       }
       Objects {
-        Id: 8152849819531558598
-        Name: "X and T"
-        Transform {
-          Location {
-            X: 321.366821
-            Y: -884.90094
-            Z: 76.6485596
-          }
-          Rotation {
-            Pitch: 74.9989166
-            Yaw: -179.999954
-            Roll: -6.29139666e-12
-          }
-          Scale {
-            X: 2.24605083
-            Y: 2.24605083
-            Z: 2.24605083
-          }
-        }
-        ParentId: 17989558743352511842
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Text {
-          Text: "Press T for TUTORIAL or  X to hide window"
-          Color {
-            R: 0.0621191412
-            G: 0.669999957
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
         Id: 16128421356101434318
         Name: "Instructions"
         Transform {
@@ -2627,8 +2582,8 @@
         Name: "DESTROY"
         Transform {
           Location {
-            X: -60
-            Y: 717.909363
+            X: -3.73690796
+            Y: 667.909302
           }
           Rotation {
           }
@@ -2641,6 +2596,7 @@
         ParentId: 16128421356101434318
         ChildIds: 1529726031455067570
         ChildIds: 13359413086011955153
+        ChildIds: 8152849819531558598
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3823,12 +3779,55 @@
         }
       }
       Objects {
+        Id: 8152849819531558598
+        Name: "X and T"
+        Transform {
+          Location {
+            X: -545
+            Y: -70
+            Z: 14.6070557
+          }
+          Rotation {
+            Pitch: 74.9988785
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 2.24605083
+            Y: 2.24605083
+            Z: 2.24605083
+          }
+        }
+        ParentId: 14539124423394870794
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "Press T for TUTORIAL or  X to hide window  < 1/3 >"
+          Color {
+            R: 0.0621191412
+            G: 0.669999957
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
         Id: 12830392775886711747
         Name: "PROTECT"
         Transform {
           Location {
-            X: -60
-            Y: 717.909363
+            X: -3.73690796
+            Y: 667.909302
           }
           Rotation {
           }
@@ -3842,6 +3841,7 @@
         ChildIds: 6142261609000088692
         ChildIds: 16306029696379222820
         ChildIds: 7917219711729788710
+        ChildIds: 7478321132817774666
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -6257,12 +6257,55 @@
         }
       }
       Objects {
+        Id: 7478321132817774666
+        Name: "X and T"
+        Transform {
+          Location {
+            X: -545
+            Y: -70
+            Z: 14.6070557
+          }
+          Rotation {
+            Pitch: 74.9986954
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 2.24605083
+            Y: 2.24605083
+            Z: 2.24605083
+          }
+        }
+        ParentId: 12830392775886711747
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "Press T for TUTORIAL or  X to hide window   < 2/3 >"
+          Color {
+            R: 0.0621191412
+            G: 0.669999957
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
         Id: 16541387472960089941
         Name: "HOLD"
         Transform {
           Location {
-            X: -60
-            Y: 717.909363
+            X: -3.73690796
+            Y: 667.909302
           }
           Rotation {
           }
@@ -6276,6 +6319,7 @@
         ChildIds: 7972584005550370050
         ChildIds: 17033619881293245881
         ChildIds: 4805397921512138990
+        ChildIds: 9624615967747813191
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -7510,6 +7554,49 @@
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:sphere"
+          }
+        }
+      }
+      Objects {
+        Id: 9624615967747813191
+        Name: "X and T"
+        Transform {
+          Location {
+            X: -545
+            Y: -70
+            Z: 14.6070557
+          }
+          Rotation {
+            Pitch: 74.9985275
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 2.24605083
+            Y: 2.24605083
+            Z: 2.24605083
+          }
+        }
+        ParentId: 16541387472960089941
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "Press T for TUTORIAL or  X to hide window  < 3/3 >"
+          Color {
+            R: 0.0621191412
+            G: 0.669999957
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
           }
         }
       }
