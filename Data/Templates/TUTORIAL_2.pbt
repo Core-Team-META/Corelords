@@ -131,7 +131,6 @@
         ChildIds: 2941748604897590395
         ChildIds: 10592470573071587801
         ChildIds: 16128421356101434318
-        ChildIds: 4122637472569609507
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -2566,6 +2565,7 @@
         ChildIds: 14539124423394870794
         ChildIds: 12830392775886711747
         ChildIds: 16541387472960089941
+        ChildIds: 8152849819531558598
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -7468,144 +7468,45 @@
         }
       }
       Objects {
-        Id: 4122637472569609507
-        Name: "X"
+        Id: 8152849819531558598
+        Name: "X and T"
         Transform {
           Location {
-            X: 931.756226
-            Y: 1221.09009
-            Z: 251.925293
+            X: 72.6299133
+            Y: -139.491638
+            Z: 14.6070557
           }
           Rotation {
+            Pitch: 74.99897
+            Yaw: -179.999954
           }
           Scale {
-            X: 0.794688
-            Y: 0.794688
-            Z: 0.794688
+            X: 2.24605083
+            Y: 2.24605083
+            Z: 2.24605083
           }
         }
-        ParentId: 17989558743352511842
-        ChildIds: 12778898690437173416
-        ChildIds: 5293340200971559301
+        ParentId: 16128421356101434318
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 12778898690437173416
-        Name: "Text 01: X"
-        Transform {
-          Location {
-            X: 24.8482666
-            Y: -124.182861
+        Text {
+          Text: "Press T for TUTORIAL or  X to hide window"
+          Color {
+            R: 0.0621191412
+            G: 0.669999957
+            A: 1
           }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 89.9999695
-            Roll: -89.9999695
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
           }
-          Scale {
-            X: 2.74192309
-            Y: 2.74192309
-            Z: 2.74192309
-          }
-        }
-        ParentId: 4122637472569609507
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Font.Faces:id"
-            AssetReference {
-              Id: 1058742528304854825
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:color"
-            Color {
-              R: 1
-              G: 0.160000026
-              B: 0.99443686
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18155898615493135854
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5293340200971559301
-        Name: "Container - Square 01"
-        Transform {
-          Location {
-            X: -24.8482666
-            Y: 124.182861
-            Z: 13.9206543
-          }
-          Rotation {
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 1.26047301
-            Y: 0.585437953
-            Z: 0.854251385
-          }
-        }
-        ParentId: 4122637472569609507
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3702191406046426907
-            }
-          }
-          Overrides {
-            Name: "ma:Building_WallInner:id"
-            AssetReference {
-              Id: 3702191406046426907
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17775292479697426286
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
           }
         }
       }
@@ -7869,24 +7770,6 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mat_advanced_9slice_wooden_crates_001_ref"
-      }
-    }
-    Assets {
-      Id: 18155898615493135854
-      Name: "Text 01: X"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_023"
-      }
-    }
-    Assets {
-      Id: 17775292479697426286
-      Name: "Whitebox Wall 01 Doorway 01 Frame"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_gen_whitebox_wall_001_doorframe"
       }
     }
     PrimaryAssetId {
