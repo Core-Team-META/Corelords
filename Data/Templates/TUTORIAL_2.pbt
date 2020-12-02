@@ -105,7 +105,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         NetworkContext {
         }
@@ -130,6 +130,7 @@
         ChildIds: 2926969563787750244
         ChildIds: 2941748604897590395
         ChildIds: 10592470573071587801
+        ChildIds: 8152849819531558598
         ChildIds: 16128421356101434318
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -2513,12 +2514,14 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16437002618243041268
+              Id: 12363760016010820557
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              G: 0.00403972715
+              B: 0.00999999
               A: 1
             }
           }
@@ -2545,6 +2548,50 @@
         }
       }
       Objects {
+        Id: 8152849819531558598
+        Name: "X and T"
+        Transform {
+          Location {
+            X: 321.366821
+            Y: -884.90094
+            Z: 76.6485596
+          }
+          Rotation {
+            Pitch: 74.9989166
+            Yaw: -179.999954
+            Roll: -6.29139666e-12
+          }
+          Scale {
+            X: 2.24605083
+            Y: 2.24605083
+            Z: 2.24605083
+          }
+        }
+        ParentId: 17989558743352511842
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "Press T for TUTORIAL or  X to hide window"
+          Color {
+            R: 0.0621191412
+            G: 0.669999957
+            A: 1
+          }
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
         Id: 16128421356101434318
         Name: "Instructions"
         Transform {
@@ -2565,7 +2612,6 @@
         ChildIds: 14539124423394870794
         ChildIds: 12830392775886711747
         ChildIds: 16541387472960089941
-        ChildIds: 8152849819531558598
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -7467,49 +7513,6 @@
           }
         }
       }
-      Objects {
-        Id: 8152849819531558598
-        Name: "X and T"
-        Transform {
-          Location {
-            X: 72.6299133
-            Y: -139.491638
-            Z: 14.6070557
-          }
-          Rotation {
-            Pitch: 74.99897
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 2.24605083
-            Y: 2.24605083
-            Z: 2.24605083
-          }
-        }
-        ParentId: 16128421356101434318
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Text {
-          Text: "Press T for TUTORIAL or  X to hide window"
-          Color {
-            R: 0.0621191412
-            G: 0.669999957
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:left"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
     }
     Assets {
       Id: 12276958753511548492
@@ -7620,12 +7623,12 @@
       }
     }
     Assets {
-      Id: 16437002618243041268
-      Name: "Glitchy Hologram"
+      Id: 12363760016010820557
+      Name: "Advanced Material"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_hologram"
+        AssetId: "universal_material_001"
       }
     }
     Assets {

@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 12363760016010820557
-  Name: "Advanced Material"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "universal_material_001"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
