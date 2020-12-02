@@ -28,6 +28,7 @@ Objects {
   ChildIds: 12102183263142264206
   ChildIds: 10067718520591833633
   ChildIds: 7140089433206238601
+  ChildIds: 8126017102802477754
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,52 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8126017102802477754
+  Name: "Map14"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16856390704288895307
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Map14"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 389.427948
+            Y: -572.081909
+            Z: 2065.14795
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 694460306534392365
+    }
   }
 }
 Objects {
@@ -83,6 +130,25 @@ Objects {
           Name: "Visible"
           Enum {
             Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15664261457648599376
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            G: 0.00403972715
+            B: 0.00999999
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 12363760016010820557
           }
         }
       }
