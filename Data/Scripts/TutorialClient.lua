@@ -59,29 +59,22 @@ function OnBindingReleased(whichPlayer, binding)
         while Events.BroadcastToServer("NeverShowTutorial") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
         HideTutorial()
     end
-
-    if (binding == "ability_extra_48") and TUTORIAL.visibility == Visibility.FORCE_ON then -- previous
-        pageNumber = pageNumber == 1 and 4 or pageNumber - 1
+    if (binding == "ability_extra_48" and TUTORIAL.visibility == Visibility.FORCE_ON) then -- previous
+        pageNumber = pageNumber < 2 and 3 or pageNumber - 1
         PickTutorialPage()
     end
-
-    if (binding == "ability_extra_49") and TUTORIAL.visibility == Visibility.FORCE_ON then -- next
-        pageNumber = pageNumber == 3 and 1 or pageNumber + 1
+    if (binding == "ability_extra_49" and TUTORIAL.visibility == Visibility.FORCE_ON) then -- next
+        pageNumber = pageNumber > 2 and 1 or pageNumber + 1
         PickTutorialPage()
     end
-
-    if (binding == "ability_extra_20") and TUTORIAL.visibility == Visibility.FORCE_ON then -- previous
-        pageNumber = pageNumber == 1 and 4 or pageNumber - 1
+    if (binding == "ability_extra_20" and TUTORIAL.visibility == Visibility.FORCE_ON) then -- previous
+        pageNumber = pageNumber < 2 and 3 or pageNumber - 1
         PickTutorialPage()
     end
-
-    if (binding == "ability_extra_22") and TUTORIAL.visibility == Visibility.FORCE_ON then -- next
-        pageNumber = pageNumber == 3 and 1 or pageNumber + 1
+    if (binding == "ability_extra_22" and TUTORIAL.visibility == Visibility.FORCE_ON) then -- next
+        pageNumber = pageNumber > 2 and 1 or pageNumber + 1
         PickTutorialPage()
     end
-
-
-
 end
 while player == nil do Task.Wait(.1) end
 player.bindingReleasedEvent:Connect(OnBindingReleased)
