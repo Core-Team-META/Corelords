@@ -102,7 +102,7 @@ Events.Connect("CastleDestroyed", function(owner, position)
 	end
 end)
 
-Events.Connect("RoundEnded", function(winner)
+Events.Connect("RoundEnded", function()
 	utils.PlaySound("roundFinished", Vector3.ZERO)
 end)
 

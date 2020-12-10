@@ -114,19 +114,12 @@ end
 function RoundService.EndRound()
 	local round = RoundService.currentRound
 	round.isActive = false
-	local winner
-	for _, castle in pairs(round.castles) do
-		if castle.owner then
-			winner = castle.owner
-			break
-		end
-	end
 
 	-- round end scoring wait for it to be done then continue on
-	while Events.Broadcast("DisplayVictory") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
+	Events.Broadcast("DisplayVictory")
 	Task.Wait(7)
-	utils.SendBroadcast("RoundEnded", winner)
-	while Events.Broadcast("RoundEnded") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do Task.Wait() end
+	utils.SendBroadcast("RoundEnded")
+	Events.Broadcast("RoundEnded")
 	Task.Wait(3)
 
 	for object, castle in pairs(round.castles) do
