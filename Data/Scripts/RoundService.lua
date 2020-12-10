@@ -206,6 +206,7 @@ function RoundService.AssignPlayer(player)
 				nametag.shadow.text = string.upper(player.name)
 				nametag.main.visibility = Visibility.FORCE_ON
 				nametag.shadow.visibility = Visibility.FORCE_ON
+				break
 			end
 		end
 	end
