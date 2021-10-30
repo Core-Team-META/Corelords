@@ -2,6 +2,9 @@
 
 # Corelords
 
+[![Build Status](https://github.com/Core-Team-META/Corelords/workflows/CI/badge.svg)](https://github.com/Core-Team-META/Corelords/actions/workflows/ci.yml?query=workflow%3ACI%29)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Core-Team-META/Corelords?style=plastic)
+
 [![](https://i.imgur.com/hKL4an0l.jpg)](https://www.coregames.com/games/28a8a6/corelords-retro)
 </div>
 
