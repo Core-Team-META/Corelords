@@ -1,4 +1,4 @@
-﻿local utils, BallPhysics
+local utils, BallPhysics
 
 local BRICK_CONTAINER = script:GetCustomProperty("BRICK_CONTAINER"):WaitForObject()
 local CLIENT_CONTEXT = script:GetCustomProperty("ClientContext"):WaitForObject()

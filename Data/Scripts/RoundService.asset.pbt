@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5133576234590503280
   Name: "RoundService"
   PlatformAssetType: 3

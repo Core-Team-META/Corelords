@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3857224540010617799
   Name: "Custom Invisible"
   PlatformAssetType: 13

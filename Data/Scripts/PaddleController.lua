@@ -1,4 +1,4 @@
-﻿local utils
+local utils
 
 local ABILITY_FOLDER = script:GetCustomProperty("ABILITY_FOLDER"):WaitForObject()
 local PADDLE_CONTAINER = script:GetCustomProperty("PADDLE_CONTAINER"):WaitForObject()

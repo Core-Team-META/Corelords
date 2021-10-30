@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14246305244567552117
   Name: "Custom Animated Glowing Hex_2"
   PlatformAssetType: 13

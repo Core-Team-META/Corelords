@@ -1,4 +1,4 @@
-﻿function OnResourceChanged(player, resource, value)
+function OnResourceChanged(player, resource, value)
 	local playerData = Storage.GetPlayerData(player)
 
 	if type(playerData.resources) ~= "table" then

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16034823918478285713
   Name: "PaddleService"
   PlatformAssetType: 3

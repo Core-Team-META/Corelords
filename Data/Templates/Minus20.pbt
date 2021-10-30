@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2031211813728554931
   Name: "Minus20"
   PlatformAssetType: 5

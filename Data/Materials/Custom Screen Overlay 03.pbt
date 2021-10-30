@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12866467495021378519
   Name: "Custom Screen Overlay 03"
   PlatformAssetType: 13

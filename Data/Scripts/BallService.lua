@@ -1,4 +1,4 @@
-﻿local utils, BallPhysics, BrickService, CastleService, RoundService
+local utils, BallPhysics, BrickService, CastleService, RoundService
 local BALL = script:GetCustomProperty("Ball")
 local BALL_CONTAINER = script:GetCustomProperty("BALL_CONTAINER"):WaitForObject()
 

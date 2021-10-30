@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12268466399571410635
   Name: "roundFinishedSound"
   PlatformAssetType: 5

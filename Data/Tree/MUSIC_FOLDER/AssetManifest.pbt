@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17652667999298900980
   Name: "\342\200\234Skeleton Rave\342\200\235 Music Construction Kit (Sections) 01"
   PlatformAssetType: 10

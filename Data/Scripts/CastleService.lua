@@ -1,4 +1,4 @@
-﻿local utils, RoundService, PaddleService
+local utils, RoundService, PaddleService
 
 local CASTLE = script:GetCustomProperty("Castle")
 local CASTLE_FOLDER = script:GetCustomProperty("CASTLE_FOLDER"):WaitForObject()

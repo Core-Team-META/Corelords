@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5027425692319489176
   Name: "Custom Gel Transparent_2"
   PlatformAssetType: 13

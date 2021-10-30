@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2622231665703962120
   Name: "BallService"
   PlatformAssetType: 3

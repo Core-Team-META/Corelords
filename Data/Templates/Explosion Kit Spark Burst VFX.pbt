@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2008711942164459240
   Name: "Explosion Kit Spark Burst VFX"
   PlatformAssetType: 5

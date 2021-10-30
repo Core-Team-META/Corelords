@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6587766742602281273
   Name: "Custom Car Paint 01"
   PlatformAssetType: 13

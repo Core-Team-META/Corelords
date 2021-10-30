@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	- Ball physics replication
 	Ball motion is server-authoritative and client-predictive
 	The server sets the position and rotation of a folder every frame representing the ball's position and direction

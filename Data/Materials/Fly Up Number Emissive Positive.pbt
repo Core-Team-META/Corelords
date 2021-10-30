@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8788329265679993174
   Name: "Fly Up Number Emissive Positive"
   PlatformAssetType: 13

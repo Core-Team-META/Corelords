@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7488356415618934296
   Name: "Custom Basic Cloud"
   PlatformAssetType: 13

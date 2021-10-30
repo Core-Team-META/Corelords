@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5313996324954360499
   Name: "destroyCastleVFX"
   PlatformAssetType: 5

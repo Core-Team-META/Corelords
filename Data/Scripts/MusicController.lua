@@ -1,4 +1,4 @@
-﻿local MUSIC_FOLDER = script:GetCustomProperty("MUSIC_FOLDER"):WaitForObject()
+local MUSIC_FOLDER = script:GetCustomProperty("MUSIC_FOLDER"):WaitForObject()
 local musicList = MUSIC_FOLDER:GetChildren()
 
 function OnPlayTrack(track)

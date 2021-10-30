@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9759711518675750994
   Name: "Custom Rubber Tiles 01"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17408143454483093440
   Name: "ScoreName"
   PlatformAssetType: 5

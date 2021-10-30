@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1349664009537848939
   Name: "Fly Up Number Outline Positive"
   PlatformAssetType: 13

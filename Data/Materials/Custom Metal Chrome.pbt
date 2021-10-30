@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13792278866937179177
   Name: "Custom Metal Chrome"
   PlatformAssetType: 13

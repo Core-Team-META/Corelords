@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11553300019207815126
   Name: "Custom Wood Floor Chevron Light_1"
   PlatformAssetType: 13

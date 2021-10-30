@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9270975276199792104
   Name: "destroyBrickSparkVFX"
   PlatformAssetType: 5

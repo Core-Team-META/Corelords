@@ -1,4 +1,4 @@
-﻿local DEPENDENCIES = {
+local DEPENDENCIES = {
 	utils = require(script:GetCustomProperty("utils")),
 	BrickController = require(script:GetCustomProperty("BrickController")),
 	PaddleController = require(script:GetCustomProperty("PaddleController")),

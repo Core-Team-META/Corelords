@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12770049859636297066
   Name: "Custom Base Material from Sci-fi Circuits Ring 03"
   PlatformAssetType: 13

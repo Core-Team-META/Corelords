@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11526724988637890406
   Name: "Custom Metal Steel Triangle 01"
   PlatformAssetType: 13

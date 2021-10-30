@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15124538403774859143
   Name: "Castle2"
   PlatformAssetType: 5

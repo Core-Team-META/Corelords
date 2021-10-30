@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 581063974361107131
   Name: "Custom Grid Lines Emissive_1"
   PlatformAssetType: 13

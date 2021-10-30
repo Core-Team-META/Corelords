@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14906331533300426999
   Name: "BrickController"
   PlatformAssetType: 3

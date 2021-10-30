@@ -1,4 +1,4 @@
-﻿Name: "DefaultContext"
+Name: "DefaultContext"
 RootId: 15307418420075356122
 Objects {
   Id: 8604723481166369506

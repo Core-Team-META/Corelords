@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13358486535000149772
   Name: "Custom Emissive Container Liquid"
   PlatformAssetType: 13

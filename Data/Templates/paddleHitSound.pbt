@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5502098385372088198
   Name: "paddleHitSound"
   PlatformAssetType: 5

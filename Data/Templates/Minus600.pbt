@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11729137962200591591
   Name: "Minus600"
   PlatformAssetType: 5

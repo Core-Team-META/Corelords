@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11918547397350143104
   Name: "Custom Grid Glow Topographical - Copy_1"
   PlatformAssetType: 13

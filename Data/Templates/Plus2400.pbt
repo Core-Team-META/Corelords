@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7399220399467369422
   Name: "Plus2400"
   PlatformAssetType: 5

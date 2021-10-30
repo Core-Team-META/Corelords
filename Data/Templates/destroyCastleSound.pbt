@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5696136033217144251
   Name: "destroyCastleSound"
   PlatformAssetType: 5

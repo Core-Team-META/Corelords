@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10485141533479566439
   Name: "Custom Fabric Space Insulation 02"
   PlatformAssetType: 13

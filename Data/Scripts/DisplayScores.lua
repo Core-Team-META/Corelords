@@ -1,4 +1,4 @@
-﻿local SCORE_NAME= script:GetCustomProperty("ScoreName")
+local SCORE_NAME= script:GetCustomProperty("ScoreName")
 local STARTING_SCORE = 4800
 local HIGH_SCORE = script:GetCustomProperty("HighScore")
 

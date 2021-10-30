@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 640038331674860232
   Name: "Custom Metal Abstract Tech Panel 01"
   PlatformAssetType: 13

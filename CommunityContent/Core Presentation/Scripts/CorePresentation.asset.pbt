@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16873370556211755531
   Name: "CorePresentation"
   PlatformAssetType: 3

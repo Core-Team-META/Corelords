@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6457897941008714228
   Name: "Custom Metal Painted 01"
   PlatformAssetType: 13

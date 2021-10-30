@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6882639620733935136
   Name: "BallController"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6916624045827999240
   Name: "Map16"
   PlatformAssetType: 5

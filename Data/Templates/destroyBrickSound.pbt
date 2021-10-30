@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16834798517672184806
   Name: "destroyBrickSound"
   PlatformAssetType: 5

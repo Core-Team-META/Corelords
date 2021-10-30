@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3062822765453810364
   Name: "Fly Up Number Emissive Negative"
   PlatformAssetType: 13

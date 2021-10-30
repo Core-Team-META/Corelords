@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2734505582520739095
   Name: "Custom Metal Corrugated 03"
   PlatformAssetType: 13

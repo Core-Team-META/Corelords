@@ -1,4 +1,4 @@
-﻿local SCREENS = script:GetCustomProperty("Screens"):WaitForObject()
+local SCREENS = script:GetCustomProperty("Screens"):WaitForObject()
 local INITIAL_DELAY = SCREENS:GetCustomProperty("InitialDelay")
 local TRANSPARENT = script:GetCustomProperty("Transparent")
 

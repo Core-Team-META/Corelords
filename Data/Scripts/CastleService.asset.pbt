@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4789939289866160584
   Name: "CastleService"
   PlatformAssetType: 3

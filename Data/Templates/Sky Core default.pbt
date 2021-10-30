@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16974592472164090712
   Name: "Sky Core default"
   PlatformAssetType: 5

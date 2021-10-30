@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15771883307625539575
   Name: "Custom Solar Panel 001"
   PlatformAssetType: 13

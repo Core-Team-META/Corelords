@@ -1,4 +1,4 @@
-﻿utils = _ENV
+utils = _ENV
 isClientContext = Environment.IsClient()
 isServerContext = Environment.IsServer()
 DEBUG = false

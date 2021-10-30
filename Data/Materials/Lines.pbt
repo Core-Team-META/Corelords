@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 305775141639857906
   Name: "Lines"
   PlatformAssetType: 13

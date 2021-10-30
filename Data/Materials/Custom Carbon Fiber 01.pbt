@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15724294045117503383
   Name: "Custom Carbon Fiber 01"
   PlatformAssetType: 13

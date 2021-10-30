@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13493194054548413188
   Name: "Custom Hex Energy Pulse"
   PlatformAssetType: 13

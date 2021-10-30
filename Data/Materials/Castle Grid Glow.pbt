@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16974966470577672953
   Name: "Castle Grid Glow"
   PlatformAssetType: 13

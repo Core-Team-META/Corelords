@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13424249725620894483
   Name: "Custom Edge Line Wavy_1"
   PlatformAssetType: 13

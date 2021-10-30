@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15316497082714207955
   Name: "gameOverSound"
   PlatformAssetType: 5

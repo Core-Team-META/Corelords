@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6934386135901523161
   Name: "Custom Clear Coat Reflector Hex 01"
   PlatformAssetType: 13

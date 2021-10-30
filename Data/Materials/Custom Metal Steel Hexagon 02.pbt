@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1491534801423099355
   Name: "Custom Metal Steel Hexagon 02"
   PlatformAssetType: 13

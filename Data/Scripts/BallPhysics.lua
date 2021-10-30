@@ -1,4 +1,4 @@
-﻿local utils, PaddleService
+local utils, PaddleService
 
 local PADDLE_CONTAINER = script:GetCustomProperty("PADDLE_CONTAINER"):WaitForObject()
 

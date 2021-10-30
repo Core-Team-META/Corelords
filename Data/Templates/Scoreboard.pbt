@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16006376798949923037
   Name: "Scoreboard"
   PlatformAssetType: 5

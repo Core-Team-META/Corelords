@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6882415711058170223
   Name: "Custom Additive Edgeline Top Fade"
   PlatformAssetType: 13

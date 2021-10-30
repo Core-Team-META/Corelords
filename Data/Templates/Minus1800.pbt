@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4263489481096753240
   Name: "Minus1800"
   PlatformAssetType: 5

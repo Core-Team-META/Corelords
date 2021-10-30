@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17208141850705169281
   Name: "Map5"
   PlatformAssetType: 5

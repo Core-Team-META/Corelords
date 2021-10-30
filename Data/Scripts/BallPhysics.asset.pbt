@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14203953131927154589
   Name: "BallPhysics"
   PlatformAssetType: 3

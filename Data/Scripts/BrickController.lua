@@ -1,4 +1,4 @@
-﻿local utils, BallPhysics, BallController, PaddleController
+local utils, BallPhysics, BallController, PaddleController
 
 local BRICK_TEMPLATE = script:GetCustomProperty("Brick")
 local CLIENT_CONTEXT = script:GetCustomProperty("ClientContext"):WaitForObject()

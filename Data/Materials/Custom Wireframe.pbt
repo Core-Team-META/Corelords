@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11511031008912246104
   Name: "Custom Wireframe"
   PlatformAssetType: 13

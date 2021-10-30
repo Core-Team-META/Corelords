@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12129623447978858665
   Name: "PaddleController"
   PlatformAssetType: 3

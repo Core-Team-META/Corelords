@@ -1,4 +1,4 @@
-﻿LeaderboardConfigs {
+LeaderboardConfigs {
   Config {
     SortType {
       Value: "mc:ecoresdkleaderboardsorting:higherisbetter"

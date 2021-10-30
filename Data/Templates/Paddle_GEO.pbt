@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14395409529532110913
   Name: "Paddle_GEO"
   PlatformAssetType: 5

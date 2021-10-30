@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8365392262078967723
   Name: "Brick"
   PlatformAssetType: 5

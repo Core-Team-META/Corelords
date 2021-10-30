@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7892135482732796705
   Name: "Map 1 Electric"
   PlatformAssetType: 13

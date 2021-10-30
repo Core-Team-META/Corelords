@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16062250732386274296
   Name: "Plus1200"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local utils, BrickService, BallService, PaddleService, CastleService
+local utils, BrickService, BallService, PaddleService, CastleService
 
 local MAPS = {
 	(script:GetCustomProperty("Map1")),

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18242483812453100048
   Name: "Custom Emissive Glow Transparent_4"
   PlatformAssetType: 13

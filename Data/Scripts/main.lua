@@ -1,4 +1,4 @@
-﻿local DEPENDENCIES = {
+local DEPENDENCIES = {
 	utils = require(script:GetCustomProperty("utils")),
 	RoundService = require(script:GetCustomProperty("RoundService")),
 	BrickService = require(script:GetCustomProperty("BrickService")),

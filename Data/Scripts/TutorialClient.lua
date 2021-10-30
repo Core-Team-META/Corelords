@@ -1,4 +1,4 @@
-﻿local player = Game.GetLocalPlayer()
+local player = Game.GetLocalPlayer()
 local tutorialOff = player:GetResource("Tutorial")
 local TUTORIAL_CAM = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
 local DEFAULT_CAM = player:GetDefaultCamera()

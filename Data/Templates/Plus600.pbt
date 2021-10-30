@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2803103840655075452
   Name: "Plus600"
   PlatformAssetType: 5

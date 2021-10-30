@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18178797066285068184
   Name: "Custom Glitchy Hologram"
   PlatformAssetType: 13

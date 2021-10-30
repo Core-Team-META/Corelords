@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6651401816672796435
   Name: "Custom Frosted Glass"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15771918211220720811
   Name: "Custom Edgeline Wavy Object Fade Advanced_1"
   PlatformAssetType: 13

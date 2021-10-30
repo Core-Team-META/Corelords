@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2824897388570953188
   Name: "Custom Basic Hologram_1"
   PlatformAssetType: 13

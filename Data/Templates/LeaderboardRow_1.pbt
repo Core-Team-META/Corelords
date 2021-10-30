@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1187109829877265113
   Name: "LeaderboardRow"
   PlatformAssetType: 5

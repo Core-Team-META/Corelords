@@ -1,4 +1,4 @@
-﻿local pulse = script.parent
+local pulse = script.parent
 local startingTime = time()
 
 function Tick(dt)

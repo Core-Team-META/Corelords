@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6923941171584419934
   Name: "Impact Sound trials"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3903971587963446636
   Name: "Custom Hex Energy Cycling Tile_1"
   PlatformAssetType: 13

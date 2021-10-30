@@ -1,4 +1,4 @@
-﻿_G.defaultContextScript = script
+_G.defaultContextScript = script
 function _G.runInDefaultContext(f, ...)
 	Events.Broadcast("runInDefaultContext", coroutine.running(), f, ...)
 	local response = _G.defaultContextResponse

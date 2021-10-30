@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10118178577577667936
   Name: "Custom Edge Line Sharp"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10067007158274220082
   Name: "utils"
   PlatformAssetType: 3

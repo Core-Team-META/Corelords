@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9844351200237576816
   Name: "Tutorial UI"
   PlatformAssetType: 5

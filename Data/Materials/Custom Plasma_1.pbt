@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13832897873389047681
   Name: "Custom Plasma_1"
   PlatformAssetType: 13

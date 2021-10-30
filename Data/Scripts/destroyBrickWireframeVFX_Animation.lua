@@ -1,4 +1,4 @@
-﻿Task.Wait(1)
+Task.Wait(1)
 
 function Tick(dt)
 	local brickPieces = script:FindDescendantsByName("Emissive")

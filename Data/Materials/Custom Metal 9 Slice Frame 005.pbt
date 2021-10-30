@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1077398709002417251
   Name: "Custom Metal 9 Slice Frame 005"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿local utils, RoundService, BallPhysics
+local utils, RoundService, BallPhysics
 
 local MOUSE_ABILITY = script:GetCustomProperty("MOUSE_ABILITY")
 local ABILITY_FOLDER = script:GetCustomProperty("ABILITY_FOLDER"):WaitForObject()

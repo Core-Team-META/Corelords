@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17153586369859599210
   Name: "roundStartSound"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16285348975840645795
   Name: "Custom Metal Greebles 04"
   PlatformAssetType: 13

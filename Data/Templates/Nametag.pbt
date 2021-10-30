@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10816911584593674529
   Name: "Nametag"
   PlatformAssetType: 5

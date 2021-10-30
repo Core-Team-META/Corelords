@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14967022320886192688
   Name: "BrickService"
   PlatformAssetType: 3

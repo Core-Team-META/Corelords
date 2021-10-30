@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1908377336064394037
   Name: "Custom Metal Floor Panel 01_1"
   PlatformAssetType: 13
